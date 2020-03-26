@@ -1,3 +1,5 @@
+![Alt text](relative/path/to/ca_redpurplelogo.png?raw=true "Title")
+
 # creatives-around 
 
 Creatives Around is a location-based social platform for visual artists.
