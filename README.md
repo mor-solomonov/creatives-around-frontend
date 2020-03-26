@@ -1,5 +1,8 @@
 
-<br/> <br/> <br/>![Screenshot](ca_redpurplelogo.png)
+<br/> 
+<p align="center">
+  <img width="460" height="300" src="![Screenshot](ca_redpurplelogo.png)">
+</p>
 
 
 Creatives Around is a location-based social platform for visual artists.
