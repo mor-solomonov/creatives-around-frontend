@@ -1,4 +1,4 @@
-![Alt text](relative/path/to/ca_redpurplelogo.png?raw=true "Title")
+![Screenshot](ca_redpurplelogo.png)
 
 # creatives-around 
 
