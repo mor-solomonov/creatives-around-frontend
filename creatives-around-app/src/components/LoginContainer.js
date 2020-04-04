@@ -4,6 +4,7 @@ import PageTitle from './PageTitle';
 import Email from './Email';
 import Password from './Password';
 import LoginButton from './LoginButton';
+import SignUp from './SignUp';
 
 export default function LoginContainer() {
     return (
@@ -13,6 +14,7 @@ export default function LoginContainer() {
             <Email />
             <Password />
             <LoginButton />
+            <SignUp />
         </div>
     )
 }
