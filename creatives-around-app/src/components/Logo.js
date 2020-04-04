@@ -6,6 +6,7 @@ export default function Logo() {
     return (
         <div className="Logo">
             <img src={LogoImage} alt="Logo" />
+            <p className="App-title">- connect with creatives nearby -</p>
         </div>
     )
 }

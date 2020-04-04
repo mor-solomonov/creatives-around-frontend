@@ -17,9 +17,9 @@
 .Logo {
   display:flex;
   flex-direction: column;
-  min-height: 500px;
-  min-width: 400px;
-  margin-top: 20px;
+  height: 500px;
+  width: 340px;
+  margin-top: 60px;
   
 }
 
@@ -27,7 +27,11 @@
   background-color: rgb(71, 11, 62);
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: center top;
   justify-content: center;
 
+}
+
+.App-title {
+  color: white;
 }
