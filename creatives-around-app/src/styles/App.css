@@ -28,12 +28,14 @@ margin-top: 45px;
 .App-title{
   color: white;
   text-align: center;
+ 
 }
 
 .Page-title {
   
   color: white;
  font-size: 20px;
+ margin-top: 40px;
   
 }
 
@@ -47,4 +49,5 @@ margin-top: 30px;
 
 .SignUp {
   color: white;
+  margin-top: 60px;
 }
