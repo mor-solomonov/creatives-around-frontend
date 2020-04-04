@@ -5,7 +5,7 @@
 
 Creatives Around is a location-based social platform for visual artists.
 
-The app suggests profiles based on location and art form.
+The app suggests profiles based on location and art forms.
 Once connected with other users, direct messaging between the users is available and the users are added as friends for future updates in the news feed.
 
 The idea of the app is to connect with other visual artists, arrange meetups,
