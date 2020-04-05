@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -15,12 +14,8 @@
 }
 
 .Logo {
-  display:flex;
-  flex-direction: column;
-  min-height: 500px;
   min-width: 400px;
   margin-top: 20px;
-  
 }
 
 .App-Container {
@@ -29,5 +24,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
