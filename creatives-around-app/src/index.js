@@ -5,16 +5,16 @@ import './styles/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import SignupPage from './components/SignUpContainer';
 import LoginPage from './components/LoginContainer';
 import SignUpContainer from './components/SignUpContainer';
-
+import TermsAndConditions from './components/TermsContainer'
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={LoginPage} />
-      <Route path="/signup" component={SignupPage} />
+      <Route exact path="/signup" component={SignUpContainer} />
+      <Route exact path="/termsandconditions" component={TermsAndConditions} />
     </Switch>
   </BrowserRouter>,
   rootElement
