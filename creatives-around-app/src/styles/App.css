@@ -31,12 +31,17 @@ margin-top: 45px;
  
 }
 
-.Page-title {
+.SignUpPageTitle {
   
   color: white;
  font-size: 20px;
- margin-top: 40px;
+ margin-top: 15px;
   
+}
+.LoginPageTitle {
+    color: white;
+ font-size: 20px;
+ margin-top: 15px;
 }
 
 .Email {
@@ -46,8 +51,18 @@ margin-top: 30px;
 .LoginButton {
   margin-top: 60px;
 }
+.SignUpButton {
+  margin-top: 30px;
+}
+.GoBackButton {
+  margin-top: 15px;
+}
 
 .SignUp {
   color: white;
   margin-top: 60px;
+}
+
+.Agree {
+  color: white;
 }

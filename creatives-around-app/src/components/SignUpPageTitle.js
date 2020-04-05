@@ -4,7 +4,7 @@ import '../styles/App.css';
 export default function SignUpPageTitle() {
     return (
         <div>
-            <h3 className="Page-title">Sign Up</h3>
+            <h3 className="SignUpPageTitle">Sign Up</h3>
         </div>
     )
 }

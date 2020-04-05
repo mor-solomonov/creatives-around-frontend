@@ -4,6 +4,9 @@ import Logo from './Logo';
 import Email from './Email';
 import Password from './Password';
 import SignUpPageTitle from './SignUpPageTitle';
+import CheckboxTerms from './CheckboxTerms'
+import SignUpButton from './SignUpButton';
+import GoBackButton from './GoBackButton'
 
 export default function SignUpContainer() {
     return (
@@ -13,6 +16,9 @@ export default function SignUpContainer() {
             <Email />
             <Password />
             <Password />
+            <CheckboxTerms />
+            <SignUpButton />
+            <GoBackButton />
         </div>
     )
 
