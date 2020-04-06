@@ -2,14 +2,16 @@ import React, { Fragment } from 'react'
 import '../styles/App.css';
 
 
-export default function SearchProfilesContainer() {
+const Settings = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Search Profiles</h3>
+                <h3>Settings</h3>
 
             </div>
         </Fragment>
     )
 
-}
+};
+
+export default Settings;

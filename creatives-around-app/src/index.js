@@ -11,10 +11,10 @@ import TermsAndConditions from './components/TermsContainer'
 import SetupProfile from './components/SetupProfileContainer'
 import SearchArtForms from './components/SearchArtFormsContainer';
 import SearchProfiles from './components/SearchProfilesContainer'
-
-
-
-
+import Settings from './components/SettingsContainer';
+import Connections from './components/ConnectionsContainer';
+import Chat from './components/ChatContainer';
+import LocationSettings from './components/LocationSettingsContainer';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -26,6 +26,10 @@ ReactDOM.render(
       <Route exact path="/setupprofile" component={SetupProfile} />
       <Route exact path="/searchartforms" component={SearchArtForms} />
       <Route exact path="/searchprofiles" component={SearchProfiles} />
+      <Route exact path="/settings" component={Settings} />
+      <Route exact path="/connections" component={Connections} />
+      <Route exact path="/chat" component={Chat} />
+      <Route exact path="/locationsettings" component={LocationSettings} />
     </Switch>
   </BrowserRouter>,
   rootElement
