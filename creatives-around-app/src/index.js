@@ -20,6 +20,9 @@ import FriendReqSent from './components/FriendReqSentContainer';
 import NotificationsContainer from './components/NotificationsContainer';
 import AppSettings from './components/AppSettingsContainer';
 import ContactUs from './components/ContactUsContainer';
+import DeleteAccount from './components/DeleteAccountContainer';
+import AboutUs from './components/AboutUsContainer';
+
 
 
 const rootElement = document.getElementById("root");
@@ -41,6 +44,8 @@ ReactDOM.render(
       <Route exact path="/notifications" component={NotificationsContainer} />
       <Route exact path="/appsettings" component={AppSettings} />
       <Route exact path="/contactus" component={ContactUs} />
+      <Route exact path="/deleteaccount" component={DeleteAccount} />
+      <Route exact path="/aboutus" component={AboutUs} />
 
     </Switch>
   </BrowserRouter>,
