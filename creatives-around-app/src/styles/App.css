@@ -57,6 +57,9 @@ margin-top: 30px;
 .GoBackButton {
   margin-top: 15px;
 }
+.GoBackButtonTerms {
+  margin-top: 15px;
+}
 
 .SignUp {
   color: white;
@@ -65,4 +68,18 @@ margin-top: 30px;
 
 .Agree {
   color: white;
+}
+
+.terms {
+  color: white;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.TermsTitle {
+      color: white;
+ font-size: 20px;
+ margin-top: 10px;
+ margin-bottom: 30px;
 }
