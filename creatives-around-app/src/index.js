@@ -15,6 +15,8 @@ import Settings from './components/SettingsContainer';
 import Connections from './components/ConnectionsContainer';
 import Chat from './components/ChatContainer';
 import LocationSettings from './components/LocationSettingsContainer';
+import Messages from './components/MessagesContainer';
+import FriendReqSent from './components/FriendReqSentContainer';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -30,6 +32,8 @@ ReactDOM.render(
       <Route exact path="/connections" component={Connections} />
       <Route exact path="/chat" component={Chat} />
       <Route exact path="/locationsettings" component={LocationSettings} />
+      <Route exact path="/messages" component={Messages} />
+      <Route exact path="/friendreqsent" component={FriendReqSent} />
     </Switch>
   </BrowserRouter>,
   rootElement
