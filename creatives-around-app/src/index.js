@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginPage from './components/LoginContainer';
 import SignUpContainer from './components/SignUpContainer';
 import TermsAndConditions from './components/TermsContainer'
+
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <BrowserRouter>

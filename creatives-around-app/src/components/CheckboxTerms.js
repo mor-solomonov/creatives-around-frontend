@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/App.css';
 import { Link } from "react-router-dom";
-import TermsContainer from "./TermsContainer";
+// import TermsContainer from "./TermsContainer";
 
-export default function CheckboxTerms() {
+const CheckboxTerms = () => {
+
+    const [checkbox, setCheckbox] = useState(false)
+
+    const handleCheckboxClick = (e) => {
+        e.preventDefault()
+
+        setCheckbox(e.target.checked)
+
+    }
+
     return (
 
         <form>
-            <input type="checkbox" name="agree to terms" />
+            <input id="checkbox" type="checkbox" name="agreeToTerms" defaultChecked={checkbox}
+                onClick=
+                {(e) => handleCheckboxClick(e)} />
             <label className="Agree">&nbsp; &nbsp;I agree to the</label>
             <Link to="/termsandconditions">&nbsp;terms and conditions</Link>
         </form>
@@ -16,3 +28,5 @@ export default function CheckboxTerms() {
 
     )
 }
+
+export default CheckboxTerms;
