@@ -9,6 +9,12 @@ import LoginPage from './components/LoginContainer';
 import SignUpContainer from './components/SignUpContainer';
 import TermsAndConditions from './components/TermsContainer'
 import SetupProfile from './components/SetupProfileContainer'
+import SearchArtForms from './components/SearchArtFormsContainer';
+
+
+
+
+
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -18,6 +24,7 @@ ReactDOM.render(
       <Route exact path="/signup" component={SignUpContainer} />
       <Route exact path="/termsandconditions" component={TermsAndConditions} />
       <Route exact path="/setupprofile" component={SetupProfile} />
+      <Route exact path="/searchartforms" component={SearchArtForms} />
     </Switch>
   </BrowserRouter>,
   rootElement
