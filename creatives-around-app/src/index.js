@@ -17,6 +17,10 @@ import Chat from './components/ChatContainer';
 import LocationSettings from './components/LocationSettingsContainer';
 import Messages from './components/MessagesContainer';
 import FriendReqSent from './components/FriendReqSentContainer';
+import NotificationsContainer from './components/NotificationsContainer';
+
+
+
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -34,6 +38,8 @@ ReactDOM.render(
       <Route exact path="/locationsettings" component={LocationSettings} />
       <Route exact path="/messages" component={Messages} />
       <Route exact path="/friendreqsent" component={FriendReqSent} />
+      <Route exact path="/notifications" component={NotificationsContainer} />
+
     </Switch>
   </BrowserRouter>,
   rootElement
