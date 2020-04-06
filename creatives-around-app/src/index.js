@@ -10,7 +10,7 @@ import SignUpContainer from './components/SignUpContainer';
 import TermsAndConditions from './components/TermsContainer'
 import SetupProfile from './components/SetupProfileContainer'
 import SearchArtForms from './components/SearchArtFormsContainer';
-
+import SearchProfiles from './components/SearchProfilesContainer'
 
 
 
@@ -25,6 +25,7 @@ ReactDOM.render(
       <Route exact path="/termsandconditions" component={TermsAndConditions} />
       <Route exact path="/setupprofile" component={SetupProfile} />
       <Route exact path="/searchartforms" component={SearchArtForms} />
+      <Route exact path="/searchprofiles" component={SearchProfiles} />
     </Switch>
   </BrowserRouter>,
   rootElement
