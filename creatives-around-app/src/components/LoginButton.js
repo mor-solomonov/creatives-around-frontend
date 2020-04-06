@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import '../styles/App.css';
 
-export default function LoginButton() {
+const LoginButton = () => {
     return (
-        <div>
+        <Fragment>
             <button className="LoginButton btn btn-light mb-4">Login</button>
 
-        </div>
+        </Fragment>
     )
 }
+
+export default LoginButton;

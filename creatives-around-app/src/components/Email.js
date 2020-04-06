@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import '../styles/App.css';
 
-export default function Email() {
+const Email = () => {
     return (
-        <div>
+        <Fragment>
             <form>
                 <input
                     className="Email form-control mb-4"
@@ -12,6 +12,8 @@ export default function Email() {
                     id="todo-item"
                 ></input>
             </form>
-        </div>
+        </Fragment>
     )
 }
+
+export default Email;

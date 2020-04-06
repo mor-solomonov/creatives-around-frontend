@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginPage from './components/LoginContainer';
 import SignUpContainer from './components/SignUpContainer';
 import TermsAndConditions from './components/TermsContainer'
-
+import SetupProfile from './components/SetupProfileContainer'
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -17,6 +17,7 @@ ReactDOM.render(
       <Route exact path="/" component={LoginPage} />
       <Route exact path="/signup" component={SignUpContainer} />
       <Route exact path="/termsandconditions" component={TermsAndConditions} />
+      <Route exact path="/setupprofile" component={SetupProfile} />
     </Switch>
   </BrowserRouter>,
   rootElement

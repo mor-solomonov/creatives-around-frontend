@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import '../styles/App.css';
 import { Link } from "react-router-dom";
 
-export default function GoBackUpButtonTerms() {
+const GoBackUpButtonTerms = () => {
     return (
-        <div>
+        <Fragment>
             <Link to="/signup">
                 <button className="GoBackUpButtonTerms btn btn-light mb-4">Go Back</button>
             </Link>
-        </div>
+        </Fragment>
     )
 }
+
+export default GoBackUpButtonTerms;
