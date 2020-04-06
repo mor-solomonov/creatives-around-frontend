@@ -18,8 +18,8 @@ import LocationSettings from './components/LocationSettingsContainer';
 import Messages from './components/MessagesContainer';
 import FriendReqSent from './components/FriendReqSentContainer';
 import NotificationsContainer from './components/NotificationsContainer';
-
-
+import AppSettings from './components/AppSettingsContainer';
+import ContactUs from './components/ContactUsContainer';
 
 
 const rootElement = document.getElementById("root");
@@ -39,6 +39,8 @@ ReactDOM.render(
       <Route exact path="/messages" component={Messages} />
       <Route exact path="/friendreqsent" component={FriendReqSent} />
       <Route exact path="/notifications" component={NotificationsContainer} />
+      <Route exact path="/appsettings" component={AppSettings} />
+      <Route exact path="/contactus" component={ContactUs} />
 
     </Switch>
   </BrowserRouter>,
