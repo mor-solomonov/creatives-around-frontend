@@ -24,11 +24,12 @@ import AboutUs from './components/AboutUsContainer';
 import AccountDeleted from './components/AccoutDeletedContainer';
 import ViewMyProfileContainer from './components/ViewMyProfileContainer';
 import MyArtForms from './components/MyArtFormsContainer';
-import ProfileOfAnotherUser from './components/ProfileofanotheruserContainer'
+import ProfileOfAnotherUser from './components/ProfileOfAnotherUserContainer'
 import MustHavaAProfileContainer from './components/MustHaveAProfileContainer';
 import MyGallery from './components/MyGalleryContainer';
 import AnotherUserGallery from './components/AnotherUserGalleryContainer';
 import ActivationKeySent from './components/ActivationKeySentContainer';
+import ProfileOfAnotherUserContainer from './components/ProfileOfAnotherUserContainer';
 
 
 const rootElement = document.getElementById("root");
@@ -55,7 +56,7 @@ ReactDOM.render(
       <Route exact path="/accountdeleted" component={AccountDeleted} />
       <Route exact path="/viewmyprofile" component={ViewMyProfileContainer} />
       <Route exact path="/myartforms" component={MyArtForms} />
-      <Route exact path="/profileofanotheruser" component={ProfileOfAnotherUser} />
+      <Route exact path="/profileofanotheruser" component={ProfileOfAnotherUserContainer} />
       <Route exact path="/youneedtohaveaprofile" component={MustHavaAProfileContainer} />
       <Route exact path="/mygallery" component={MyGallery} />
       <Route exact path="/anotherusergallery" component={AnotherUserGallery} />
