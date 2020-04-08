@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
-import DisplayTitle from './DisplayTitle';
+import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 
 const ProfileOfAnotherUserContainer = () => {
     return (

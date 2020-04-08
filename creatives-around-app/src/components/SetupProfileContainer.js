@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
-import Logo from './Logo';
+import Logo from './SymbolsandTitles/Logo';
 
 
 export default function SignUpContainer() {

@@ -1,10 +1,8 @@
-
-
 import React from 'react';
 import '../styles/App.css';
-import Logo from './Logo';
-import DisplayTitle from './DisplayTitle';
-import SignUpPageForm from './SignUpPageForm';
+import Logo from './SymbolsandTitles/Logo';
+import DisplayTitle from './SymbolsandTitles/DisplayTitle';
+import SignUpPageForm from './Forms/SignUpPageForm';
 import GoBackButton from './GoBackButton';
 import { Link } from 'react-router-dom';
 

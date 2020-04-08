@@ -1,16 +1,16 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import '../styles/App.css';
-import Logo from './Logo';
+import Logo from './SymbolsandTitles/Logo';
 
 const ActivationKeySentContainer = () => {
     return (
-        <Fragment>
 
-            <div className="App-Container">
-                <Logo />
-                <h3>An Activation Key has been sent to your email</h3>
-            </div>
-        </Fragment>
+
+        <div className="App-Container">
+            <Logo />
+            <h3>An activation key has been sent to your email</h3>
+        </div>
+
     )
 
 };

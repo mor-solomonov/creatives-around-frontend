@@ -25,7 +25,7 @@ import AccountDeleted from './components/AccoutDeletedContainer';
 import MyProfile from './components/ViewMyProfile';
 import MyArtForms from './components/MyArtFormsContainer';
 import ProfileOfAnotherUser from './components/ProfileofanotheruserContainer'
-import YouNeedToHavaAProfile from './components/YouNeedToHaveAProfile';
+import MustHavaAProfileContainer from './components/MustHaveAProfileContainer';
 import MyGallery from './components/MyGalleryContainer';
 import AnotherUserGallery from './components/AnotherUserGalleryContainer';
 import ActivationKeySent from './components/ActivationKeySentContainer';
@@ -56,7 +56,7 @@ ReactDOM.render(
       <Route exact path="/myprofile" component={MyProfile} />
       <Route exact path="/myartforms" component={MyArtForms} />
       <Route exact path="/profileofanotheruser" component={ProfileOfAnotherUser} />
-      <Route exact path="/youneedtohaveaprofile" component={YouNeedToHavaAProfile} />
+      <Route exact path="/youneedtohaveaprofile" component={MustHavaAProfileContainer} />
       <Route exact path="/mygallery" component={MyGallery} />
       <Route exact path="/anotherusergallery" component={AnotherUserGallery} />
       <Route exact path="/activationlinksent" component={ActivationKeySent} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
-import Logo from './Logo';
+import Logo from './SymbolsandTitles/Logo';
 import GoBackButtonTerms from './GoBackButtonTerms'
 
 // import LoginPageTitle from './LoginPageTitle';

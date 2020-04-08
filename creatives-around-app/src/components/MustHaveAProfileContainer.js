@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
-import Logo from './Logo'
+import Logo from './SymbolsandTitles/Logo'
 
-const YouNeedToHaveAProfile = () => {
+const MustHaveAProfileContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
@@ -14,4 +14,4 @@ const YouNeedToHaveAProfile = () => {
 
 };
 
-export default YouNeedToHaveAProfile;
+export default MustHaveAProfileContainer;
