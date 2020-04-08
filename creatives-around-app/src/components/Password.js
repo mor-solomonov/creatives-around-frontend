@@ -9,7 +9,6 @@ export default function Password() {
                     className="Password form-control mb-4"
                     placeholder="Password:"
                     type="text"
-                    id="todo-item"
                 ></input>
             </form>
         </div>
