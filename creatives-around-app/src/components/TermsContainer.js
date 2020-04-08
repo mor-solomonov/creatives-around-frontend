@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
-import GoBackButtonTerms from './GoBackButtonTerms'
+import GoBackButton from './ButtonsAndCheckBoxs/GoBackButton';
 
 // import LoginPageTitle from './LoginPageTitle';
 
@@ -129,7 +129,7 @@ export default function LoginContainer() {
                     mor.solomonov@gmail.com or nicsolitom@gmail.com
 </p>
             </div>
-            <GoBackButtonTerms />
+            <GoBackButton />
         </div>
 
     )

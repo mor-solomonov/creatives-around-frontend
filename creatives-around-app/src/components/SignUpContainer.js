@@ -3,7 +3,7 @@ import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 import SignUpPageForm from './Forms/SignUpPageForm';
-import GoBackButton from './GoBackButton';
+import GoBackButton from './ButtonsAndCheckBoxs/GoBackButton';
 import { Link } from 'react-router-dom';
 
 export default function SignUpContainer() {

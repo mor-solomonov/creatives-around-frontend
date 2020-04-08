@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import '../styles/App.css';
 
 
-const MyProfileContainer = () => {
+const ViewMyProfileContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
@@ -13,4 +13,4 @@ const MyProfileContainer = () => {
 
 };
 
-export default MyProfileContainer;
+export default ViewMyProfileContainer;
