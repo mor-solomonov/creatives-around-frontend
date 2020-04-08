@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react'
-import '../styles/App.css';
-import Logo from './SymbolsandTitles/Logo';
+import '../styles/App.css'
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
-export default function SignUpContainer() {
+
+export default function SetupProfileContainer() {
     return (
         <Fragment>
             <div className="App-Container">
-                <Logo />
+                <TitleWithSymbol title="Setup Profile" />
 
             </div>
         </Fragment>

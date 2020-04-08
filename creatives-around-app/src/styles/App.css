@@ -96,3 +96,14 @@ h3 {
   color: white;
   font-size: 20px;
 }
+.TitleWithSymbol {
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+.LogoSymbol {
+  width: 3.5rem;
+}
+.PageHeader {
+  display: inline-block;
+  margin-left: 0.4rem;
+}

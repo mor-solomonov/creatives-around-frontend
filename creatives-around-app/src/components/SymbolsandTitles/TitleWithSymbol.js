@@ -1,6 +1,6 @@
 import React from 'react';
-import LogoSymbolImage from "../images/ca_symbol_white.svg";
-import '../styles/App.css';
+import LogoSymbolImage from '../../images/ca_symbol_white.svg';
+import '../../styles/App.css';
 const TitleWithSymbol = (props) => {
     return (
         <div className="TitleWithSymbol">
