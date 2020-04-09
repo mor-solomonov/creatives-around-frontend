@@ -59,7 +59,7 @@ ReactDOM.render(
       <Route exact path="/youneedtohaveaprofile" component={MustHavaAProfileContainer} />
       <Route exact path="/mygallery" component={MyGallery} />
       <Route exact path="/anotherusergallery" component={AnotherUserGallery} />
-      <Route exact path="/activationlinksent" component={ActivationKeySent} />
+      <Route exact path="/activationkeysent" component={ActivationKeySent} />
 
 
     </Switch>

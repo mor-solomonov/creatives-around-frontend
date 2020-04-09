@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const FriendReqSentContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Friend Request sent page</h3>
-
+                <TitleWithSymbol title="Creatives Around" />
             </div>
         </Fragment>
     )

@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const LocationSettingsContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Location Settings</h3>
-
+                <TitleWithSymbol title="Location Settings" />
             </div>
         </Fragment>
     )

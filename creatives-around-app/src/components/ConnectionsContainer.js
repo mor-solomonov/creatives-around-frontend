@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const ConnectionsContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Connections</h3>
+                <TitleWithSymbol title="Connections" />
 
             </div>
         </Fragment>

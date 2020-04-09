@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const DeleteAccountContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Delete Account</h3>
-
+                <TitleWithSymbol title="Delete Account" />
             </div>
         </Fragment>
     )
