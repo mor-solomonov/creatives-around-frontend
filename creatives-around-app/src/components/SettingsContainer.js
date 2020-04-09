@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const Settings = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Settings</h3>
+                <TitleWithSymbol title="Settings" />
+
 
             </div>
         </Fragment>

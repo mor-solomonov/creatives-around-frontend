@@ -2,18 +2,18 @@ import React from 'react';
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
 import GoBackButton from './ButtonsAndCheckBoxs/GoBackButton';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 // import LoginPageTitle from './LoginPageTitle';
 
 export default function LoginContainer() {
     return (
         <div className="App-Container">
+            <TitleWithSymbol title="Terms and Conditions" />
             <Logo />
-            <h3 className="TermsTitle">Terms and conditions</h3>
+
             <div>
                 <p className="terms">
-                    TERMS & CONDITIONS
-
 
                     PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY
 

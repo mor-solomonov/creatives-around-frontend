@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 export default function SearchArtFormsContainer() {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>search art forms</h3>
-
+                <TitleWithSymbol title="Search Art Forms" />
             </div>
         </Fragment>
     )

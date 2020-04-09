@@ -1,13 +1,14 @@
 import React from 'react';
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const AboutUsContainer = () => {
     return (
 
         <div className="App-Container">
-
+            <TitleWithSymbol title="About Us" />
             <Logo />
 
             <p className="aboutus">Creatives Around is a location-based social platform for visual artists.

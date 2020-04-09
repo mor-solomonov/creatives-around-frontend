@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
-
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 export default function SearchProfilesContainer() {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>Search Profiles</h3>
+
+                <TitleWithSymbol title="Search Profiles" />
 
             </div>
         </Fragment>

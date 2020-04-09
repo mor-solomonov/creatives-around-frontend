@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
+import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 
 
 const ViewMyProfileContainer = () => {
     return (
         <Fragment>
             <div className="App-Container">
-                <h3>My Profile</h3>
+                <TitleWithSymbol title="My Profile" />
             </div>
         </Fragment>
     )
