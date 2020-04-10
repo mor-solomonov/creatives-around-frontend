@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from './SymbolsandTitles/Logo';
-import LoginPageForm from './Forms/LoginPageForm';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ export default function LoginContainer() {
         <div className="App-Container">
             <Logo />
             <DisplayTitle title="Login" />
-            <LoginPageForm />
+
             <form action='http://localhost:5000/api/auth/login' method='POST'>
                 <input
                     className='Email form-control mb-4'
