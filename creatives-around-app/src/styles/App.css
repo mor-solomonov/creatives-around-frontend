@@ -107,3 +107,38 @@ h3 {
   display: inline-block;
   margin-left: 0.4rem;
 }
+
+/* for art forms page */
+
+.section-container {
+  width: 60%;
+  height: auto;
+
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.checkbox-container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 1.5%;
+}
+
+
+
+.label {
+  font-size: 1.1rem;
+  margin-left: 17px;
+  color: white;
+}
+
+.SubmitButtonArtForms{
+  margin-top: 50px;
+}
+/* end - for artforms page */
+
