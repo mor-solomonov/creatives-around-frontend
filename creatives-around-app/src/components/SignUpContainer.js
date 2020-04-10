@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
-import SignUpPageForm from './Forms/SignUpPageForm';
 import GoBackButton from './ButtonsAndCheckBoxs/GoBackButton';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +20,7 @@ export default function SignUpContainer() {
         <div className='App-Container'>
             <Logo />
             <DisplayTitle title="Sign up" />
-            <SignUpPageForm />
+
             <form action='http://localhost:5000/api/auth/register' method='POST'>
                 <input
                     className='Email form-control mb-4'
