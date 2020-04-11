@@ -142,6 +142,10 @@ h3 {
 }
 /* end - for artforms page */
 
-.App-Settings-Button {
+.App-Settings-Buttons {
+padding: 20px;
+}
+
+.Settings-Buttons {
 padding: 20px;
 }
