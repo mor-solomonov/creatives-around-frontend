@@ -15,12 +15,12 @@ const AppSettingsContainer = () => {
                 <Logo />
                 <div className="About-Us-Buttons">
                     <div>
-                        <img src={AboutUsImage} alt="AboutUsImage" />
-                        <img src={DeleteAccountImage} alt="DeleteAccountImage" />
+                        <img src={AboutUsImage} className="App-Settings-Button" alt="AboutUsImage" />
+                        <img src={DeleteAccountImage} className="App-Settings-Button" alt="DeleteAccountImage" />
                     </div>
                     <div>
-                        <img src={TermsImage} alt="TermsImage" />
-                        <img src={ContactUsImage} alt="ContactUsImage" />
+                        <img src={TermsImage} className="App-Settings-Button" alt="TermsImage" />
+                        <img src={ContactUsImage} className="App-Settings-Button" alt="ContactUsImage" />
                     </div>
                 </div>
             </div>
