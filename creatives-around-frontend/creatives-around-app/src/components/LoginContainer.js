@@ -13,12 +13,35 @@ export default function LoginContainer() {
         console.log('NAME', e.target.name);
         setState({ ...state, [e.target.name]: e.target.value });
     };
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+
+
+        const response = await fetch("http://localhost:5000/auth/login", {
+            method: "POST",
+            body: JSON.stringify(state),
+            headers: {
+                "content-type": "application/json"
+            }
+        });
+
+        const result = await response.json();
+        if (result.token) {
+            localStorage.setItem("token", result.token)
+            window.location.reload();
+
+        }
+
+
+    };
+
     return (
         <div className="App-Container">
             <Logo />
             <DisplayTitle title="Login" />
 
-            <form action='http://localhost:5000/api/auth/login' method='POST'>
+            <form onSubmit={submitForm}>
                 <input
                     className='Email form-control mb-4'
                     placeholder='Email:'
@@ -33,8 +56,9 @@ export default function LoginContainer() {
                     name='password'
                     onChange={updateState}
                 />
+                <button type="submit" className="LoginButton btn btn-light mb-4">Login</button>
             </form>
-            <button className="LoginButton btn btn-light mb-4">Login</button>
+
             <div>
                 <p className="SignUp">Not a member yet? &nbsp;
                <Link to="/signup">
