@@ -50,6 +50,42 @@ export default function SetupProfileContainer() {
                             <label className='DisplayFullName'>&nbsp; &nbsp; Display on profile</label>
                         </div>
                 </div>
+
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Username</h4>
+                        <input
+                            className='FullName form-control mb-4'
+                            placeholder=''
+                            type='text'
+                            name='username'
+                            onChange={updateState}
+                        />
+                </div>
+
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Birthday</h4>
+                {/* Change format from 'MM/DD/YYYY' to DD/MM/YYYY: */}
+                        <input
+                            className='Birthday form-control mb-4'
+                            placeholder=''
+                            type='date'
+                            name='birthday'
+                            onChange={updateState}
+                        />
+                </div>
+
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Location</h4>
+                {/* Connect to backend and add node-geocoder + geo-distance */}
+                        <input
+                            className='Location form-control mb-4'
+                            placeholder=''
+                            type='text'
+                            name='location'
+                            onChange={updateState}
+                        />
+                </div>
+
                     </form>
             </div>
         </Fragment>
