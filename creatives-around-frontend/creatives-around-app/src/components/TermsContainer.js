@@ -3,6 +3,7 @@ import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
 import GoBackButton from './ButtonsAndCheckBoxs/GoBackButton';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
+import { Link } from "react-router-dom";
 
 // import LoginPageTitle from './LoginPageTitle';
 
@@ -129,7 +130,9 @@ export default function LoginContainer() {
                     mor.solomonov@gmail.com or nicsolitom@gmail.com
 </p>
             </div>
-            <GoBackButton />
+            <Link to="/">
+                <GoBackButton />
+            </Link>
         </div>
 
     )
