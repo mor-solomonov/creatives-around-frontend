@@ -179,6 +179,10 @@ const MyArtFormsContainer = () => {
                     <div className="SubmitButtonArtForms text-center">
                         <Link to='/setupprofile'> <button className=" btn btn-light mb-4">Submit</button></Link>
                     </div>
+                    <div className="text-center">
+                        <p className="cannot-find-artform">Cannot find an Art Form?&nbsp;&nbsp;
+                        <Link to="/contactus"><b>Write us</b> </Link></p>
+                    </div>
                 </form>
             </section>
         </div>

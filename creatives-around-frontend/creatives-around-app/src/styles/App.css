@@ -145,6 +145,10 @@ h3 {
   padding: 0;
   margin: 0;
 }
+.cannot-find-artform {
+  color:white;
+  margin-top: 3%;
+}
 /* end - for artforms page */
 
 .App-Settings-Buttons {

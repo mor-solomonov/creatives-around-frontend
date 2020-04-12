@@ -3,6 +3,7 @@ import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
+import { Link } from 'react-router-dom';
 
 const SearchArtFormsContainer = () => {
     //Setup the form state
@@ -177,7 +178,11 @@ const SearchArtFormsContainer = () => {
 
                     </div>
                     <div className="SubmitButtonArtForms text-center">
-                        <button className=" btn btn-light mb-4">Submit</button>
+                        <Link to='/setupprofile'><button className=" btn btn-light mb-4">Submit</button></Link>
+                    </div>
+                    <div className="text-center">
+                        <p className="cannot-find-artform">Cannot find an Art Form?&nbsp;&nbsp;
+                        <Link to="/contactus"><b>Write us</b> </Link></p>
                     </div>
                 </form>
             </section>
