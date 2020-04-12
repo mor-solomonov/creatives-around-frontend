@@ -47,7 +47,7 @@ export default function SetupProfileContainer() {
                         />
                         <div className="DisplayFullNameWrapper">
                             <input type='checkbox' id='checkbox' className='CheckboxFullNameCheckbox' name='displayFullName' value={state.displayFullName} onChange={updateState} />
-                            <label className='DisplayFullName'>&nbsp; &nbsp; Display Full name</label>
+                            <label className='DisplayFullName'>&nbsp; &nbsp; Display on profile</label>
                         </div>
                 </div>
                     </form>
