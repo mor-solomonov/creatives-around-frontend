@@ -50,10 +50,14 @@ export default function SignUpContainer() {
 
 
             </form>
-            <button type='submit' className='LoginButton btn btn-light mb-4'>
-                Sign up
+            <Link to="/activationkeysent">
+                <button type='submit' className='LoginButton btn btn-light mb-4'>
+                    Sign up
         </button>
-            <GoBackButton />
+            </Link>
+            <Link to="/">
+                <GoBackButton />
+            </Link>
         </div>
     )
 }
