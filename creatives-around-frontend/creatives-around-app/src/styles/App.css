@@ -1,59 +1,61 @@
-
 .App {
   text-align: center;
 }
 
 .Logo {
-  display:flex;
+  display: flex;
   flex-direction: column;
   height: 140px;
   width: 340px;
-margin-top: 45px;
+  margin-top: 45px;
 
 
-  
+
 }
 
 .App-Container {
- 
+
   background-color: rgb(47, 3, 41);
   min-height: 100vh;
-  display:flex;
+  display: flex;
   justify-content: center top;
   flex-direction: column;
   align-items: center;
 
 }
 
-.App-title{
+.App-title {
   color: white;
   text-align: center;
- 
+
 }
 
 .SignUpPageTitle {
-  
+
   color: white;
- font-size: 20px;
- margin-top: 15px;
-  
+  font-size: 20px;
+  margin-top: 15px;
+
 }
+
 .LoginPageTitle {
-    color: white;
- font-size: 20px;
- margin-top: 15px;
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .Email {
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .LoginButton {
   margin-top: 20px;
 }
+
 .SignUpButton {
   margin-top: 30px;
 }
+
 .GoBackButton {
   margin-top: 15px;
 }
@@ -76,17 +78,17 @@ margin-top: 30px;
 }
 
 .TermsTitle {
-      color: white;
- font-size: 20px;
- margin-top: 10px;
- margin-bottom: 30px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 h3 {
- color: white;
- font-size: 17px;
- margin-top: 12px;
- margin-bottom: 15px;
+  color: white;
+  font-size: 17px;
+  margin-top: 12px;
+  margin-bottom: 15px;
 
 }
 
@@ -96,17 +98,23 @@ h3 {
   color: white;
   font-size: 20px;
 }
+
+/* components/SymbolsandTitles/TitleWithSymbol.js: */
 .TitleWithSymbol {
   align-self: flex-start;
   margin-left: 1rem;
 }
+
 .LogoSymbol {
   width: 3.5rem;
 }
+
 .PageHeader {
   display: inline-block;
   margin-left: 0.4rem;
 }
+
+/* end of TitleWithSymbols.js */
 
 /* for art forms page */
 
@@ -137,15 +145,16 @@ h3 {
   color: white;
 }
 
-.SubmitButtonArtForms{
+.SubmitButtonArtForms {
   margin-top: 50px;
 }
+
 /* end - for artforms page */
 
 .App-Settings-Buttons {
-padding: 20px;
+  padding: 20px;
 }
 
 .Settings-Buttons {
-padding: 20px;
+  padding: 20px;
 }
