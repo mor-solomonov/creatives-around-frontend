@@ -160,3 +160,11 @@ h3 {
 .Settings-Buttons {
   padding: 20px;
 }
+
+/* components/SymbolsandTitles/SetupProfilePics.js: */
+.SetupProfilePics {
+  display: flex;
+  width: 100vw;
+}
+
+/* end of SetupProfilePics.js */
