@@ -103,6 +103,8 @@ h3 {
 .TitleWithSymbol {
   align-self: flex-start;
   margin-left: 1rem;
+  /* Just added now to test, but I know Mor did one before, so overwrite this one: */
+  margin-top: 0.8rem;
 }
 
 .LogoSymbol {
