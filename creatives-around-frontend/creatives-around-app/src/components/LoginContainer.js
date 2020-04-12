@@ -56,7 +56,11 @@ export default function LoginContainer() {
                     name='password'
                     onChange={updateState}
                 />
-                <button type="submit" className="LoginButton btn btn-light mb-4">Login</button>
+                <div className="text-center">
+                    <Link to="/searchprofiles">
+                        <button type="submit" className="LoginButton btn btn-light mb-4">Login</button>
+                    </Link>
+                </div>
             </form>
 
             <div>
