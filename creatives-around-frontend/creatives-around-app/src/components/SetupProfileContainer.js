@@ -25,6 +25,7 @@ export default function SetupProfileContainer() {
                 <TitleWithSymbol title='Setup Profile' />
                 
                 {/* Needs to be connected to storage and connected to the form */}
+                {/* Container for AddProfilePic & AddCoverPic: */}
                 <div className='SetupProfilePics flex-grid'>
                     <div className='col-4'>
                         <p></p>
@@ -37,7 +38,6 @@ export default function SetupProfileContainer() {
                     </div>
                 </div>
 
-                {/* ----> */}
 
             <form className='FormSetupProfile'>
                 
@@ -133,18 +133,101 @@ export default function SetupProfileContainer() {
                         </div>
 
                     </div>
-                    {/* ---> End example art forms */}
 
                     {/* Create a plus sign and add */}
                     <button>ADD ART FORM</button>
                     {/* ---> */}
 
                 </div>
+                    {/* ---> End example art forms */}
 
                 <div className='FormFieldSetupProfile'>
                     <h4 className='FormHeader'>Gallery</h4>
                 {/* Insert real gallery */}
                         <div className="tempGallery" />
+                </div>
+
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Bio (optional)</h4>
+                        <input
+                            className='Bio form-control mb-4'
+                            placeholder=''
+                            type='text'
+                            name='bio'
+                            onChange={updateState}
+                        />
+                </div>
+
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>I am looking for (optional)</h4>
+                        <input
+                            className='LookingFor form-control mb-4'
+                            placeholder=''
+                            type='text'
+                            name='lookingFor'
+                            onChange={updateState}
+                        />
+
+                        
+                </div>
+
+                    {/* Example of Art forms (Looking for): */}
+                    <div className='ArtFormsLookingForCollection'>
+
+                        <div className='ArtFormLookingForSingle'>
+                            <p className='ArtFormsText'>
+                                Water Color
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                        <div className='ArtFormLookingForSingle'>
+                            <p className='ArtFormsText'>
+                                Photography
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+                
+                        <div className='ArtFormLookingForSingle'>
+                            <p className='ArtFormsText'>
+                                Acrylic
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                        <div className='ArtFormLookingForSingle'>
+                            <p className='ArtFormsText'>
+                                Sculpture
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                        <div className='ArtFormLookingForSingle'>
+                            <p className='ArtFormsText'>
+                                Digital Art
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    {/* Create a plus sign and add */}
+                    <button>ADD ART FORM</button>
+                    {/* ---> */}
+                    {/* ---> End example art forms (looking for) */}
+
+
+                    {/* Links: */}
+                    {/* Needs: remove-link, add-link and so on... */}
+                    <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Website</h4>
+                        <input
+                            className='MyLink form-control mb-4'
+                            placeholder=''
+                            type='text'
+                            name='myLink'
+                            onChange={updateState}
+                        />
                 </div>
 
                 </form>
