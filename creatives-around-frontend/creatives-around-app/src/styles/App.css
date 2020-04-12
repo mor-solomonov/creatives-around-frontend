@@ -9,9 +9,6 @@
   height: 140px;
   width: 340px;
   margin-top: 45px;
-
-
-  
 }
 
 .App-Container {
@@ -128,7 +125,7 @@ h3 {
   width: 100%;
   height: 100%;
   align-items: center;
-  margin: 1.5%;
+  margin: 1%;
 }
 
 
@@ -141,6 +138,12 @@ h3 {
 
 .SubmitButtonArtForms{
   margin-top: 50px;
+}
+
+.ArtFormsLine {
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 /* end - for artforms page */
 

@@ -3,6 +3,7 @@ import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
+import { Link } from 'react-router-dom';
 
 const MyArtFormsContainer = () => {
     //Setup the form state
@@ -176,7 +177,7 @@ const MyArtFormsContainer = () => {
 
                     </div>
                     <div className="SubmitButtonArtForms text-center">
-                        <button className=" btn btn-light mb-4">Submit</button>
+                        <Link to='/setupprofile'> <button className=" btn btn-light mb-4">Submit</button></Link>
                     </div>
                 </form>
             </section>
