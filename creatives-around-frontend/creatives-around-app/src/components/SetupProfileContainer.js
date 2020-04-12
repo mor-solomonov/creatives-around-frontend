@@ -3,6 +3,7 @@ import '../styles/App.css'
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import AddProfilePic from '../images/graphs/add_profile_pic.svg';
 import AddCoverPic from '../images/graphs/add_cover_pic.svg';
+import RemoveWhiteCircle from '../images/graphs/remove_white_circle.svg';
 
 
 
@@ -23,6 +24,7 @@ export default function SetupProfileContainer() {
             <div className='App-Container'>
                 <TitleWithSymbol title='Setup Profile' />
                 
+                {/* Needs to be connected to storage and connected to the form */}
                 <div className='SetupProfilePics flex-grid'>
                     <div className='col-4'>
                         <p></p>
@@ -34,8 +36,11 @@ export default function SetupProfileContainer() {
                         <img src={AddCoverPic} alt='Add cover pic' id='AddCoverPic'/>
                     </div>
                 </div>
+
+                {/* ----> */}
+
+            <form className='FormSetupProfile'>
                 
-                    <form>
                 <div className='FormFieldSetupProfile'>
                     <h4 className='FormHeader'>Full Name</h4>
                         <input
@@ -86,7 +91,63 @@ export default function SetupProfileContainer() {
                         />
                 </div>
 
-                    </form>
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Art forms</h4>
+
+                    {/* Example of Art forms: */}
+                    <div className='ArtFormsCollection'>
+
+                        <div className='ArtFormSingle'>
+                            <p className='ArtFormsText'>
+                                Water Color
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                        <div className='ArtFormSingle'>
+                            <p className='ArtFormsText'>
+                                Photography
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+                
+                        <div className='ArtFormSingle'>
+                            <p className='ArtFormsText'>
+                                Acrylic
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                        <div className='ArtFormSingle'>
+                            <p className='ArtFormsText'>
+                                Sculpture
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                        <div className='ArtFormSingle'>
+                            <p className='ArtFormsText'>
+                                Digital Art
+                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+                            </p>
+                        </div>
+
+                    </div>
+                    {/* ---> End example art forms */}
+
+                    {/* Create a plus sign and add */}
+                    <button>ADD ART FORM</button>
+                    {/* ---> */}
+
+                </div>
+
+                <div className='FormFieldSetupProfile'>
+                    <h4 className='FormHeader'>Gallery</h4>
+                {/* Insert real gallery */}
+                        <div className="tempGallery" />
+                </div>
+
+                </form>
             </div>
         </Fragment>
     )

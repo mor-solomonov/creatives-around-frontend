@@ -173,10 +173,16 @@ div.SetupProfilePics>div.col-4 {
   flex-direction: column;
 }
 
-.FormFieldSetupProfile {
+form.FormSetupProfile {
+  max-width: 80vw;
+}
+
+div.FormFieldSetupProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .FormHeader {
@@ -201,6 +207,31 @@ div.SetupProfilePics>div.col-4 {
 label.DisplayFullName {
   color: white;
   font-size: 0.7rem;
+}
+
+div.ArtFormsCollection {}
+
+div.ArtFormSingle {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+p.ArtFormsText {
+  font-size: 0.8rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+img.RemoveArtForm {
+  margin-left: 0.2rem;
+}
+
+div.tempGallery {
+  width: 100vw;
+  height: 66vw;
+  background-color: white;
 }
 
 /* end of SetupProfilePics.js */
