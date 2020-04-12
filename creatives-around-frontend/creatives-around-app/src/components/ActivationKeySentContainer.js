@@ -12,7 +12,7 @@ const ActivationKeySentContainer = () => {
             <h3 className="activationkeysent">An Activation key has been sent to your email.</h3>
             <div className="text-center">
             </div>
-            <div className="activation-key-gobackbutton">
+            <div className="alignbottom-gobackbutton">
                 <Link to='/'>
                     <GoBackButton />
                 </Link>
