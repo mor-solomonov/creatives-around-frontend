@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
 import GoBackButton from '../components/ButtonsAndCheckBoxs/GoBackButton'
+import { Link } from 'react-router-dom';
 
 const ActivationKeySentContainer = () => {
     return (
@@ -12,8 +13,9 @@ const ActivationKeySentContainer = () => {
             <div className="text-center">
             </div>
             <div className="activation-key-gobackbutton">
-
-                <GoBackButton />
+                <Link to='/'>
+                    <GoBackButton />
+                </Link>
             </div>
         </div>
     )
