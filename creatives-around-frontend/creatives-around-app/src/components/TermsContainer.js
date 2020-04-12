@@ -12,7 +12,9 @@ export default function LoginContainer() {
         <div className="App-Container">
             <TitleWithSymbol title="Terms and Conditions" />
             <Logo />
-
+            <Link to="/">
+                <GoBackButton />
+            </Link>
             <div>
                 <p className="terms">
 
