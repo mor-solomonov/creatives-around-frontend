@@ -164,4 +164,25 @@ padding: 20px;
 .activationkeysent {
   margin-top: 3rem;
 }
+.FormControlTextarea{
+  color:white;
+  margin-top: 10%;
+}
 
+.MarginDeleteAccount {
+  margin-top: 20%;
+  
+}
+
+.DeleteAccountbtn {
+
+  color: black;
+  border: none;
+  text-decoration: none !important;
+}
+
+.DeleteAccountform {
+ 
+  border: none;
+
+}
