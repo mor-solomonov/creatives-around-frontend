@@ -6,6 +6,8 @@ import MyProfileImage from '../images/graphs/my_profile_box.svg';
 import ConnectionsImage from '../images/graphs/connections_box.svg';
 import LocationSettingsImage from '../images/graphs/location_settings_box.svg';
 import AppSettingsImage from '../images/graphs/app_settings_box.svg';
+import { Link } from 'react-router-dom';
+
 
 const Settings = () => {
     return (
@@ -15,12 +17,12 @@ const Settings = () => {
                 <Logo />
                 <div className="Settings-Buttons">
                     <div>
-                        <img src={MyProfileImage} className="Settings-Buttons" alt="MyProfileImage" />
-                        <img src={ConnectionsImage} className="Settings-Buttons" alt="DConnectionsImage" />
+                        <Link style={{ textDecoration: 'none' }} to='/setupprofile'><img src={MyProfileImage} className="Settings-Buttons" alt="MyProfileImage" /></Link>
+                        <Link style={{ textDecoration: 'none' }} to='/connections'><img src={ConnectionsImage} className="Settings-Buttons" alt="DConnectionsImage" /></Link>
                     </div>
                     <div>
-                        <img src={LocationSettingsImage} className="Settings-Buttons" alt="LocationSettingsImage" />
-                        <img src={AppSettingsImage} className="Settings-Buttons" alt="AppSettingsImage" />
+                        <Link style={{ textDecoration: 'none' }} to='/locationsettings'><img src={LocationSettingsImage} className="Settings-Buttons" alt="LocationSettingsImage" /></Link>
+                        <Link style={{ textDecoration: 'none' }} to='/appsettings'> <img src={AppSettingsImage} className="Settings-Buttons" alt="AppSettingsImage" /></Link>
                     </div>
                 </div>
             </div>
