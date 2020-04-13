@@ -4,7 +4,12 @@ import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import AddProfilePic from '../images/graphs/add_profile_pic.svg';
 import AddCoverPic from '../images/graphs/add_cover_pic.svg';
 import RemoveWhiteCircle from '../images/graphs/remove_white_circle.svg';
-
+// Images for footer:
+import AddTravelText from '../images/graphs/add_travel_text.svg'
+import SettingsText from '../images/graphs/settings_text.svg'
+import CancelText from '../images/graphs/cancel_text.svg'
+import SaveText from '../images/graphs/save_text.svg'
+// ---->
 
 
 export default function SetupProfileContainer() {
@@ -47,8 +52,8 @@ export default function SetupProfileContainer() {
                             className='FullName form-control mb-4'
                             placeholder=''
                             type='text'
-                            name='fullName'
-                            onChange={updateState}
+                            name='fullName'Two
+
                         />
                         <div className="DisplayFullNameWrapper">
                             <input type='checkbox' id='checkbox' className='CheckboxFullNameCheckbox' name='displayFullName' value={state.displayFullName} onChange={updateState} />
@@ -229,6 +234,28 @@ export default function SetupProfileContainer() {
                             onChange={updateState}
                         />
                 </div>
+
+
+                {/* Pictures needs to be made into buttons: */}
+                <footer>
+                    <div className="FooterContainerFour">
+                        <div>
+                            <img src={AddTravelText} alt='Add Travel' id='AddTravelText'/>
+                        </div>
+                        
+                        <div>
+                            <img src={SettingsText} alt='Settings' id='SettingsText'/>
+                        </div>
+                        
+                        <div>
+                            <img src={CancelText} alt='Cancel' id='CancelText'/>
+                        </div>
+
+                        <div>
+                            <img src={SaveText} alt='Save' id='SaveText'/>
+                        </div>
+                    </div>
+                </footer>
 
                 </form>
             </div>
