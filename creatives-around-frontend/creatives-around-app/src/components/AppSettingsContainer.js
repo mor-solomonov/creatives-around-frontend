@@ -7,7 +7,7 @@ import DeleteAccountImage from '../images/graphs/delete_account_box.svg';
 import TermsImage from '../images/graphs/terms_conditions_box.svg';
 import ContactUsImage from '../images/graphs/contact_us_box.svg';
 import { Link } from 'react-router-dom';
-import BarsMenu from '../images/graphs/menu_bars.svg';
+// import BarsMenu from '../images/graphs/menu_bars.svg';
 
 const AppSettingsContainer = () => {
     return (

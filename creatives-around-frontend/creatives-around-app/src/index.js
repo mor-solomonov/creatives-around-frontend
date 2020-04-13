@@ -60,7 +60,7 @@ ReactDOM.render(
       <Route exact path="/mygallery" component={MyGallery} />
       <Route exact path="/anotherusergallery" component={AnotherUserGallery} />
       <Route exact path="/activationkeysent" component={ActivationKeySent} />
-
+      <Route exact path="/accountdeleted" component={AccountDeleted} />
 
     </Switch>
   </BrowserRouter>,
