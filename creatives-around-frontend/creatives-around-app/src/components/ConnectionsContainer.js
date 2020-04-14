@@ -8,6 +8,10 @@ const ConnectionsContainer = () => {
         <Fragment>
             <div className="App-Container">
                 <TitleWithSymbol title="Connections" />
+                {/* TODO: 1 search-field add button, 
+                2: Wrapper ConnectionsContainer
+                3: Wrapper ConnectionSingle - grid
+                4: Single connection function */}
 
             </div>
         </Fragment>
