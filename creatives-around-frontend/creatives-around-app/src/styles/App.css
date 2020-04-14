@@ -304,6 +304,10 @@ div.ConnectionSingle>img {
   margin-bottom: 0.2rem;
 }
 
+div.ConnectionSingle>img.OnlineConnection {
+  border: 3px solid white;
+}
+
 div.ConnectionSingle>p {
   color: white;
   font-size: 0.7rem;
