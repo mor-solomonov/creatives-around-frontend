@@ -263,3 +263,37 @@ div.FooterContainerFour>div {
 }
 
 /* end of SetupProfilePics.js */
+
+/* components/SetupProfileContainer.js: */
+
+form.SearchConnections {
+  margin-top: 1rem;
+}
+
+div.ConnectionsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+}
+
+div.ConnectionSingle {
+  width: 50%;
+  justify-self: center;
+  margin-bottom: 1rem;
+  border: 1px solid blue;
+}
+
+div.ConnectionSingle>img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+div.ConnectionSingle>p {
+  color: white;
+  font-size: 0.7rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* End of: SetupProfileContainer.js*/
