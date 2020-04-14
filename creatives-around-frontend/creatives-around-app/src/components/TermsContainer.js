@@ -1,20 +1,28 @@
 import React from 'react';
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
-import GoBackButton from './ButtonsAndCheckBoxs/GoBackButton';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import { Link } from "react-router-dom";
 
 // import LoginPageTitle from './LoginPageTitle';
 
-export default function LoginContainer() {
+export default function LoginContainer(props) {
+
+    const backClick = () => {
+
+        props.history.go(-1)
+
+    }
+
+
+
     return (
         <div className="App-Container">
             <TitleWithSymbol title="Terms and Conditions" />
             <Logo />
-            <Link to="/">
-                <GoBackButton />
-            </Link>
+            <button onClick={backClick}>
+                Go Back
+            </button>
             <div>
                 <p className="terms">
 
@@ -132,9 +140,9 @@ export default function LoginContainer() {
                     mor.solomonov@gmail.com or nicsolitom@gmail.com
 </p>
             </div>
-            <Link to="/">
-                <GoBackButton />
-            </Link>
+            <button onClick={backClick}>
+                Go Back
+            </button>
         </div>
 
     )
