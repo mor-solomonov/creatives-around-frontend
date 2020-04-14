@@ -48,45 +48,41 @@ const ViewMyProfileContainer = () => {
                 {/* Art forms */}
                 <h4 className='FormHeader'>Art forms</h4>
 
-{/* Example of Art forms: */}
+{/* Example of Art forms (without remove-button): */}
 <div className='ArtFormsCollection'>
 
     <div className='ArtFormSingle'>
         <p className='ArtFormsText'>
             Water Color
-            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
         </p>
     </div>
 
     <div className='ArtFormSingle'>
         <p className='ArtFormsText'>
             Photography
-            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
         </p>
     </div>
 
     <div className='ArtFormSingle'>
         <p className='ArtFormsText'>
             Acrylic
-            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
         </p>
     </div>
 
     <div className='ArtFormSingle'>
         <p className='ArtFormsText'>
             Sculpture
-            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
         </p>
     </div>
 
     <div className='ArtFormSingle'>
         <p className='ArtFormsText'>
             Digital Art
-            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
         </p>
     </div>
-
+    
 </div>
+
             </div>
         </Fragment>
     )
