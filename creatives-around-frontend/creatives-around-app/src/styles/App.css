@@ -100,11 +100,16 @@ h3 {
 }
 
 /* components/SymbolsandTitles/TitleWithSymbol.js: */
-.TitleWithSymbol {
-  align-self: flex-start;
-  margin-left: 1rem;
+.Navbar {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
   /* Just added now to test, but I know Mor did one before, so overwrite this one: */
   margin-top: 0.8rem;
+}
+
+.TitleWithSymbol {
+  display: inline;
 }
 
 .LogoSymbol {
@@ -320,3 +325,15 @@ div.ConnectionSingle>p {
 }
 
 /* End of: SetupProfileContainer.js*/
+
+/* MenuBar: */
+div.MenuBar {
+  /* margin-right: 1rem; */
+  display: inline-flex;
+  /* align-self: flex-end; */
+}
+
+div.MenuBar>h3 {
+  display: inline;
+}
+/* ...End of: MenuBar */
