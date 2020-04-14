@@ -11,7 +11,7 @@ const MustHaveAProfileContainer = () => {
                 <Logo />
                 <h3>You need to have a profile to view and connect with other Visual Artists.</h3>
                 <div className="alignbottom-gobackbutton">
-                    <Link to='/'>
+                    <Link to='/setupprofile'>
                         <GoBackButton />
                     </Link>
                 </div>
