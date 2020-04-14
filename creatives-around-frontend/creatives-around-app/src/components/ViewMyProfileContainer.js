@@ -4,6 +4,7 @@ import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 // Images:
 import ProfilePic from '../images/fake_profiles/profile_paintrbush_man.png';
 import CoverPic from '../images/fake_profiles/o-SPIEGELMAN-570.jpg';
+import PicExample from '../images/fake_profiles/images.jpg';
 // Graphics:
 import RemoveWhiteCircle from '../images/graphs/remove_white_circle.svg';
 import AddPicGallery from '../images/graphs/add_pic_gallery.svg';
@@ -83,6 +84,26 @@ const ViewMyProfileContainer = () => {
     
 </div>
 
+                <div className="ViewProfileGallery">
+                    <div className="ViewProfileGallerySingle">
+                        <img src={AddPicGallery} alt=""/>
+                    </div>
+                    <div className="ViewProfileGallerySingle">
+                        <img src={AddPicGallery} alt=""/>
+                    </div>
+                    <div className="ViewProfileGallerySingle">
+                        <img src={AddPicGallery} alt=""/>
+                    </div>
+                    <div className="ViewProfileGallerySingle">
+                        <img src={AddPicGallery} alt=""/>
+                    </div>
+                    <div className="ViewProfileGallerySingle">
+                        <img src={AddPicGallery} alt=""/>
+                    </div>
+                    {/* <div className="ViewProfileGallerySingle">
+                        <img src={AddPicGallery} alt=""/>
+                    </div> */}
+                </div>
             </div>
         </Fragment>
     )

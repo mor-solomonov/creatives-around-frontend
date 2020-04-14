@@ -68,6 +68,7 @@ export default function SetupProfileContainer() {
                             placeholder=''
                             type='text'
                             name='username'
+                            required='true'
                             onChange={updateState}
                         />
                 </div>
