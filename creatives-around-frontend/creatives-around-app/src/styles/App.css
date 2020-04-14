@@ -92,6 +92,8 @@ h3 {
 
 }
 
+
+
 .aboutus {
   margin-right: 40px;
   margin-left: 40px;
@@ -257,10 +259,11 @@ div.FooterContainerFour {
   margin-bottom: 2rem;
 }
 
-div.FooterContainerFour > div {
+div.FooterContainerFour>div {
   align-self: end;
   justify-self: center;
 }
+
 /* End of: SetupProfileContainer.js */
 
 
@@ -273,9 +276,10 @@ div.ProfilePicsContainer {
 div.CoverPic {
   height: 200px;
   overflow: hidden;
+  filter: drop-shadow(0px 0px 7px #000000);
 }
 
-div.CoverPic > img {
+div.CoverPic>img {
   width: 100%;
   margin-top: -120px;
 }
@@ -287,12 +291,55 @@ div.ProfilePic {
   margin-top: -2rem;
   margin-right: auto;
   margin-left: auto;
-  filter: drop-shadow(0px -4px 10px #000000);
+  filter: drop-shadow(0px -6px 14px #000000);
 }
 
-div.ProfilePic > img {
+div.ProfilePic>img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
+
+div.FullNameUsername {
+  margin-top: 0.5rem;
+}
+
+
+div.FullNameUsername>h4,
+div.ProfileInfoLeft>h4,
+div.ProfileInfoRight>h4 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+div.FullNameUsername>h5,
+div.ProfileInfoLeft>h5,
+div.ProfileInfoRight>h5 {
+  color: white;
+  font-size: 0.7rem;
+}
+
+div.FullNameUsername>h4,
+div.FullNameUsername>h5 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.LocationAgeContainer {
+  display: flex;
+  margin-top: 1rem;
+}
+
+div.ProfileInfoLeft {
+  margin-right: 2rem;
+  text-align: center;
+}
+
+div.ProfileInfoRight {
+  margin-left: 2rem;
+  text-align: center;
+
+}
+
 /* End of: ViewMyProfileContainer.js: */

@@ -11,6 +11,7 @@ const ViewMyProfileContainer = () => {
             <div className='App-Container'>
                 <TitleWithSymbol title='My Profile' />
                 
+                {/* Profile and Cover pics: */}
                 <div className='ProfilePicsContainer'>
 
                     <div className='CoverPic'>
@@ -21,6 +22,24 @@ const ViewMyProfileContainer = () => {
                         <img src={ProfilePic} />
                     </div>
                     
+                </div>
+
+                {/* Full name, username, location, age */}
+                <div className='FullNameUsername'>
+                    <h4 className='FullName'>Steve Bloom</h4>
+                    <h5>=</h5>
+                    <h4 className='Username'>Tweaker</h4>
+                </div>
+
+                <div className='LocationAgeContainer'>
+                    <div className='ProfileInfoLeft'>
+                        <h5>Location</h5>
+                        <h4>Berlin</h4>
+                    </div>
+                    <div className='ProfileInfoRight'>
+                        <h5>Age</h5>
+                        <h4>33</h4>
+                    </div>
                 </div>
             </div>
         </Fragment>
