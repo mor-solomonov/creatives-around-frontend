@@ -257,8 +257,9 @@ div.FooterContainerFour {
   margin-bottom: 2rem;
 }
 
-div.FooterContainerFour > div {
+div.FooterContainerFour>div {
   align-self: end;
   justify-self: center;
 }
+
 /* end of SetupProfilePics.js */
