@@ -4,6 +4,9 @@ import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 // Images:
 import ProfilePic from '../images/fake_profiles/profile_paintrbush_man.png';
 import CoverPic from '../images/fake_profiles/o-SPIEGELMAN-570.jpg';
+// Graphics:
+import RemoveWhiteCircle from '../images/graphs/remove_white_circle.svg';
+import AddPicGallery from '../images/graphs/add_pic_gallery.svg';
 
 const ViewMyProfileContainer = () => {
     return (
@@ -41,6 +44,49 @@ const ViewMyProfileContainer = () => {
                         <h4>33</h4>
                     </div>
                 </div>
+
+                {/* Art forms */}
+                <h4 className='FormHeader'>Art forms</h4>
+
+{/* Example of Art forms: */}
+<div className='ArtFormsCollection'>
+
+    <div className='ArtFormSingle'>
+        <p className='ArtFormsText'>
+            Water Color
+            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+        </p>
+    </div>
+
+    <div className='ArtFormSingle'>
+        <p className='ArtFormsText'>
+            Photography
+            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+        </p>
+    </div>
+
+    <div className='ArtFormSingle'>
+        <p className='ArtFormsText'>
+            Acrylic
+            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+        </p>
+    </div>
+
+    <div className='ArtFormSingle'>
+        <p className='ArtFormsText'>
+            Sculpture
+            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+        </p>
+    </div>
+
+    <div className='ArtFormSingle'>
+        <p className='ArtFormsText'>
+            Digital Art
+            <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
+        </p>
+    </div>
+
+</div>
             </div>
         </Fragment>
     )

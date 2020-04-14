@@ -329,17 +329,16 @@ div.FullNameUsername>h5 {
 div.LocationAgeContainer {
   display: flex;
   margin-top: 1rem;
+  width: 60%;
+  justify-content: space-between;
 }
 
-div.ProfileInfoLeft {
-  margin-right: 2rem;
-  text-align: center;
-}
-
+div.ProfileInfoLeft,
 div.ProfileInfoRight {
-  margin-left: 2rem;
   text-align: center;
-
+  width: 5rem;
+  /* border: 1px solid white; */
 }
+
 
 /* End of: ViewMyProfileContainer.js: */
