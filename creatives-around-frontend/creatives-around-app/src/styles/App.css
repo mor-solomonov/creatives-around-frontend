@@ -270,6 +270,21 @@ form.SearchConnections {
   margin-top: 1rem;
 }
 
+form.SearchConnections>input {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+form.SearchConnections>button {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
 div.ConnectionsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -277,16 +292,16 @@ div.ConnectionsContainer {
 }
 
 div.ConnectionSingle {
-  width: 50%;
+  width: 60%;
   justify-self: center;
   margin-bottom: 1rem;
-  border: 1px solid blue;
 }
 
 div.ConnectionSingle>img {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  margin-bottom: 0.2rem;
 }
 
 div.ConnectionSingle>p {
