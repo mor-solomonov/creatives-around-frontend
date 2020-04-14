@@ -108,12 +108,14 @@ h3 {
 }
 
 .LogoSymbol {
-  width: 3.5rem;
+  width: 2rem;
+  vertical-align: top;
 }
 
 .PageHeader {
   display: inline-block;
   margin-left: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 /* end of TitleWithSymbols.js */
