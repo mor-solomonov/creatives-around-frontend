@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/App.css';
 import Logo from './SymbolsandTitles/Logo';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
-import { Link } from "react-router-dom";
+
 
 // import LoginPageTitle from './LoginPageTitle';
 
