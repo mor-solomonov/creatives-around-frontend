@@ -5,7 +5,7 @@ import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 import { Link } from 'react-router-dom';
 
-const MyArtFormsContainer = () => {
+const MyArtFormsContainer = (props) => {
     //Setup the form state
     //If you need anything else on the form such as text input fields add them here and don't
     //forget to add them to the de-construction below
@@ -48,6 +48,12 @@ const MyArtFormsContainer = () => {
     //Create the JSX for the form and the checkboxes.
     //The trick is to use the name attribute as the link to the formData object
     //and the defaultChecked attribute.
+
+    const backClick = () => {
+
+        props.history.go(-1)
+
+    }
     return (
 
         <div className="App-Container">
@@ -176,8 +182,13 @@ const MyArtFormsContainer = () => {
                         <label className='label'>Ceramics</label>
 
                     </div>
-                    <div className="SubmitButtonArtForms text-center">
-                        <Link to='/setupprofile'> <button className=" btn btn-light mb-4">Submit</button></Link>
+                    <div>
+                        <div className="SubmitButtonArtForms text-center">
+                            <Link to='/setupprofile'> <button className=" btn btn-light mb-4">Submit</button></Link>
+                        </div>
+                        <div className="GoBackButtonArtForms text-center">
+                            <button onClick={backClick} className=" btn btn-light mb-4">Go Back</button>
+                        </div>
                     </div>
                     <div className="text-center">
                         <p className="cannot-find-artform">Cannot find an Art Form?&nbsp;&nbsp;
