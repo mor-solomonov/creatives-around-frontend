@@ -94,16 +94,15 @@ export default function LoginContainer() {
                     <Link to="/searchprofiles">
                         <button className="LoginButton btn btn-light mb-4">Login</button>
                     </Link>
+                    <p className="SignUp">Not a member yet? &nbsp;
+               <Link to="/signup">
+                            <button>Sign up</button>
+                        </Link></p>
+                    <p className="login-about-us-button">Discover <Link className="login-about-us-button" to="/aboutus"><b >HERE</b></Link> more about us</p>
                 </div>
             </form>
 
-            <div>
-                <p className="SignUp">Not a member yet? &nbsp;
-               <Link to="/signup">
-                        <button>Sign up</button>
-                    </Link></p>
 
-            </div>
         </div>
     )
 }
