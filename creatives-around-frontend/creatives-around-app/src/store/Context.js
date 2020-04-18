@@ -55,6 +55,9 @@ export const DataProvider = props => {
     setProfiles(profilesCopy);
   };
 
+  //? Karol's tip:
+  //? Remember to add any new functions to value properties. Then = shared through all components.
+
   return (
     <DataContext.Provider
       value={{
