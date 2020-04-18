@@ -170,7 +170,7 @@ padding: 20px;
 }
 
 .MarginButtons {
-  margin-top: 20%;
+  margin-top: 10%;
   
 }
 
@@ -190,5 +190,11 @@ padding: 20px;
  
    margin-top: 18%;
     
+
+  }
+
+.delete-account-checkbox{
+color: white;
+margin-top: 3%;
 
 }

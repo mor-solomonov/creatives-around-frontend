@@ -15,8 +15,9 @@ const DeleteAccountContainer = () => {
                     <form>
                         <label for="FormControlTextarea" className="FormControlTextarea">Why would you like to delete your account? (optional)</label>
                         <textarea class="form-control DeleteAccountform" rows="4"></textarea>
+                        <input id='checkbox' type='checkbox' name='deleteaccount' />
+                        <label className='delete-account-checkbox'>&nbsp;Delete my account</label>
                         <div className="text-center MarginButtons">
-
                             <button type="submit" className="btn btn btn-light mb-4 btn-block">Delete Account</button>
                             <Link className="text-decoration-none" to="/appsettings"> <button className="DeleteAccountbtn btn btn-light mb-4 btn-block">Go Back</button></Link>
                         </div>
