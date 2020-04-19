@@ -16,7 +16,6 @@ import Chat from './components/ChatContainer';
 import LocationSettings from './components/LocationSettingsContainer';
 import Messages from './components/MessagesContainer';
 import FriendReqSent from './components/FriendReqSentContainer';
-import NotificationsContainer from './components/NotificationsContainer';
 import ContactUs from './components/ContactUsContainer';
 import DeleteAccount from './components/DeleteAccountContainer';
 import AccountDeleted from './components/AccoutDeletedContainer';
@@ -46,7 +45,6 @@ ReactDOM.render(
       <Route exact path="/locationsettings" component={LocationSettings} />
       <Route exact path="/messages" component={Messages} />
       <Route exact path="/friendreqsent" component={FriendReqSent} />
-      <Route exact path="/notifications" component={NotificationsContainer} />
       <Route exact path="/contactus" component={ContactUs} />
       <Route exact path="/deleteaccount" component={DeleteAccount} />
       <Route exact path="/aboutus" component={AboutUsContainer} />
