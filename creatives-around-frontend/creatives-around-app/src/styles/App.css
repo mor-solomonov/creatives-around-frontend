@@ -189,7 +189,8 @@ div.FormFieldSetupProfile {
 
 .FormHeader {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-weight: 600;
   margin-bottom: 0.3rem;
   margin-top: 0;
 }
@@ -211,7 +212,6 @@ label.DisplayFullName {
   font-size: 0.7rem;
 }
 
-/* div.ArtFormsCollection {} */
 
 div.ArtFormsLookingForCollection {
   display: flex;
@@ -345,6 +345,31 @@ div.ViewProfileGallery {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+button.ArtFormSingle {
+  padding: 0;
+  padding-right: 0.5rem;
+  border-radius: 2rem;
+}
+
+p.ArtFormsText {
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+
+
+button.ArtFormSingle>img {
+  padding-left: 0.3rem;
+}
+
+div.ArtFormsCollection {
+  margin-top: 1rem;
+}
+
+div.ArtFormsCollection>h4 {
+  margin-bottom: 0.5rem;
 }
 
 /* End of: ViewMyProfileContainer.js: */
