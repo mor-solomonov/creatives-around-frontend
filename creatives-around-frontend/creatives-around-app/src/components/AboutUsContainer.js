@@ -31,7 +31,7 @@ const AboutUsContainer = (props) => {
                 to hold space for creatives from various genres and skill levels and to connect with other creatives nearby locally or in 'travel mode' when abroad.
                 <br />
                 Creatives Around is a place for visual artists to get inspired from others in desired fields, inspire others by sharing your work, discover & communicate exhibitions, initiate collaborations and meetups with other visual artists.</p>
-            {/* <Link to="/appsettings"><GoBackButton /></Link> */}
+
             <button onClick={backClick}>
                 Go Back
             </button>

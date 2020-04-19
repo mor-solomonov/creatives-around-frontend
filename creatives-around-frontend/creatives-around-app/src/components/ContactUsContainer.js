@@ -18,7 +18,7 @@ const ContactUsContainer = () => {
                     <div className="text-center MarginButtons">
 
                         <button type="submit" className=" btn btn-light mb-4 btn-block">Send message</button>
-                        <Link className="text-decoration-none" to="/appsettings"> <button className=" btn btn-light mb-4 btn-block">Go Back</button></Link>
+                        <Link className="text-decoration-none" to="/settings"> <button className=" btn btn-light mb-4 btn-block">Go Back</button></Link>
                     </div>
 
 
