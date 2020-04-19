@@ -185,7 +185,7 @@ const SearchArtFormsContainer = (props) => {
                     </div>
                     <div>
                         <div className="SubmitButtonArtForms text-center">
-                            <Link to='/setupprofile'><button className=" btn btn-light mb-4">Submit</button></Link>
+                            <button onClick={backClick} className=" btn btn-light mb-4">Submit</button>
                         </div>
                         <div className="GoBackButtonArtForms text-center">
                             <button onClick={backClick} className=" btn btn-light mb-4">Go Back</button>
