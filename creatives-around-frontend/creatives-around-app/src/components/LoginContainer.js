@@ -71,6 +71,9 @@ export default function LoginContainer() {
           <Link to="/searchprofiles">
             <button className="LoginButton btn btn-light mb-4">Login</button>
           </Link>
+        </div>
+
+        <div className="text-center signup-discover">
           <p className="SignUp">
             Not a member yet? &nbsp;
             <Link to="/signup">
