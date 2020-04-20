@@ -1,0 +1,207 @@
+
+.App {
+  text-align: center;
+}
+
+.Logo {
+  display:flex;
+  flex-direction: column;
+  height: 140px;
+  width: 340px;
+  margin-top: 45px;
+}
+
+.App-Container {
+ 
+  background-color: rgb(47, 3, 41);
+  min-height: 100vh;
+  display:flex;
+  justify-content: center top;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.App-title{
+  color: white;
+  text-align: center;
+ 
+}
+
+.SignUpPageTitle {
+  
+  color: white;
+ font-size: 20px;
+ margin-top: 15px;
+  
+}
+.LoginPageTitle {
+    color: white;
+ font-size: 20px;
+ margin-top: 15px;
+}
+
+.Email {
+margin-top: 30px;
+}
+
+.LoginButton {
+  margin-top: 20px;
+}
+.SignUpButton {
+  margin-top: 30px;
+}
+.GoBackButton {
+  margin-top: 15px;
+}
+
+
+.SignUp {
+  color: white;
+  margin-top: 60px;
+}
+
+.Agree {
+  color: white;
+}
+
+.terms {
+  color: white;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.TermsTitle {
+      color: white;
+ font-size: 20px;
+ margin-top: 10px;
+ margin-bottom: 30px;
+}
+
+h3 {
+ color: white;
+ font-size: 17px;
+ margin-top: 12px;
+ margin-bottom: 15px;
+
+}
+
+.aboutus {
+  margin-right: 40px;
+  margin-left: 40px;
+  color: white;
+  font-size: 18px;
+}
+.TitleWithSymbol {
+  align-self: flex-start;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.LogoSymbol {
+  width: 3.5rem;
+}
+.PageHeader {
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+
+/* for art forms page */
+
+.section-container {
+  width: 60%;
+  height: auto;
+
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.checkbox-container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 1%;
+}
+
+
+
+.label {
+  font-size: 1.1rem;
+  margin-left: 17px;
+  color: white;
+}
+
+.SubmitButtonArtForms{
+  margin-top: 50px;
+}
+
+.ArtFormsLine {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.cannot-find-artform {
+  color:white;
+  margin-top: 3%;
+}
+/* end - for artforms page */
+
+.App-Settings-Buttons {
+padding: 20px;
+}
+
+.Settings-Buttons {
+padding: 10px;
+}
+.alignbottom-gobackbutton {
+  margin-top: 20%;
+}
+.activationkeysent {
+  margin-top: 3rem;
+}
+.FormControlTextarea{
+  color:white;
+  margin-top: 10%;
+}
+
+.MarginButtons {
+  margin-top: 10%;
+  
+}
+
+.DeleteAccountbtn {
+
+  color: black;
+  border: none;
+  text-decoration: none !important;
+}
+
+.DeleteAccountform {
+ 
+  border: none;
+
+}
+.GoBackalignBottom {
+ 
+   margin-top: 18%;
+    
+
+  }
+
+.delete-account-checkbox{
+color: white;
+margin-top: 3%;
+
+}
+
+.login-about-us-button {
+  color: white;
+    text-decoration: none !important;
+  
+}
+
