@@ -92,6 +92,8 @@ h3 {
 
 }
 
+
+
 .aboutus {
   margin-right: 40px;
   margin-left: 40px;
@@ -168,7 +170,7 @@ h3 {
   padding: 20px;
 }
 
-/* components/SymbolsandTitles/SetupProfilePics.js: */
+/* components/SetupProfileContainer.js: */
 .SetupProfilePics {
   display: flex;
   width: 100vw;
@@ -194,7 +196,8 @@ div.FormFieldSetupProfile {
 
 .FormHeader {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-weight: 600;
   margin-bottom: 0.3rem;
   margin-top: 0;
 }
@@ -216,7 +219,6 @@ label.DisplayFullName {
   font-size: 0.7rem;
 }
 
-/* div.ArtFormsCollection {} */
 
 div.ArtFormsLookingForCollection {
   display: flex;
@@ -336,4 +338,114 @@ div.MenuBar {
 div.MenuBar>h3 {
   display: inline;
 }
+
 /* ...End of: MenuBar */
+/* End of: SetupProfileContainer.js */
+
+
+/* components/ViewMyProfileContainer.js: */
+div.ProfilePicsContainer {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+div.CoverPic {
+  height: 200px;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 7px #000000);
+}
+
+div.CoverPic>img {
+  width: 100%;
+  margin-top: -40%;
+}
+
+div.ProfilePic {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  margin-top: -2rem;
+  margin-right: auto;
+  margin-left: auto;
+  filter: drop-shadow(0px -6px 14px #000000);
+}
+
+div.ProfilePic>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+div.FullNameUsername {
+  margin-top: 0.5rem;
+}
+
+
+div.FullNameUsername>h4,
+div.ProfileInfoLeft>h4,
+div.ProfileInfoRight>h4 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+div.FullNameUsername>h5,
+div.ProfileInfoLeft>h5,
+div.ProfileInfoRight>h5 {
+  color: white;
+  font-size: 0.7rem;
+}
+
+div.FullNameUsername>h4,
+div.FullNameUsername>h5 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.LocationAgeContainer {
+  display: flex;
+  margin-top: 1rem;
+  width: 60%;
+  justify-content: space-between;
+}
+
+div.ProfileInfoLeft,
+div.ProfileInfoRight {
+  text-align: center;
+  width: 5rem;
+  /* border: 1px solid white; */
+}
+
+div.ViewProfileGallery {
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button.ArtFormSingle {
+  padding: 0;
+  padding-right: 0.5rem;
+  border-radius: 2rem;
+}
+
+p.ArtFormsText {
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+
+
+button.ArtFormSingle>img {
+  padding-left: 0.3rem;
+}
+
+div.ArtFormsCollection {
+  margin-top: 1rem;
+}
+
+div.ArtFormsCollection>h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* End of: ViewMyProfileContainer.js: */
