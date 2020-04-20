@@ -26,10 +26,11 @@ router.post('/login', function (req, res, next) {
 router.post('/register', async (req, res, next) => {
   try {
     const user = req.body;
+    console.log(user);
     user.password = bcrypt.hashSync(user.password, 10);
     // BODY NEEDS TO HAVE ALL FIELDS REQUIRED IN USER MODEL
     await User.create(user);
-    res.send('User successfuly created.');
+    res.status(200).send('User successfuly created.');
   } catch (error) {
     next(error);
   }
