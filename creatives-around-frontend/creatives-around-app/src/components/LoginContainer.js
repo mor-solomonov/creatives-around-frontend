@@ -1,37 +1,50 @@
 import React, { useContext, useEffect } from 'react';
 import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import Context from '../store/Context';
 
-export default function LoginContainer() {
+function LoginContainer(props) {
   console.log('App fired');
 
-  const { UpdateProfile } = useContext(Context);
+  const { UpdateProfile, loggedInUser } = useContext(Context);
 
   useEffect(() => {
-    UpdateProfile(3, { location: 'Hamburg' });
+    // UpdateProfile(3, { location: 'Hamburg' });
+    if (loggedInUser) {
+      props.history.push({
+        pathname: '/searchprofiles',
+      });
+    }
   }, []);
+  useEffect(() => {
+    // UpdateProfile(3, { location: 'Hamburg' });
+    if (loggedInUser) {
+      props.history.push({
+        pathname: '/searchprofiles',
+      });
+    }
+  }, [loggedInUser]);
 
   const [state, setState] = React.useState({
     email: '',
-    password: ''
+    password: '',
   });
-  const updateState = e => {
+  const updateState = (e) => {
     console.log('VALUE', e.target.value);
     console.log('NAME', e.target.name);
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const submitForm = async e => {
+  const submitForm = async (e) => {
     e.preventDefault();
 
     const response = await fetch('http://localhost:5000/auth/login', {
       method: 'POST',
       body: JSON.stringify(state),
       headers: {
-        'content-type': 'application/json'
-      }
+        'content-type': 'application/json',
+      },
     });
 
     const result = await response.json();
@@ -42,34 +55,34 @@ export default function LoginContainer() {
   };
 
   return (
-    <div className="App-Container">
+    <div className='App-Container'>
       <Logo />
-      <DisplayTitle title="Login" />
+      <DisplayTitle title='Login' />
 
       <form onSubmit={submitForm}>
         <input
-          className="Email form-control mb-4"
-          placeholder="Email:"
-          type="text"
-          name="email"
+          className='Email form-control mb-4'
+          placeholder='Email:'
+          type='text'
+          name='email'
           onChange={updateState}
         />
         <input
-          className="Password form-control mb-4"
-          placeholder="Password:"
-          type="text"
-          name="password"
+          className='Password form-control mb-4'
+          placeholder='Password:'
+          type='text'
+          name='password'
           onChange={updateState}
         />
-        <button type="submit" className="LoginButton btn btn-light mb-4">
+        <button type='submit' className='LoginButton btn btn-light mb-4'>
           Login
         </button>
       </form>
 
       <div>
-        <p className="SignUp">
+        <p className='SignUp'>
           Not a member yet? &nbsp;
-          <Link to="/signup">
+          <Link to='/signup'>
             <button>Sign up</button>
           </Link>
         </p>
@@ -77,3 +90,5 @@ export default function LoginContainer() {
     </div>
   );
 }
+
+export default withRouter(LoginContainer);

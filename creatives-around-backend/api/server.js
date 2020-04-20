@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
+// ROUTES
 const authRoutes = require('../api/routes/auth');
+const userRoutes = require('../api/routes/user');
 const passport = require('passport');
 const morgan = require('morgan');
 const cors = require('cors');
@@ -28,6 +30,7 @@ mongoose.connection.once('open', () => {
 require('./passport');
 // ROUTE
 api.use('/auth', authRoutes);
+api.use('/user', userRoutes);
 api.get('/users', passport.authenticate('jwt', { session: false }), async (req, res, next) => {
   const users = await Users.find().lean();
   res.status(200).json(users);
