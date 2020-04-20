@@ -12,8 +12,6 @@ import Chat from './components/ChatContainer';
 import LocationSettings from './components/LocationSettingsContainer';
 import Messages from './components/MessagesContainer';
 import FriendReqSent from './components/FriendReqSentContainer';
-import NotificationsContainer from './components/NotificationsContainer';
-import AppSettings from './components/AppSettingsContainer';
 import ContactUs from './components/ContactUsContainer';
 import DeleteAccount from './components/DeleteAccountContainer';
 import AccountDeleted from './components/AccoutDeletedContainer';
@@ -40,8 +38,8 @@ function App(props) {
       if (token) {
         const response = await fetch('http://localhost:5000/user', {
           headers: {
-            Authorization: `bearer ${token}`,
-          },
+            Authorization: `bearer ${token}`
+          }
         });
         const user = await response.json();
         await setLoggedInUser(user);
@@ -52,33 +50,47 @@ function App(props) {
     // IF USER IS IN RESPONSE, SAVE IT IN GLOBAL STATE (CONTEXT)
   }, []);
   return (
-    <div className='App'>
+    <div className="App">
       <Switch>
-        <Route exact path='/' component={LoginPage} />
-        <Route exact path='/signup' component={SignUpContainer} />
-        <Route exact path='/termsandconditions' component={TermsAndConditions} />
-        <Route exact path='/setupprofile' component={SetupProfile} />
-        <Route exact path='/searchartforms' component={SearchArtForms} />
-        <Route exact path='/searchprofiles' component={SearchProfiles} />
-        <Route exact path='/settings' component={Settings} />
-        <Route exact path='/connections' component={Connections} />
-        <Route exact path='/chat' component={Chat} />
-        <Route exact path='/locationsettings' component={LocationSettings} />
-        <Route exact path='/messages' component={Messages} />
-        <Route exact path='/friendreqsent' component={FriendReqSent} />
-        <Route exact path='/notifications' component={NotificationsContainer} />
-        <Route exact path='/appsettings' component={AppSettings} />
-        <Route exact path='/contactus' component={ContactUs} />
-        <Route exact path='/deleteaccount' component={DeleteAccount} />
-        <Route exact path='/aboutus' component={AboutUsContainer} />
-        <Route exact path='/accountdeleted' component={AccountDeleted} />
-        <Route exact path='/viewmyprofile' component={ViewMyProfileContainer} />
-        <Route exact path='/myartforms' component={MyArtForms} />
-        <Route exact path='/profileofanotheruser' component={ProfileOfAnotherUserContainer} />
-        <Route exact path='/youneedtohaveaprofile' component={MustHavaAProfileContainer} />
-        <Route exact path='/mygallery' component={MyGallery} />
-        <Route exact path='/anotherusergallery' component={AnotherUserGallery} />
-        <Route exact path='/activationkeysent' component={ActivationKeySent} />
+        <Route exact path="/" component={LoginPage} />
+        <Route exact path="/signup" component={SignUpContainer} />
+        <Route
+          exact
+          path="/termsandconditions"
+          component={TermsAndConditions}
+        />
+        <Route exact path="/setupprofile" component={SetupProfile} />
+        <Route exact path="/searchartforms" component={SearchArtForms} />
+        <Route exact path="/searchprofiles" component={SearchProfiles} />
+        <Route exact path="/settings" component={Settings} />
+        <Route exact path="/connections" component={Connections} />
+        <Route exact path="/chat" component={Chat} />
+        <Route exact path="/locationsettings" component={LocationSettings} />
+        <Route exact path="/messages" component={Messages} />
+        <Route exact path="/friendreqsent" component={FriendReqSent} />
+        <Route exact path="/contactus" component={ContactUs} />
+        <Route exact path="/deleteaccount" component={DeleteAccount} />
+        <Route exact path="/aboutus" component={AboutUsContainer} />
+        <Route exact path="/accountdeleted" component={AccountDeleted} />
+        <Route exact path="/viewmyprofile" component={ViewMyProfileContainer} />
+        <Route exact path="/myartforms" component={MyArtForms} />
+        <Route
+          exact
+          path="/profileofanotheruser"
+          component={ProfileOfAnotherUserContainer}
+        />
+        <Route
+          exact
+          path="/youneedtohaveaprofile"
+          component={MustHavaAProfileContainer}
+        />
+        <Route exact path="/mygallery" component={MyGallery} />
+        <Route
+          exact
+          path="/anotherusergallery"
+          component={AnotherUserGallery}
+        />
+        <Route exact path="/activationkeysent" component={ActivationKeySent} />
       </Switch>
     </div>
   );

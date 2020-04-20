@@ -12,6 +12,8 @@ function SignUpContainer(props) {
     confirmPassword: '',
     terms: false
   });
+
+  // ! Nic. Check:
   const [success, setSuccess] = React.useState(null);
   const [errors, setErrors] = React.useState([]);
 
@@ -81,7 +83,7 @@ function SignUpContainer(props) {
         <Link to="/">
           <GoBackButton />
           {/* ASK KAROL ABOUT! */}
-          {/* {success && <p>Thank you for registration</p>} */}
+          {success && <p>Thank you for registration</p>}
         </Link>
       </form>
     </div>
