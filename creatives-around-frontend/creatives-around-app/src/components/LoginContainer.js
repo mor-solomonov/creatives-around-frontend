@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 import { Link } from 'react-router-dom';
+import Context from '../store/Context';
+
 export default function LoginContainer() {
+  const { Login, loggedInUser } = useContext(Context);
   const [state, setState] = useState({
     email: '',
     password: ''
@@ -14,39 +17,47 @@ export default function LoginContainer() {
     console.log('NAME', e.target.name);
     setState({ ...state, [e.target.name]: e.target.value });
   };
+
+  if (loggedInUser) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/searchprofiles',
+          state: {}
+        }}
+      />
+    );
+  }
+
+  // useEffect(() => {
+  //   if (loggedInUser) {
+  //     console.log('loggedInUser fired');
+  //     renderRedirect(loggedInUser);
+  //   }
+  // }, [loggedInUser]);
+
   // //Redirect handler
-  const handleRedirect = () => {
-    setRedirect(true);
-  };
+  // const handleRedirect = () => {
+  //   setRedirect(true);
+  // };
   //Redirect function
-  const renderRedirect = user => {
-    let path = '';
-    user.username ? (path = '/searchprofiles') : (path = '/setupprofile');
-    if (redirect) {
-      return (
-        <Redirect
-          to={{
-            pathname: path,
-            state: {}
-          }}
-        />
-      );
-    }
-  };
+  // const renderRedirect = user => {
   const submitForm = async e => {
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/auth/login', {
-      method: 'POST',
-      body: JSON.stringify(state),
-      headers: {
-        'content-type': 'application/json'
-      }
-    });
-    const result = await response.json();
-    if (result.token) {
-      localStorage.setItem('token', result.token);
-      window.location.reload();
-    }
+    Login(state.email, state.password);
+    // Comment: to add token
+    // const response = await fetch('http://localhost:5000/auth/login', {
+    //   method: 'POST',
+    //   body: JSON.stringify(state),
+    //   headers: {
+    //     'content-type': 'application/json'
+    //   }
+    // });
+    // const result = await response.json();
+    // if (result.token) {
+    //   localStorage.setItem('token', result.token);
+    //   window.location.reload();
+    // }
   };
   return (
     <div className="App-Container">
@@ -68,9 +79,12 @@ export default function LoginContainer() {
           onChange={updateState}
         />
         <div className="text-center">
-          <Link to="/searchprofiles">
-            <button className="LoginButton btn btn-light mb-4">Login</button>
-          </Link>
+          {/* <Link to="/searchprofiles"> */}
+
+          <button type="submit" className="LoginButton btn btn-light mb-4">
+            Login
+          </button>
+          {/* </Link> */}
         </div>
 
         <div className="text-center signup-discover">
