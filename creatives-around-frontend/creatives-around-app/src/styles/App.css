@@ -1,5 +1,5 @@
 /* Nic was here */
-  /* Mor test */
+/* Mor test */
 .App {
   text-align: center;
 }
@@ -64,6 +64,7 @@ p.App-title {
 .SignUp {
   color: white;
 }
+
 .signup-discover {
   position: absolute;
   bottom: 0;
@@ -102,7 +103,7 @@ h3 {
   font-size: 18px;
 }
 
-/* components/SymbolsandTitles/TitleWithSymbol.js: */
+/* Navbar = TitleWithSymbol: */
 .Navbar {
   display: flex;
   width: 90vw;
@@ -127,9 +128,44 @@ h3 {
 
 .PageHeader {
   display: inline-block;
+  font-size: 1.1rem;
   margin-left: 0.4rem;
   margin-top: 0.5rem;
 }
+
+.MenuMargins {
+  padding-right: 1.5rem;
+  height: 2rem;
+  align-self: center;
+}
+
+.SettingsLink {
+  height: 2rem;
+  align-self: center;
+}
+
+.SearchSymbol {
+  width: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.MessagesSymbol {
+  width: 1.6rem;
+  /* margin-right: 1.5rem; */
+
+}
+
+.ConnectionsSymbol {
+  width: 1.8rem;
+  /* margin-right: 1.5rem; */
+
+}
+
+.SettingsSymbol {
+  width: 1.2rem;
+}
+
+
 
 /* end of TitleWithSymbols.js */
 
@@ -236,7 +272,7 @@ h3 {
   margin-bottom: 2rem;
 }
 
-div.SetupProfilePics > div.col-4 {
+div.SetupProfilePics>div.col-4 {
   display: flex;
   flex-direction: column;
 }
@@ -323,7 +359,7 @@ div.FooterContainerFour {
   margin-bottom: 2rem;
 }
 
-div.FooterContainerFour > div {
+div.FooterContainerFour>div {
   align-self: end;
   justify-self: center;
 }
@@ -336,14 +372,14 @@ form.SearchConnections {
   margin-top: 1rem;
 }
 
-form.SearchConnections > input {
+form.SearchConnections>input {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
   margin-right: 0.3rem;
 }
 
-form.SearchConnections > button {
+form.SearchConnections>button {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
@@ -363,7 +399,7 @@ div.ConnectionSingle {
   margin-bottom: 1rem;
 }
 
-div.ConnectionSingle > img {
+div.ConnectionSingle>img {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -371,11 +407,11 @@ div.ConnectionSingle > img {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 
-div.ConnectionSingle > img.OnlineConnection {
+div.ConnectionSingle>img.OnlineConnection {
   border: 3px solid white;
 }
 
-div.ConnectionSingle > p {
+div.ConnectionSingle>p {
   color: white;
   font-size: 0.7rem;
   margin: 0;
@@ -391,7 +427,7 @@ div.MenuBar {
   /* align-self: flex-end; */
 }
 
-div.MenuBar > h3 {
+div.MenuBar>h3 {
   display: inline;
 }
 
@@ -410,7 +446,7 @@ div.CoverPic {
   filter: drop-shadow(0px 0px 7px #000000);
 }
 
-div.CoverPic > img {
+div.CoverPic>img {
   width: 100%;
   margin-top: -40%;
 }
@@ -425,7 +461,7 @@ div.ProfilePic {
   filter: drop-shadow(0px -6px 14px #000000);
 }
 
-div.ProfilePic > img {
+div.ProfilePic>img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -435,22 +471,22 @@ div.FullNameUsername {
   margin-top: 0.5rem;
 }
 
-div.FullNameUsername > h4,
-div.ProfileInfoLeft > h4,
-div.ProfileInfoRight > h4 {
+div.FullNameUsername>h4,
+div.ProfileInfoLeft>h4,
+div.ProfileInfoRight>h4 {
   color: white;
   font-size: 0.9rem;
 }
 
-div.FullNameUsername > h5,
-div.ProfileInfoLeft > h5,
-div.ProfileInfoRight > h5 {
+div.FullNameUsername>h5,
+div.ProfileInfoLeft>h5,
+div.ProfileInfoRight>h5 {
   color: white;
   font-size: 0.7rem;
 }
 
-div.FullNameUsername > h4,
-div.FullNameUsername > h5 {
+div.FullNameUsername>h4,
+div.FullNameUsername>h5 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -489,7 +525,7 @@ p.ArtFormsText {
   padding-right: 0;
 }
 
-button.ArtFormSingle > img {
+button.ArtFormSingle>img {
   padding-left: 0.3rem;
 }
 
@@ -497,7 +533,7 @@ div.ArtFormsCollection {
   margin-top: 1rem;
 }
 
-div.ArtFormsCollection > h4 {
+div.ArtFormsCollection>h4 {
   margin-bottom: 0.5rem;
 }
 
