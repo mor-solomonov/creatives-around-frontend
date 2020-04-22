@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import AddProfilePic from '../images/graphs/add_profile_pic.svg';
@@ -12,232 +12,304 @@ import SaveText from '../images/graphs/save_text.svg';
 // ---->
 
 export default function SetupProfileContainer() {
-    const [state, setState] = React.useState({
-        displayFullName: false
-    });
+  const [state, setState] = React.useState({
+    displayFullName: false
+  });
+  const [image, setImage] = useState('');
+  const [loading, setLoading] = useState(false);
 
-//! TO BE CHECKED:
-    const updateState = (e) => {
-        console.log('VALUE', e.target.value);
-        console.log('NAME', e.target.name);
-        setState({ ...state, [e.target.name]: e.target.value });
-    }
-//! ---->
-    return (
-        <Fragment>
-            <div className='App-Container'>
-                <TitleWithSymbol title='Setup Profile' />
-                
-                {/* Needs to be connected to storage and connected to the form */}
-                {/* Container for AddProfilePic & AddCoverPic: */}
-                <div className='SetupProfilePics flex-grid'>
-                    <div className='col-4'>
-                        <p></p>
-                    </div>
-                    <div className='col-4'>
-                        <img src={AddProfilePic} alt='Add profile pic' id='AddProfilePic'/>
-                    </div>
-                    <div className='col-4'>
-                        <img src={AddCoverPic} alt='Add cover pic' id='AddCoverPic'/>
-                    </div>
-                </div>
+  const uploadImage = async e => {
+    const files = e.target.files;
+    const data = new FormData();
+    data.append('file', files[0]);
+    data.append('upload_preset', 'profilepics');
+    setLoading(true);
+    const res = await fetch(
+      'https://api.cloudinary.com/v1_1/creatives-around/image/upload',
+      {
+        method: 'POST',
+        body: data
+      }
+    );
+    const file = await res.json();
 
+    setImage(file.secure_url);
+    setLoading(false);
+  };
 
-            <form className='FormSetupProfile'>
-                
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Full Name</h4>
-                        <input
-                            className='FullName form-control mb-4'
-                            placeholder=''
-                            type='text'
-                            name='fullName'Two
+  //! TO BE CHECKED:
+  const updateState = e => {
+    console.log('VALUE', e.target.value);
+    console.log('NAME', e.target.name);
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+  //! ---->
+  return (
+    <Fragment>
+      <div className="App-Container">
+        <TitleWithSymbol title="Setup Profile" />
 
-                        />
-                        <div className="DisplayFullNameWrapper">
-                            <input type='checkbox' id='checkbox' className='CheckboxFullNameCheckbox' name='displayFullName' value={state.displayFullName} onChange={updateState} />
-                            <label className='DisplayFullName'>&nbsp; &nbsp; Display on profile</label>
-                        </div>
-                </div>
+        {/* Needs to be connected to storage and connected to the form */}
+        {/* Container for AddProfilePic & AddCoverPic: */}
+        <div className="SetupProfilePics flex-grid">
+          <div className="col-4">
+            <p></p>
+          </div>
+          <div className="col-4">
+            <input
+              type="file"
+              name="file"
+              placeholder="Upload an image"
+              onChange={uploadImage}
+            />
+            {loading ? (
+              <h3>loading...</h3>
+            ) : (
+              <img src={image} style={{ width: '300px' }} />
+            )}
 
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Username</h4>
-                        <input
-                            className='FullName form-control mb-4'
-                            placeholder=''
-                            type='text'
-                            name='username'
-                            required='true'
-                            onChange={updateState}
-                        />
-                </div>
+            <img src={AddProfilePic} alt="Add profile pic" id="AddProfilePic" />
+          </div>
+          <div className="col-4">
+            <img src={AddCoverPic} alt="Add cover pic" id="AddCoverPic" />
+          </div>
+        </div>
 
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Birthday</h4>
-                {/* Change format from 'MM/DD/YYYY' to DD/MM/YYYY: */}
-                        <input
-                            className='Birthday form-control mb-4'
-                            placeholder=''
-                            type='date'
-                            name='birthday'
-                            onChange={updateState}
-                        />
-                </div>
+        <form className="FormSetupProfile">
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Full Name</h4>
+            <input
+              className="FullName form-control mb-4"
+              placeholder=""
+              type="text"
+              name="fullName"
+              Two
+            />
+            <div className="DisplayFullNameWrapper">
+              <input
+                type="checkbox"
+                id="checkbox"
+                className="CheckboxFullNameCheckbox"
+                name="displayFullName"
+                value={state.displayFullName}
+                onChange={updateState}
+              />
+              <label className="DisplayFullName">
+                &nbsp; &nbsp; Display on profile
+              </label>
+            </div>
+          </div>
 
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Location</h4>
-                {/* Connect to backend and add node-geocoder + geo-distance */}
-                        <input
-                            className='Location form-control mb-4'
-                            placeholder=''
-                            type='text'
-                            name='location'
-                            onChange={updateState}
-                        />
-                </div>
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Username</h4>
+            <input
+              className="FullName form-control mb-4"
+              placeholder=""
+              type="text"
+              name="username"
+              required="true"
+              onChange={updateState}
+            />
+          </div>
 
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Art forms</h4>
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Birthday</h4>
+            {/* Change format from 'MM/DD/YYYY' to DD/MM/YYYY: */}
+            <input
+              className="Birthday form-control mb-4"
+              placeholder=""
+              type="date"
+              name="birthday"
+              onChange={updateState}
+            />
+          </div>
 
-                    {/* Example of Art forms: */}
-                    <div className='ArtFormsCollection'>
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Location</h4>
+            {/* Connect to backend and add node-geocoder + geo-distance */}
+            <input
+              className="Location form-control mb-4"
+              placeholder=""
+              type="text"
+              name="location"
+              onChange={updateState}
+            />
+          </div>
 
-                        <div className='ArtFormSingle'>
-                            <p className='ArtFormsText'>
-                                Water Color
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Art forms</h4>
 
-                        <div className='ArtFormSingle'>
-                            <p className='ArtFormsText'>
-                                Photography
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
-                
-                        <div className='ArtFormSingle'>
-                            <p className='ArtFormsText'>
-                                Acrylic
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
+            {/* Example of Art forms: */}
+            <div className="ArtFormsCollection">
+              <div className="ArtFormSingle">
+                <p className="ArtFormsText">
+                  Water Color
+                  <img
+                    src={RemoveWhiteCircle}
+                    alt="Add profile pic"
+                    className="RemoveArtForm"
+                  />
+                </p>
+              </div>
 
-                        <div className='ArtFormSingle'>
-                            <p className='ArtFormsText'>
-                                Sculpture
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
+              <div className="ArtFormSingle">
+                <p className="ArtFormsText">
+                  Photography
+                  <img
+                    src={RemoveWhiteCircle}
+                    alt="Add profile pic"
+                    className="RemoveArtForm"
+                  />
+                </p>
+              </div>
 
-                        <div className='ArtFormSingle'>
-                            <p className='ArtFormsText'>
-                                Digital Art
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
+              <div className="ArtFormSingle">
+                <p className="ArtFormsText">
+                  Acrylic
+                  <img
+                    src={RemoveWhiteCircle}
+                    alt="Add profile pic"
+                    className="RemoveArtForm"
+                  />
+                </p>
+              </div>
 
-                    </div>
+              <div className="ArtFormSingle">
+                <p className="ArtFormsText">
+                  Sculpture
+                  <img
+                    src={RemoveWhiteCircle}
+                    alt="Add profile pic"
+                    className="RemoveArtForm"
+                  />
+                </p>
+              </div>
 
-                    {/* Create a plus sign and add */}
-                    <button>ADD ART FORM</button>
-                    {/* ---> */}
-
-                </div>
-                    {/* ---> End example art forms */}
-
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Gallery</h4>
-                {/* Insert real gallery */}
-                        <div className="tempGallery" />
-                </div>
-
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Bio (optional)</h4>
-                        <input
-                            className='Bio form-control mb-4'
-                            placeholder=''
-                            type='text'
-                            name='bio'
-                            onChange={updateState}
-                        />
-                </div>
-
-                <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>I am looking for (optional)</h4>
-                        <input
-                            className='LookingFor form-control mb-4'
-                            placeholder=''
-                            type='text'
-                            name='lookingFor'
-                            onChange={updateState}
-                        />
-
-                        
-                </div>
-
-                    {/* Example of Art forms (Looking for): */}
-                    <div className='ArtFormsLookingForCollection'>
-
-                        <div className='ArtFormLookingForSingle'>
-                            <p className='ArtFormsText'>
-                                Water Color
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
-
-                        <div className='ArtFormLookingForSingle'>
-                            <p className='ArtFormsText'>
-                                Photography
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
-                
-                        <div className='ArtFormLookingForSingle'>
-                            <p className='ArtFormsText'>
-                                Acrylic
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
-
-                        <div className='ArtFormLookingForSingle'>
-                            <p className='ArtFormsText'>
-                                Sculpture
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
-
-                        <div className='ArtFormLookingForSingle'>
-                            <p className='ArtFormsText'>
-                                Digital Art
-                                <img src={RemoveWhiteCircle} alt='Add profile pic' className='RemoveArtForm'/>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    {/* Create a plus sign and add */}
-                    <button>ADD ART FORM</button>
-                    {/* ---> */}
-                    {/* ---> End example art forms (looking for) */}
-
-
-                    {/* Links: */}
-                    {/* Needs: remove-link, add-link and so on... */}
-                    <div className='FormFieldSetupProfile'>
-                    <h4 className='FormHeader'>Website</h4>
-                        <input
-                            className='MyLink form-control mb-4'
-                            placeholder=''
-                            type='text'
-                            name='myLink'
-                            onChange={updateState}
-                        />
-                </div>
+              <div className="ArtFormSingle">
+                <p className="ArtFormsText">
+                  Digital Art
+                  <img
+                    src={RemoveWhiteCircle}
+                    alt="Add profile pic"
+                    className="RemoveArtForm"
+                  />
+                </p>
+              </div>
+            </div>
 
             {/* Create a plus sign and add */}
             <button>ADD ART FORM</button>
             {/* ---> */}
+          </div>
+          {/* ---> End example art forms */}
+
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Gallery</h4>
+            {/* Insert real gallery */}
+            <div className="tempGallery" />
+          </div>
+
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Bio (optional)</h4>
+            <input
+              className="Bio form-control mb-4"
+              placeholder=""
+              type="text"
+              name="bio"
+              onChange={updateState}
+            />
+          </div>
+
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">I am looking for (optional)</h4>
+            <input
+              className="LookingFor form-control mb-4"
+              placeholder=""
+              type="text"
+              name="lookingFor"
+              onChange={updateState}
+            />
+          </div>
+
+          {/* Example of Art forms (Looking for): */}
+          <div className="ArtFormsLookingForCollection">
+            <div className="ArtFormLookingForSingle">
+              <p className="ArtFormsText">
+                Water Color
+                <img
+                  src={RemoveWhiteCircle}
+                  alt="Add profile pic"
+                  className="RemoveArtForm"
+                />
+              </p>
+            </div>
+
+            <div className="ArtFormLookingForSingle">
+              <p className="ArtFormsText">
+                Photography
+                <img
+                  src={RemoveWhiteCircle}
+                  alt="Add profile pic"
+                  className="RemoveArtForm"
+                />
+              </p>
+            </div>
+
+            <div className="ArtFormLookingForSingle">
+              <p className="ArtFormsText">
+                Acrylic
+                <img
+                  src={RemoveWhiteCircle}
+                  alt="Add profile pic"
+                  className="RemoveArtForm"
+                />
+              </p>
+            </div>
+
+            <div className="ArtFormLookingForSingle">
+              <p className="ArtFormsText">
+                Sculpture
+                <img
+                  src={RemoveWhiteCircle}
+                  alt="Add profile pic"
+                  className="RemoveArtForm"
+                />
+              </p>
+            </div>
+
+            <div className="ArtFormLookingForSingle">
+              <p className="ArtFormsText">
+                Digital Art
+                <img
+                  src={RemoveWhiteCircle}
+                  alt="Add profile pic"
+                  className="RemoveArtForm"
+                />
+              </p>
+            </div>
+          </div>
+
+          {/* Create a plus sign and add */}
+          <button>ADD ART FORM</button>
+          {/* ---> */}
+          {/* ---> End example art forms (looking for) */}
+
+          {/* Links: */}
+          {/* Needs: remove-link, add-link and so on... */}
+          <div className="FormFieldSetupProfile">
+            <h4 className="FormHeader">Website</h4>
+            <input
+              className="MyLink form-control mb-4"
+              placeholder=""
+              type="text"
+              name="myLink"
+              onChange={updateState}
+            />
+          </div>
+
+          {/* Create a plus sign and add */}
+          <button>ADD ART FORM</button>
+          {/* ---> */}
           {/* </div> */}
           {/* ---> End example art forms */}
 
