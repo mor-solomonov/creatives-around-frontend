@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, HashRouter, withRouter } from 'react-router-dom';
 import LoginPage from './components/LoginContainer';
 import SignUpContainer from './components/SignUpContainer';
 import TermsAndConditions from './components/TermsContainer';
@@ -51,7 +51,7 @@ function App(props) {
   }, []);
   return (
     <div className="App">
-      <Switch>
+      <HashRouter>
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/signup" component={SignUpContainer} />
         <Route
@@ -91,7 +91,7 @@ function App(props) {
           component={AnotherUserGallery}
         />
         <Route exact path="/activationkeysent" component={ActivationKeySent} />
-      </Switch>
+      </HashRouter>
     </div>
   );
 }
