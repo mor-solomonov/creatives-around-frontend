@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 const DataContext = createContext();
-export const DataProvider = (props) => {
+export const DataProvider = props => {
   let [isLoggedIn, setIsLoggedIn] = useState(false);
   let [loggedInUser, setLoggedInUser] = useState(null);
   let [profiles, setProfiles] = useState([
@@ -8,10 +8,29 @@ export const DataProvider = (props) => {
       userId: 1,
       email: 'mor.solomonov@gmail.com',
       name: 'Mor',
+      username: 'mor',
       birthday: '1984-01-01',
+      age: '35',
       location: 'Berlin',
+      artForms: [
+        'Water Color',
+        'Photography',
+        'Acrylic',
+        'Sculpture',
+        'Digital Art'
+      ],
+      bio: 'My name is...',
+      searchingArtForms: [
+        'Water Color',
+        'Photography',
+        'Acrylic',
+        'Sculpture',
+        'Digital Art'
+      ],
+      links: [{ name: 'Test', url: 'http://test.me' }],
+      events: [{ name: 'Test', date: '18-10-2020' }],
       district: 'T-hof',
-      messages: [{ msg: 'Hello', fromUser: 'Rob' }],
+      messages: [{ msg: 'Hello', fromUser: 'Rob' }]
     },
     {
       userId: 2,
@@ -19,7 +38,7 @@ export const DataProvider = (props) => {
       name: 'Nic',
       birthday: '1986-01-01',
       location: 'Berlin',
-      district: 'F-Hain',
+      district: 'F-Hain'
     },
     {
       userId: 3,
@@ -27,12 +46,12 @@ export const DataProvider = (props) => {
       email: 'rob@gmail.com',
       birthday: '1983-01-01',
       location: 'Berlin',
-      district: 'Wedding',
-    },
+      district: 'Wedding'
+    }
   ]);
 
   const Login = (email, password) => {
-    let userFound = profiles.find((profile) => profile.email == email);
+    let userFound = profiles.find(profile => profile.email == email);
     console.log(userFound);
     if (userFound) {
       setIsLoggedIn(true);
@@ -45,11 +64,11 @@ export const DataProvider = (props) => {
     let profileFieldsKeys = Object.keys(profileFields);
 
     let profilesCopy = [...profiles];
-    let profileFound = profilesCopy.find((profile) => {
+    let profileFound = profilesCopy.find(profile => {
       return profile.userId == userId;
     });
 
-    profileFieldsKeys.forEach((key) => {
+    profileFieldsKeys.forEach(key => {
       profileFound[key] = profileFields[key];
     });
     console.log(profilesCopy);
@@ -69,7 +88,7 @@ export const DataProvider = (props) => {
         profiles,
         setProfiles,
         Login,
-        UpdateProfile,
+        UpdateProfile
       }}
     >
       {props.children}
