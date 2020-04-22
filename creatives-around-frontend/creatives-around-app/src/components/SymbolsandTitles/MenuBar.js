@@ -4,29 +4,39 @@ import '../../styles/App.css';
 // Graphics:
 import SettingsSymbol from '../../images/graphs/menu_bars.svg';
 import ConnectionsSymbol from '../../images/graphs/connections.svg';
+import MessagesSymbol from '../../images/graphs/envelope.svg';
+import SearchSymbol from '../../images/graphs/search.svg';
 
 const MenuBar = () => {
   return (
     <div className="MenuBar">
-      {/* <Link to="/searchprofiles">
-                <img className="SearchSymbol" src={SearchSymbol} alt="SearchSymbol" />
-            </Link> */}
-
-      {/* <Link to="/messages">
-                <img className="MessagesSymbol" src={MessagesSymbol} alt="MessagesSymbol" />
-            </Link> */}
-
-      <Link to="/connections">
+      <Link to="/searchprofiles" className="MenuMargins">
         <img
-          className="ConnectionsSymbol"
+          className="SearchSymbol MenuIcon"
+          src={SearchSymbol}
+          alt="SearchSymbol"
+        />
+      </Link>
+
+      <Link to="/messages" className="MenuMargins">
+        <img
+          className="MessagesSymbol MenuIcon"
+          src={MessagesSymbol}
+          alt="MessagesSymbol"
+        />
+      </Link>
+
+      <Link to="/connections" className="MenuMargins">
+        <img
+          className="ConnectionsSymbol MenuIcon"
           src={ConnectionsSymbol}
           alt="ConnectionsSymbol"
         />
       </Link>
 
-      <Link to="/settings">
+      <Link to="/settings" className="SettingsLink">
         <img
-          className="SettingsSymbols"
+          className="SettingsSymbol MenuIcon"
           src={SettingsSymbol}
           alt="SettingsSymbol"
         />
