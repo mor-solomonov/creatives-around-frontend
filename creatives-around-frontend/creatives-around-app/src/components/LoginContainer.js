@@ -51,8 +51,8 @@ export default function LoginContainer() {
   return (
     <div className="App-Container">
       <Logo />
-      <DisplayTitle title="Login" />
-      <form onSubmit={submitForm}>
+      <form onSubmit={submitForm} className="LoginForm">
+        <DisplayTitle title="Login" className="LoginHeader" />
         <input
           className="Email form-control mb-4"
           placeholder="Email:"
@@ -69,7 +69,7 @@ export default function LoginContainer() {
         />
         <div className="text-center">
           <Link to="/searchprofiles">
-            <button className="LoginButton btn btn-light mb-4">Login</button>
+            <button className="LoginButton mb-4">Login</button>
           </Link>
         </div>
 
