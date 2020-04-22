@@ -18,7 +18,7 @@ export default function LoginContainer(props) {
 
     return (
         <div className="App-Container">
-            <TitleWithSymbol title="Terms and Conditions" />
+            <TitleWithSymbol title="T&C" />
             <Logo />
             <button onClick={backClick}>
                 Go Back

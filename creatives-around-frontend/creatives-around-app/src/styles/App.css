@@ -32,6 +32,20 @@
   align-items: center;
 }
 
+a {
+  color: white;
+}
+
+a.TermsAndConditions {
+  font-weight: 700;
+}
+
+.form-control {
+  display: inline-block !important;
+}
+
+/* END OF GLOBAL (note for cleanup) */
+
 p.App-title {
   color: white;
   text-align: center;
@@ -80,6 +94,15 @@ p.App-title {
   position: absolute;
   bottom: 0;
 }
+
+/* SIGNUP: */
+
+.Email.form-control,
+.Password.form-control {
+  width: auto;
+}
+
+/* */
 
 .Agree {
   color: white;

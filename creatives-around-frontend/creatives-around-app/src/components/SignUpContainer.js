@@ -65,21 +65,26 @@ function SignUpContainer(props) {
           onChange={updateState}
         />
 
-        <input
-          id="checkbox"
-          type="checkbox"
-          name="terms"
-          value={state.terms}
-          onChange={updateState}
-        />
-        <label className="Agree">&nbsp; &nbsp;I agree to the</label>
-        <Link to="/termsandconditions">&nbsp;terms and conditions</Link>
-
+        <label className="Agree">
+          <input
+            id="checkbox"
+            type="checkbox"
+            name="terms"
+            value={state.terms}
+            onChange={updateState}
+          />
+          &nbsp; &nbsp;I agree to the
+        </label>
+        <Link to="/termsandconditions" className="TermsAndConditions">
+          &nbsp;terms and conditions
+        </Link>
+        <br />
         <Link to="/activationkeysent">
-          <button type="submit" className="LoginButton btn btn-light mb-4">
+          <button type="submit" className="LoginButton mb-4">
             Sign up
           </button>
         </Link>
+        <br />
         <Link to="/">
           <GoBackButton />
           {/* ASK KAROL ABOUT! */}
@@ -90,8 +95,4 @@ function SignUpContainer(props) {
   );
 }
 
-// </form>
-//         </div>
-//     )
-// }
 export default withRouter(SignUpContainer);
