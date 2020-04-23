@@ -72,14 +72,17 @@ export default function LoginContainer() {
             <button className="LoginButton mb-4">Login</button>
           </Link>
         </div>
-
-        <div className="text-center signup-discover">
+      </form>
+      <div className="text-center signup-discover">
+        <div className="signup-footer">
           <p className="SignUp">
             Not a member yet? &nbsp;
             <Link to="/signup">
               <button>Sign up</button>
             </Link>
           </p>
+        </div>
+        <div className="signup-footer">
           <p className="login-about-us-button">
             Discover{' '}
             <Link className="login-about-us-button" to="/aboutus">
@@ -88,7 +91,7 @@ export default function LoginContainer() {
             more about us
           </p>
         </div>
-      </form>
+      </div>
     </div>
   );
 }
