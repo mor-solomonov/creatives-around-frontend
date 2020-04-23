@@ -91,7 +91,6 @@ export default function LoginContainer() {
             more about us
 
           </p>
-          </div>
         </div>
       </div>
     </div>
