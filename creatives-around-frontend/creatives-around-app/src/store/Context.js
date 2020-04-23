@@ -7,11 +7,15 @@ export const DataProvider = props => {
     {
       userId: 1,
       email: 'mor.solomonov@gmail.com',
-      name: 'Mor',
+      name: 'Kaiser Strasse Hamburg',
       username: 'mor',
       birthday: '1984-01-01',
       age: '35',
-      location: 'Berlin',
+      location: 'Sweden',
+      geolocation: {
+        latitude: 53.49651,
+        longitude: 10.2103
+      },
       artForms: [
         'Water Color',
         'Photography',
@@ -35,20 +39,66 @@ export const DataProvider = props => {
     {
       userId: 2,
       email: 'nic@gmail.com',
-      name: 'Nic',
+      name: 'Kaiserin Augusta Strasse',
       birthday: '1986-01-01',
       location: 'Berlin',
-      district: 'F-Hain'
+      district: 'F-Hain',
+      geolocation: {
+        latitude: 52.460621,
+        longitude: 13.36987
+      }
     },
     {
       userId: 3,
-      name: 'Rob',
+      name: 'Köln',
       email: 'rob@gmail.com',
       birthday: '1983-01-01',
       location: 'Berlin',
-      district: 'Wedding'
+      district: 'Wedding',
+      geolocation: {
+        latitude: 50.942584,
+        longitude: 6.955347
+      }
+    },
+    {
+      userId: 4,
+      name: 'Alexanderplatitudez',
+      email: 'rob@gmail.com',
+      birthday: '1983-01-01',
+      location: 'Berlin',
+      district: 'Wedding',
+      geolocation: {
+        latitude: 52.52127,
+        longitude: 13.41268
+      }
+    },
+    {
+      userId: 5,
+      name: 'Hasenheide',
+      email: 'rob@gmail.com',
+      birthday: '1983-01-01',
+      location: 'Berlin',
+      district: 'Hasenheide',
+      geolocation: {
+        latitude: 52.48552,
+        longitude: 13.42992
+      }
+    },
+    {
+      userId: 6,
+      name: 'Karl-Marx',
+      email: 'rob@gmail.com',
+      birthday: '1983-01-01',
+      location: 'Berlin',
+      district: 'Karl-Marx-1',
+      geolocation: {
+        latitude: 52.486347,
+        longitude: 13.424793
+      }
     }
   ]);
+
+  let [activeProfile, setActiveProfile] = useState(profiles[0]);
 
   const Login = (email, password) => {
     let userFound = profiles.find(profile => profile.email == email);
@@ -88,7 +138,8 @@ export const DataProvider = props => {
         profiles,
         setProfiles,
         Login,
-        UpdateProfile
+        UpdateProfile,
+        activeProfile
       }}
     >
       {props.children}
