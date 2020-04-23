@@ -42,23 +42,23 @@ function SignUpContainer(props) {
       <Logo />
       <DisplayTitle title="Sign up" />
 
-      <form onSubmit={registerUser}>
+      <form className="inputs-center" onSubmit={registerUser}>
         <input
-          className="Email form-control mb-4"
+          className="displayBlock Email form-control mb-4"
           placeholder="Email:"
           type="text"
           name="email"
           onChange={updateState}
         />
         <input
-          className="Password form-control mb-4"
+          className="displayBlock Password form-control mb-4"
           placeholder="Password:"
           type="text"
           name="password"
           onChange={updateState}
         />
         <input
-          className="Password form-control mb-4"
+          className="displayBlock Password form-control mb-4"
           placeholder="Confirm Password:"
           type="text"
           name="Confirm password"

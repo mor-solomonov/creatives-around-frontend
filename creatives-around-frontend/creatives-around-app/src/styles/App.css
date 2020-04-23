@@ -41,7 +41,13 @@ a.TermsAndConditions {
 }
 
 .form-control {
-  display: inline-block !important;
+  display: block !important;
+}
+
+.inputs-center {
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* END OF GLOBAL (note for cleanup) */
@@ -80,6 +86,10 @@ p.App-title {
 
 .SignUpButton {
   margin-top: 30px;
+}
+
+.displayBlock {
+  display: block;
 }
 
 .GoBackButton {
