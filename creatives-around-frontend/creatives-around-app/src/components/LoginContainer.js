@@ -69,7 +69,7 @@ export default function LoginContainer() {
         />
         <div className="text-center">
           <Link to="/searchprofiles">
-            <button className="LoginButton mb-4">Login</button>
+            <button className="LoginButton mb-4 btn btn-light">Login</button>
           </Link>
         </div>
       </form>
@@ -89,7 +89,9 @@ export default function LoginContainer() {
               <b>HERE</b>
             </Link>{' '}
             more about us
+
           </p>
+          </div>
         </div>
       </div>
     </div>
