@@ -69,24 +69,28 @@ export default function LoginContainer() {
         />
         <div className="text-center">
           <Link to="/searchprofiles">
-            <button className="LoginButton mb-4">Login</button>
+            <button className="LoginButton mb-4 btn btn-light">Login</button>
           </Link>
         </div>
 
         <div className="text-center signup-discover">
-          <p className="SignUp">
-            Not a member yet? &nbsp;
+          <div className=" divdiscover">
+            <p className="SignUp">
+              Not a member yet? &nbsp;
             <Link to="/signup">
-              <button>Sign up</button>
-            </Link>
+                <button className="btn btn-light">Sign up</button>
+              </Link>
+            </p>
+          </div>
+          <div className="divdiscover">
+            <p className="login-about-us-button">
+              Discover{' '}
+              <Link className="login-about-us-button" to="/aboutus">
+                <b>HERE</b>
+              </Link>{' '}
+              more about us
           </p>
-          <p className="login-about-us-button">
-            Discover{' '}
-            <Link className="login-about-us-button" to="/aboutus">
-              <b>HERE</b>
-            </Link>{' '}
-            more about us
-          </p>
+          </div>
         </div>
       </form>
     </div>
