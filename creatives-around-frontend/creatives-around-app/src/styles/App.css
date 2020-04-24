@@ -80,8 +80,8 @@ p.App-title {
   margin-top: 30px;
 }
 
-.LoginButton {
-  margin-top: 20px;
+.Loginbutton {
+  margin-top: 2rem;
 }
 
 .SignUpButton {
@@ -445,7 +445,7 @@ form.SearchConnections > button {
 .btn-light {
   background: linear-gradient(193deg,#24061f , #24061f, #8d6586 );
   border: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   font-family: 'Raleway';
    border-radius: 0.3rem;
@@ -454,8 +454,8 @@ form.SearchConnections > button {
 }
 
 .btn-light:hover {
-color: rgb(131, 180, 236);
-font-weight: 700;
+color: rgb(82, 173, 105);
+font-weight: 600;
 
   /* color: rgb(32, 121, 62); */
 }
@@ -635,6 +635,12 @@ div.ArtFormsCollection > h4 {
 width: 90%;
 
 }
+
+.linkStyle:hover {
+text-decoration: none;
+  color:rgb(79, 148, 114);
+}
+
 
 
 /*? MEDIA-QUERIES */
