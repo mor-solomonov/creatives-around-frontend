@@ -73,18 +73,18 @@ function SignUpContainer(props) {
             value={state.terms}
             onChange={updateState}
           />
-          &nbsp; &nbsp;I agree to the
+          &nbsp;I agree to the
         </label>
         <Link to="/termsandconditions" className="TermsAndConditions">
-          &nbsp;terms and conditions
+          terms and conditions
         </Link>
         <br />
         <Link to="/activationkeysent">
-          <button type="submit" className="LoginButton mb-4">
+          <button type="submit" className="btn btn-light">
             Sign up
           </button>
         </Link>
-        <br />
+
         <Link to="/">
           <GoBackButton />
           {/* ASK KAROL ABOUT! */}

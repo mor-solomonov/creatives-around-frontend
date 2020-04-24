@@ -39,7 +39,7 @@ const AboutUsContainer = props => {
         other visual artists.
       </p>
 
-      <button onClick={backClick}>Go Back</button>
+      <button className="btn btn-light" onClick={backClick}>Go Back</button>
     </div>
   );
 };

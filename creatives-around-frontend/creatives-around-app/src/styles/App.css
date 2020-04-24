@@ -190,7 +190,7 @@ h3 {
 }
 
 .MenuMargins {
-  padding-right: 1.5rem;
+  padding-right: 1.2rem;
   height: 2rem;
   align-self: center;
 }
@@ -431,22 +431,33 @@ form.SearchConnections > input {
   margin-right: 0.3rem;
 }
 
+
 form.SearchConnections > button {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
   font-size: 1rem;
   color: white;
+ 
 }
 
-/*  */
-button {
-  background: rgba(0, 0, 0, 0.3);
+.btn-light {
+  background: linear-gradient(193deg, rgb(147, 243, 227) , rgb(211, 161, 188), rgb(77, 33, 77));
   border: 1px solid white;
-  border-radius: 0.5rem;
+  font-weight: 800;
   font-size: 1rem;
-  color: white;
+  font-family: 'Raleway';
+   border-radius: 0.5rem;
 }
+/*  */
+/* button {
+  background: linear-gradient(193deg, rgb(97, 212, 193) , rgb(211, 161, 188), rgb(77, 33, 77));
+  border: 1px solid rgb(80, 72, 83);
+  border-radius: 0.5rem;
+  font-weight: 800;
+  font-size: 1rem;
+  color:  rgb(33, 30, 34);
+} */
 
 /*  */
 

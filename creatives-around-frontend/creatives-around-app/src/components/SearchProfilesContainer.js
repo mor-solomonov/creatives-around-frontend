@@ -7,7 +7,7 @@ export default function SearchProfilesContainer() {
         <Fragment>
             <div className="App-Container">
 
-                <TitleWithSymbol title="Search Profiles" />
+                <TitleWithSymbol title="Search" />
 
             </div>
         </Fragment>
