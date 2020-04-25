@@ -517,11 +517,22 @@ div.Message-Container > img {
 
 div.Message-Container > p {
   float: left;
+  text-align: left;
+ padding-left: 4%;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   margin: 0;
-  text-align: center;
+  font-weight: 500;
+  font-family: 'Roboto'
+  
 }
+ .Line{ border: 0.3px solid white;
+   width: 60%;
+   margin: auto;
+   /* margin-top: 5%;
+   margin-bottom: 5%;  */
+  }
+
 /* End of: SetupProfileContainer.js*/
 
 /* MenuBar: */
