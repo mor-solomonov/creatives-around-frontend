@@ -40,25 +40,26 @@ const LocationSettingsContainer = () => {
           <input
             type="range"
             id="rangeBar"
-            name="rangeBar"
+            className="mySearchRadius"
+            name="myMinSearchRadius"
             min="1"
             max="50"
-            value="1"
+            value={state.myMinSearchRadius}
             onChange={updateState}
           />
           <output type="text" id="rangeKm" name="rangeKm">
-            {state.myMinSearchRadius}
+            {state.myMinSearchRadius}km
           </output>
+          {/* 
+          <input type="range" class="custom-range" id="customRange1" /> */}
 
-          <input type="range" class="custom-range" id="customRange1" />
-
-          <Slider value={1} min={1} max={30} />
+          {/* <Slider value={1} min={1} max={30} /> */}
 
           <div className="Line"></div>
 
           <h4 className="FormHeader">Disable Location</h4>
           <label class="switch">
-            <input type="checkbox" checked />
+            <input type="checkbox" unchecked />
             <span class="slider round" />
           </label>
 
