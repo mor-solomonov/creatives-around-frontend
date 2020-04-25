@@ -283,8 +283,10 @@ h3 {
 
 .FormControlTextarea {
   color: white;
-  margin-top: 10%;
+  margin-top: 5%;
+  font-size: 0.9rem;
 }
+
 
 .MarginButtons {
   margin-top: 10%;

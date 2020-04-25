@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const DeleteAccountContainer = () => {
     return (
         <Fragment>
-            <div className="App-Container text-center">
+            <div className="App-Container ">
                 <TitleWithSymbol title="" />
                 <Logo />
 
