@@ -682,10 +682,7 @@ form.locationSettingsForm > input {
   padding-left: 10px;
 }
 
-form.locationSettingsForm > button {
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid white;
-  border-radius: 0.5rem;
+form.locationSettingsForm > output {
   font-size: 1rem;
   color: white;
 }
@@ -716,9 +713,10 @@ form.locationSettingsForm > .Line {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #85667f;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  transform: scale(0.8);
 }
 
 .slider:before {
@@ -728,13 +726,15 @@ form.locationSettingsForm > .Line {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #3b0a33;
+  /* background-color: #3b0a33; */
+  background-image: linear-gradient(195deg, #24061f, #72516c);
+
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  /* background-color: #2196f3; */
+  background-color: #ffffff;
 }
 
 input:focus + .slider {

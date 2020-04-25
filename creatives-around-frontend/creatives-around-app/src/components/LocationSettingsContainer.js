@@ -16,6 +16,15 @@ import SaveLocation from '../images/graphs/save_text.svg';
 //? HR-lines (look at messages)
 
 const LocationSettingsContainer = () => {
+  const [state, setState] = useState({
+    myMinSearchRadius: 1
+  });
+  const updateState = e => {
+    console.log('VALUE', e.target.value);
+    console.log('NAME', e.target.name);
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+
   return (
     <Fragment>
       <div className="App-Container">
@@ -34,10 +43,11 @@ const LocationSettingsContainer = () => {
             name="rangeBar"
             min="1"
             max="50"
-            oninput="rangeKm.value = rangeBar.value"
+            value="1"
+            onChange={updateState}
           />
           <output type="text" id="rangeKm" name="rangeKm">
-            1
+            {state.myMinSearchRadius}
           </output>
 
           <input type="range" class="custom-range" id="customRange1" />
@@ -55,7 +65,7 @@ const LocationSettingsContainer = () => {
           <div className="Line"></div>
           <h4 className="FormHeader">Travel Mode</h4>
           <label class="switch travelSwitch">
-            <input type="checkbox" checked />
+            <input type="checkbox" unchecked />
             <span class="slider round" />
           </label>
           <br />
