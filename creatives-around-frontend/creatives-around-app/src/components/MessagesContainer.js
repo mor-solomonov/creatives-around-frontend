@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
-import Profile1 from '../images/fake_profiles/profile_paintrbush_man.png';
+import Profile9 from '../images/fake_profiles/profile_9.png';
 import Profile2 from '../images/fake_profiles/profile_2.png';
 import Profile3 from '../images/fake_profiles/profile_3.png';
 import Profile4 from '../images/fake_profiles/profile_4.png';
 import Profile5 from '../images/fake_profiles/profile_5.png';
 import Profile6 from '../images/fake_profiles/profile_6.png';
+import { Link } from 'react-router-dom';
 
 const MessagesContainer = () => {
     return (
@@ -19,37 +20,40 @@ const MessagesContainer = () => {
                 </form>
                 <div className="Messages-Container">
                     <div className="Message-Container">
-                        <img src={Profile1} className="OnlineConnection" alt="" srcset="" />
-                        <p>Steve: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+
+                        <img src={Profile9} className="OnlineConnection" alt="" srcset="" />
+                        <p><Link to="/message"><b>Lia:&nbsp; </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</Link></p>
 
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile2} className="OnlineConnection" alt="" srcset="" />
-                        <p>Steve: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Steve:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile3} className="OnlineConnection" alt="" srcset="" />
-                        <p>Liroy: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Liroy:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
 
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile4} className="OnlineConnection" alt="" srcset="" />
-                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Max:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile5} className="OnlineConnection" alt="" srcset="" />
-                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Anja:&nbsp;</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile6} className="OnlineConnection" alt="" srcset="" />
-                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Christina:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
+
+
 
 
                 </div>

@@ -8,7 +8,7 @@ import SearchArtForms from './components/SearchArtFormsContainer';
 import SearchProfiles from './components/SearchProfilesContainer';
 import Settings from './components/SettingsContainer';
 import Connections from './components/ConnectionsContainer';
-import Chat from './components/ChatContainer';
+import Message from './components/MessageContainer';
 import LocationSettings from './components/LocationSettingsContainer';
 import Messages from './components/MessagesContainer';
 import FriendReqSent from './components/FriendReqSentContainer';
@@ -64,7 +64,7 @@ function App(props) {
         <Route exact path="/searchprofiles" component={SearchProfiles} />
         <Route exact path="/settings" component={Settings} />
         <Route exact path="/connections" component={Connections} />
-        <Route exact path="/chat" component={Chat} />
+        <Route exact path="/message" component={Message} />
         <Route exact path="/locationsettings" component={LocationSettings} />
         <Route exact path="/messages" component={Messages} />
         <Route exact path="/friendreqsent" component={FriendReqSent} />
