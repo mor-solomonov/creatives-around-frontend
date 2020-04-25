@@ -504,7 +504,9 @@ div.ConnectionSingle > p {
 
 .Message-Container{
   display: flex;
-  padding: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 div.Message-Container > img {
  
@@ -526,11 +528,11 @@ div.Message-Container > p {
   font-family: 'Roboto'
   
 }
- .Line{ border: 0.5px solid white;
+ .Line { border: 0.5px solid white;
    width: 60%;
    margin: auto;
-   /* margin-top: 5%;
-   margin-bottom: 5%;  */
+   margin-top: 5%;
+  
   }
 
 /* End of: SetupProfileContainer.js*/
