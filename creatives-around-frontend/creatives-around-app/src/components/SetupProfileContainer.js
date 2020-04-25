@@ -65,8 +65,8 @@ export default function SetupProfileContainer() {
             {loading ? (
               <h3>loading...</h3>
             ) : (
-              <img src={image} style={{ width: '300px' }} />
-            )}
+                <img src={image} style={{ width: '300px' }} />
+              )}
 
             <img src={AddProfilePic} alt="Add profile pic" id="AddProfilePic" />
           </div>
@@ -400,7 +400,7 @@ export default function SetupProfileContainer() {
           </div>
 
           {/* Create a plus sign and add */}
-          <button>ADD ART FORM</button>
+          <button className="btn btn-light">ADD ART FORM</button>
           {/* ---> */}
           {/* ---> End example art forms (looking for) */}
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
-import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 import { Link } from 'react-router-dom';
 
@@ -57,13 +56,11 @@ const SearchArtFormsContainer = (props) => {
     return (
 
         <div className="App-Container">
-            <TitleWithSymbol title="My Search Art Forms" />
+            <TitleWithSymbol title="" />
 
-            <Logo />
-            <DisplayTitle title="Select the art forms you want to search for" />
-
-            <section className='section-container'>
-                <form className='form' onSubmit={(e) => onSubmit(e)}>
+            <DisplayTitle title="Select your Search Art forms" className="myArtFormsTitle" />
+            <section className='section-container myArtFormsContainer'>
+                <form className='form myArtFormsForm' onSubmit={(e) => onSubmit(e)}>
                     <div className='checkbox-container'>
                         <input
                             className='checkbox'
@@ -183,23 +180,25 @@ const SearchArtFormsContainer = (props) => {
                         <label className='label'>Ceramics</label>
 
                     </div>
-                    <div>
-                        <div className="SubmitButtonArtForms text-center">
-                            <button onClick={backClick} className=" btn btn-light mb-4">Submit</button>
-                        </div>
-                        <div className="GoBackButtonArtForms text-center">
-                            <button onClick={backClick} className=" btn btn-light mb-4">Go Back</button>
-                        </div>
 
+                </form>
+                <div className="text-center">
+                    <div className="SubmitButtonArtForms text-center">
+                        <button onClick={backClick} className=" btn btn-light mb-4">Submit</button>
                     </div>
+                    <div className="GoBackButtonArtForms text-center">
+                        <button onClick={backClick} className=" btn btn-light mb-4">Go Back</button>
+                    </div>
+
                     <div className="text-center">
                         <p className="cannot-find-artform">Cannot find an Art Form?&nbsp;&nbsp;
                         <Link to="/contactus"><b>Write us</b> </Link></p>
                     </div>
-                </form>
+                </div>
             </section>
         </div>
     )
 
 };
+
 export default SearchArtFormsContainer;

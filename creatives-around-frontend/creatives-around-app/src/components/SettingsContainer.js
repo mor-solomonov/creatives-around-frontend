@@ -24,7 +24,8 @@ const Settings = () => {
                         <Link style={{ textDecoration: 'none' }} to="/contactus"> <img src={ContactUsImage} className="Settings-Buttons" alt="ContactUsImage" /></Link>
                     </div>
                     <div>
-                        <Link style={{ textDecoration: 'none' }} to='/deleteaccount'><img src={DeleteAccountImage} className="App-Settings-Buttons" alt="DeleteAccountImage" /></Link>
+                        <Link style={{ textDecoration: 'none' }} to='/deleteaccount'><img src={DeleteAccountImage} className="Settings-Buttons" alt="DeleteAccountImage" /></Link>
+                        <Link style={{ textDecoration: 'none' }} to='/aboutus'><img src={AboutUsImage} className="Settings-Buttons" alt="AboutUsImage" /> </Link>
 
                     </div>
 

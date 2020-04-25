@@ -10,7 +10,7 @@ const AccountDeletedContainer = () => {
                 <Logo />
                 <h3>Your account has been deleted. </h3>
                 <div className="GoBackalignBottom">
-                    <Link to='/'>  <button className="btn btn-light mb-4">Back To Login</button></Link>
+                    <Link to='/'>  <button className="btn btn-light">Back To Login</button></Link>
                 </div>
             </div>
         </Fragment>
@@ -18,4 +18,4 @@ const AccountDeletedContainer = () => {
 
 };
 
-export default AccountDeletedContainer;
+export default AccountDeletedContainer

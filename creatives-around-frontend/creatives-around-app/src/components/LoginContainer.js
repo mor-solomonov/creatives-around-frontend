@@ -51,8 +51,8 @@ export default function LoginContainer() {
   return (
     <div className="App-Container">
       <Logo />
-      <DisplayTitle title="Login" />
-      <form onSubmit={submitForm}>
+      <form onSubmit={submitForm} className="LoginForm">
+        <DisplayTitle title="Login" className="LoginHeader" />
         <input
           className="Email form-control mb-4"
           placeholder="Email:"
@@ -69,26 +69,29 @@ export default function LoginContainer() {
         />
         <div className="text-center">
           <Link to="/searchprofiles">
-            <button className="LoginButton btn btn-light mb-4">Login</button>
+            <button className="Loginbutton btn btn-light">Login</button>
           </Link>
         </div>
+      </form>
+      <div className="text-center signup-discover">
+        <div className="signup-footer">
+          <Link className="linkStyle" to="/signup">
+            <p className="SignUp">Not a member yet?&nbsp;
+            <b>Sign up</b></p>
+          </Link>
 
-        <div className="text-center signup-discover">
-          <p className="SignUp">
-            Not a member yet? &nbsp;
-            <Link to="/signup">
-              <button>Sign up</button>
-            </Link>
-          </p>
+        </div>
+        <div className="signup-footer">
           <p className="login-about-us-button">
-            Discover{' '}
-            <Link className="login-about-us-button" to="/aboutus">
-              <b>HERE</b>
-            </Link>{' '}
-            more about us
+
+            <Link className="linkStyle" to="/aboutus">
+              <p className="linkStyle">Discover more&nbsp;<b>About us</b></p>
+            </Link>
+
+
           </p>
         </div>
-      </form>
+      </div>
     </div>
   );
 }

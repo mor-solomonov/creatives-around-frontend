@@ -42,44 +42,49 @@ function SignUpContainer(props) {
       <Logo />
       <DisplayTitle title="Sign up" />
 
-      <form onSubmit={registerUser}>
+      <form className="inputs-center" onSubmit={registerUser}>
         <input
-          className="Email form-control mb-4"
+          className="displayBlock Email form-control mb-4"
           placeholder="Email:"
           type="text"
           name="email"
           onChange={updateState}
         />
         <input
-          className="Password form-control mb-4"
+          className="displayBlock Password form-control mb-4"
           placeholder="Password:"
           type="text"
           name="password"
           onChange={updateState}
         />
         <input
-          className="Password form-control mb-4"
+          className="displayBlock Password form-control mb-4"
           placeholder="Confirm Password:"
           type="text"
           name="Confirm password"
           onChange={updateState}
         />
 
-        <input
-          id="checkbox"
-          type="checkbox"
-          name="terms"
-          value={state.terms}
-          onChange={updateState}
-        />
-        <label className="Agree">&nbsp; &nbsp;I agree to the</label>
-        <Link to="/termsandconditions">&nbsp;terms and conditions</Link>
-
+        <label className="Agree">
+          <input
+            id="checkbox"
+            type="checkbox"
+            name="terms"
+            value={state.terms}
+            onChange={updateState}
+          />
+          &nbsp;I agree to the
+        </label>
+        <Link to="/termsandconditions" className="TermsAndConditions">
+          terms and conditions
+        </Link>
+        <br />
         <Link to="/activationkeysent">
-          <button type="submit" className="LoginButton btn btn-light mb-4">
+          <button type="submit" className="btn btn-light">
             Sign up
           </button>
         </Link>
+
         <Link to="/">
           <GoBackButton />
           {/* ASK KAROL ABOUT! */}
@@ -90,8 +95,4 @@ function SignUpContainer(props) {
   );
 }
 
-// </form>
-//         </div>
-//     )
-// }
 export default withRouter(SignUpContainer);
