@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
-import Logo from './SymbolsandTitles/Logo';
 import DisplayTitle from './SymbolsandTitles/DisplayTitle';
 import { Link } from 'react-router-dom';
 

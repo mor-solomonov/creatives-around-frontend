@@ -17,7 +17,13 @@ const MessagesContainer = () => {
                     <input type="text" />
                     <button>Search</button>
                 </form>
+                <div className="Messages-Container">
+                    <div className="Message-Container">
+                        <img src={Profile1} className="OnlineConnection" alt="" srcset="" />
+                        <p>Steve: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
 
+                    </div>
+                </div>
 
             </div>
         </Fragment>
