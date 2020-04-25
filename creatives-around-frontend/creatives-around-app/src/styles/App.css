@@ -45,7 +45,6 @@ a.TermsAndConditions {
 }
 
 .inputs-center {
-
   display: flex;
   flex-direction: column;
 }
@@ -432,33 +431,32 @@ form.SearchConnections > input {
   margin-right: 0.3rem;
 }
 
-
 form.SearchConnections > button {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
   font-size: 1rem;
   color: white;
- 
 }
 
 .btn-light {
-  background: linear-gradient(193deg,#24061f , #24061f, #8d6586 );
+  background: linear-gradient(193deg, #24061f, #24061f, #8d6586);
   border: none;
   font-weight: 500;
   font-size: 1rem;
   font-family: 'Raleway';
-   border-radius: 0.3rem;
-   color: white;
-   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+  border-radius: 0.3rem;
+  color: white;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 
 .btn-light:hover {
-color: rgb(82, 173, 105);
-font-weight: 600;
+  color: rgb(82, 173, 105);
+  font-weight: 600;
 
   /* color: rgb(32, 121, 62); */
 }
+
 /*  */
 /* button {
   background: linear-gradient(193deg, rgb(97, 212, 193) , rgb(211, 161, 188), rgb(77, 33, 77));
@@ -502,12 +500,12 @@ div.ConnectionSingle > p {
   text-align: center;
 }
 
-.Message-Container{
+.Message-Container {
   display: flex;
   padding: 5%;
 }
+
 div.Message-Container > img {
- 
   width: 20%;
   height: 20%;
   border-radius: 50%;
@@ -518,20 +516,21 @@ div.Message-Container > img {
 div.Message-Container > p {
   float: left;
   text-align: left;
- padding-left: 4%;
+  padding-left: 4%;
   color: white;
   font-size: 0.75rem;
   margin: 0;
   font-weight: 500;
-  font-family: 'Roboto'
-  
+  font-family: 'Roboto';
 }
- .Line{ border: 0.5px solid white;
-   width: 60%;
-   margin: auto;
-   /* margin-top: 5%;
+
+.Line {
+  border: 0.5px solid white;
+  width: 60%;
+  margin: auto;
+  /* margin-top: 5%;
    margin-bottom: 5%;  */
-  }
+}
 
 /* End of: SetupProfileContainer.js*/
 
@@ -654,25 +653,110 @@ div.ArtFormsCollection > h4 {
 
 /* End of: ViewMyProfileContainer.js: */
 
-
-
 .myArtFormsContainer {
-
   width: 85%;
   text-align: left !important;
 }
 
 .myArtFormsForm {
-width: 90%;
-
+  width: 90%;
 }
 
 .linkStyle:hover {
-text-decoration: none;
-  color:rgb(79, 148, 114);
+  text-decoration: none;
+  color: rgb(79, 148, 114);
 }
 
+/* LocationsSettings: */
 
+form.locationSettingsForm {
+  margin-top: 2rem;
+}
+
+form.locationSettingsForm > input {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin-right: 0.3rem;
+  color: white;
+  padding-left: 10px;
+}
+
+form.locationSettingsForm > button {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+form.locationSettingsForm > .Line {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #3b0a33;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  /* background-color: #2196f3; */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**/
 
 /*? MEDIA-QUERIES */
 @media only screen and (min-width: 768px) {
