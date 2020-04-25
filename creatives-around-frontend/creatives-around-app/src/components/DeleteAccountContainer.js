@@ -7,19 +7,19 @@ import { Link } from 'react-router-dom';
 const DeleteAccountContainer = () => {
     return (
         <Fragment>
-            <div className="App-Container">
-                <TitleWithSymbol title="Delete Account" />
+            <div className="App-Container ">
+                <TitleWithSymbol title="" />
                 <Logo />
 
-                <div class="form-group">
-                    <form>
+                <div className="form-group text-center">
+                    <form className='DeleteAccountform text-center'>
                         <label for="FormControlTextarea" className="FormControlTextarea">Why would you like to delete your account? (optional)</label>
-                        <textarea class="form-control DeleteAccountform" rows="4"></textarea>
+                        <textarea class="form-control " rows="4"></textarea>
                         <input id='checkbox' type='checkbox' name='deleteaccount' />
                         <label className='delete-account-checkbox'>&nbsp;Delete my account</label>
                         <div className="text-center MarginButtons">
                             <button type="submit" className="btn btn btn-light mb-4 btn-block">Delete Account</button>
-                            <Link className="text-decoration-none" to="/    settings"> <button className="DeleteAccountbtn btn btn-light mb-4 btn-block">Go Back</button></Link>
+                            <Link className="text-decoration-none" to="/settings"> <button className="DeleteAccountbtn btn btn-light mb-4 btn-block">Go Back</button></Link>
                         </div>
 
 
