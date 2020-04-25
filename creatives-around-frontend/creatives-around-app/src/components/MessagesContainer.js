@@ -20,36 +20,38 @@ const MessagesContainer = () => {
                 <div className="Messages-Container">
                     <div className="Message-Container">
                         <img src={Profile1} className="OnlineConnection" alt="" srcset="" />
-                        <p>Steve: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Steve:&nbsp; </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
 
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile2} className="OnlineConnection" alt="" srcset="" />
-                        <p>Steve: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Steve:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile3} className="OnlineConnection" alt="" srcset="" />
-                        <p>Liroy: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Liroy:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
 
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile4} className="OnlineConnection" alt="" srcset="" />
-                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Max:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile5} className="OnlineConnection" alt="" srcset="" />
-                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Anja:&nbsp;</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
                     </div>
                     <div className="Line"></div>
                     <div className="Message-Container">
                         <img src={Profile6} className="OnlineConnection" alt="" srcset="" />
-                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                        <p><b>Christina:&nbsp;</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
+
+
 
 
                 </div>
