@@ -40,7 +40,16 @@ const MessagesContainer = () => {
                         <img src={Profile4} className="OnlineConnection" alt="" srcset="" />
                         <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
                     </div>
-
+                    <div className="Line"></div>
+                    <div className="Message-Container">
+                        <img src={Profile5} className="OnlineConnection" alt="" srcset="" />
+                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                    </div>
+                    <div className="Line"></div>
+                    <div className="Message-Container">
+                        <img src={Profile6} className="OnlineConnection" alt="" srcset="" />
+                        <p>Max: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</p>
+                    </div>
 
 
                 </div>
