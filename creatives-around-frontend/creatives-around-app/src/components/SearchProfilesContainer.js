@@ -11,18 +11,14 @@ import Profile6 from '../images/fake_profiles/profile_6.png';
 import Profile10 from '../images/fake_profiles/profile_10.png';
 import Profile11 from '../images/fake_profiles/profile_11.png';
 
-
 export default function SearchProfilesContainer() {
   return (
-
     <div className="App-Container">
       <TitleWithSymbol title="Search" />
       <form action="" className="SearchConnections">
         <input type="text" />
         <button>Search</button>
       </form>
-
-
 
       <div className="Messages-Container">
         <div className="Search-Container">
@@ -327,6 +323,5 @@ export default function SearchProfilesContainer() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
