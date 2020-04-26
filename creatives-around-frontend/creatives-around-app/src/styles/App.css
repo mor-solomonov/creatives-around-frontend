@@ -494,9 +494,24 @@ div.ConnectionsContainer {
 }
 
 div.ConnectionSingle {
+  position: relative;
   width: 60%;
   justify-self: center;
   margin-bottom: 1rem;
+}
+
+div.ConnectionSingle.online::after {
+  content: ' ';
+  display: inline;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  /* background-color: rgb(10, 150, 10); */
+  background-image: linear-gradient(0deg, #0f5813, #2ed42e);
+  box-shadow: -1.5px 1px 2px rgba(0, 0, 0, 0.8);
+  top: 6%;
+  right: 3%;
 }
 
 div.ConnectionSingle > img {
@@ -505,10 +520,6 @@ div.ConnectionSingle > img {
   border-radius: 50%;
   margin-bottom: 0.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
-}
-
-div.ConnectionSingle > img.OnlineConnection {
-  border: 3px solid white;
 }
 
 div.ConnectionSingle > p {
@@ -766,8 +777,8 @@ form.locationSettingsForm > output {
 }
 
 form.locationSettingsForm > .Line {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
 }
 
@@ -778,6 +789,30 @@ form.locationSettingsForm > .Line {
 }
 
 /* switches: disable location + travel mode */
+/* h4.FormHeader.inline {
+  display: inline;
+} */
+
+.LocationFooter {
+  margin-top: 0.8rem;
+}
+
+.LocationSwitchesContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.LocationSwitch {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+h4.FormHeader.SwitchHeader {
+  display: inline;
+  margin-top: 10px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -841,6 +876,11 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+button.btn.location {
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 /**/
 
 /* SEARCH PROFILES */
