@@ -22,50 +22,51 @@ export default function SearchProfilesContainer() {
         <button>Search</button>
       </form>
 
-      <div className="Search-Container">
-        <img src={Profile3} className="OnlineConnection" alt="" srcset="" />
-        <p className="NameAge">Eitan Schur, 39</p>
-        <p className="KmAway">2 km away</p>
-        <p className="Area">Kreuzberg, Berlin</p>
-        <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
-          <button
-            type="button"
-            className="ArtFormSingle SearchArtForm btn btn-outline-light"
-          >
-            <p className="ArtFormsText">Water Color</p>
-          </button>
 
-          <button
-            type="button"
-            className="ArtFormSingle SearchArtForm btn btn-outline-light"
-          >
-            <p className="ArtFormsText">Photography</p>
-          </button>
 
-          <button
-            type="button"
-            className="ArtFormSingle SearchArtForm btn btn-outline-light"
-          >
-            <p className="ArtFormsText">Acrylic</p>
-          </button>
-
-          <button
-            type="button"
-            className="ArtFormSingle SearchArtForm btn btn-outline-light"
-          >
-            <p className="ArtFormsText">Sculpture</p>
-          </button>
-
-          <button
-            type="button"
-            className="ArtFormSingle SearchArtForm btn btn-outline-light"
-          >
-            <p className="ArtFormsText">Digital Art</p>
-          </button>
-        </div>
-      </div>
-      {/* ///////////////////////////////////////////////////////// */}
       <div className="Messages-Container">
+        <div className="Search-Container">
+          <img src={Profile3} className="OnlineConnection" alt="" srcset="" />
+          <p className="NameAge">Eitan Schur, 39</p>
+          <p className="KmAway">2 km away</p>
+          <p className="Area">Kreuzberg, Berlin</p>
+          <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
+            <button
+              type="button"
+              className="ArtFormSingle SearchArtForm btn btn-outline-light"
+            >
+              <p className="ArtFormsText">Water Color</p>
+            </button>
+
+            <button
+              type="button"
+              className="ArtFormSingle SearchArtForm btn btn-outline-light"
+            >
+              <p className="ArtFormsText">Photography</p>
+            </button>
+
+            <button
+              type="button"
+              className="ArtFormSingle SearchArtForm btn btn-outline-light"
+            >
+              <p className="ArtFormsText">Acrylic</p>
+            </button>
+
+            <button
+              type="button"
+              className="ArtFormSingle SearchArtForm btn btn-outline-light"
+            >
+              <p className="ArtFormsText">Sculpture</p>
+            </button>
+
+            <button
+              type="button"
+              className="ArtFormSingle SearchArtForm btn btn-outline-light"
+            >
+              <p className="ArtFormsText">Digital Art</p>
+            </button>
+          </div>
+        </div>
         <div className="Line"></div>
         <div className="Search-Container">
           <img src={Profile6} className="OnlineConnection" alt="" srcset="" />
