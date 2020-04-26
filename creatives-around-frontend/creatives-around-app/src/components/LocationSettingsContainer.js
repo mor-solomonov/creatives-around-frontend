@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import Slider from 'react-smooth-range-input';
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 // Graphics:

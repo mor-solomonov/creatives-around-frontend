@@ -299,8 +299,8 @@ h3 {
 
 .DeleteAccountform {
   /* border: none; */
- width: 70%;
- margin: auto;
+  width: 70%;
+  margin: auto;
 }
 
 .GoBackalignBottom {
@@ -382,6 +382,16 @@ div.ArtFormSingle {
   padding-left: 0.3rem;
 }
 
+
+div.ArtFormSingle {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+
+
 div.ArtFormLookingForSingle {
   display: flex;
   flex-direction: row;
@@ -445,20 +455,20 @@ form.SearchConnections>button {
 
 .btn-light {
 
-  background: linear-gradient(200deg,#24061f , #24061f, #8d6586 );
+  background: linear-gradient(200deg, #24061f, #24061f, #8d6586);
   border: 4px solid #24061f;
   font-weight: 500;
   font-size: 1rem;
   font-family: 'Raleway';
-   border-radius: 0.3rem;
-   color: white;
-   /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
+  border-radius: 0.3rem;
+  color: white;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .btn-light:hover {
-color: rgb(53, 212, 114);
-font-weight: 600;
-border: 4px solid #24061f;
+  color: rgb(53, 212, 114);
+  font-weight: 600;
+  border: 4px solid #24061f;
 
 
   /* color: rgb(32, 121, 62); */
@@ -533,12 +543,13 @@ div.Message-Container>p {
   font-family: 'Roboto';
 }
 
- .Line { border: 0.5px solid white;
-   width: 60%;
-   margin: auto;
-   margin-top: 5%;
-  
-  }
+.Line {
+  border: 0.5px solid white;
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+
+}
 
 /* End of: SetupProfileContainer.js*/
 
@@ -670,6 +681,10 @@ div.ArtFormsCollection>h4 {
   width: 90%;
 }
 
+.myArtFormsForm>.FormHeader {
+  margin-top: 2rem;
+}
+
 .linkStyle:hover {
   text-decoration: none;
   color: rgb(79, 148, 114);
@@ -776,6 +791,71 @@ input:checked+.slider:before {
 }
 
 /**/
+
+/* SEARCH PROFILES */
+.Search-Container {
+  display: flex;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  position: relative;
+  flex-direction: column;
+}
+
+div.Search-Container>img {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+
+
+  position: absolute;
+}
+
+div.Search-Container>p {
+  float: left;
+  text-align: left;
+  padding-left: 5.5rem;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+div.Search-Container>p.NameAge {
+  font-size: 0.9rem;
+}
+
+button.ArtFormSingle.SearchArtForm {
+  padding: 0;
+  padding-right: 0.5rem;
+  padding-bottom: 0.1rem;
+  border-radius: 2rem;
+}
+
+button.ArtFormSingle.SearchArtForm>p {
+  font-size: 0.73rem;
+}
+
+div.SearchingArtForms {
+  padding-top: 0.6rem;
+  margin-left: auto;
+  margin-top: auto;
+  width: 85%;
+
+}
+
+p.KmAway {
+  position: absolute;
+  right: 1.5rem;
+  margin-left: auto;
+}
+
+/* */
+
 
 /*? MEDIA-QUERIES */
 @media only screen and (min-width: 768px) {
