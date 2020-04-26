@@ -1,4 +1,4 @@
-/* Nic was here */
+/* Nic was here the second time */
 /* Mor test */
 .App {
   text-align: center;
@@ -381,15 +381,12 @@ div.ArtFormSingle {
   padding-left: 0.3rem;
 }
 
-
 div.ArtFormSingle {
   border: 1px solid white;
   border-radius: 1rem;
   padding-right: 0.3rem;
   padding-left: 0.3rem;
 }
-
-
 
 div.ArtFormLookingForSingle {
   display: flex;
@@ -545,7 +542,6 @@ div.Message-Container > p {
   width: 60%;
   margin: auto;
   margin-top: 5%;
-
 }
 
 /* End of: SetupProfileContainer.js*/
@@ -678,7 +674,7 @@ div.ArtFormsCollection > h4 {
   width: 90%;
 }
 
-.myArtFormsForm>.FormHeader {
+.myArtFormsForm > .FormHeader {
   margin-top: 2rem;
 }
 
@@ -800,18 +796,17 @@ input:checked + .slider:before {
   flex-direction: column;
 }
 
-div.Search-Container>img {
+div.Search-Container > img {
   width: 20%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 0.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 
-
   position: absolute;
 }
 
-div.Search-Container>p {
+div.Search-Container > p {
   float: left;
   text-align: left;
   padding-left: 5.5rem;
@@ -822,7 +817,7 @@ div.Search-Container>p {
   font-family: 'Roboto';
 }
 
-div.Search-Container>p.NameAge {
+div.Search-Container > p.NameAge {
   font-size: 0.9rem;
 }
 
@@ -833,7 +828,7 @@ button.ArtFormSingle.SearchArtForm {
   border-radius: 2rem;
 }
 
-button.ArtFormSingle.SearchArtForm>p {
+button.ArtFormSingle.SearchArtForm > p {
   font-size: 0.73rem;
 }
 
@@ -842,7 +837,6 @@ div.SearchingArtForms {
   margin-left: auto;
   margin-top: auto;
   width: 85%;
-
 }
 
 p.KmAway {
@@ -852,7 +846,6 @@ p.KmAway {
 }
 
 /* */
-
 
 /*? MEDIA-QUERIES */
 /* Iphone 6 and bigger: */
