@@ -8,6 +8,7 @@ import ContactUsImage from '../images/graphs/contact_us_box.svg';
 import { Link } from 'react-router-dom';
 import DeleteAccountImage from '../images/graphs/delete_account.svg';
 import AboutUsImage from '../images/graphs/about_us_box.svg';
+import LogOutImage from '../images/graphs/log_out.svg';
 const Settings = () => {
   return (
     <Fragment>
@@ -56,11 +57,11 @@ const Settings = () => {
                 alt="DeleteAccountImage"
               />
             </Link>
-            <Link style={{ textDecoration: 'none' }} to="/aboutus">
+            <Link style={{ textDecoration: 'none' }} to="/">
               <img
-                src={AboutUsImage}
+                src={LogOutImage}
                 className="Settings-Buttons"
-                alt="AboutUsImage"
+                alt="LogOutImage"
               />{' '}
             </Link>
           </div>
