@@ -800,12 +800,14 @@ form.locationSettingsForm > .Line {
 .LocationSwitchesContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .LocationSwitch {
-  text-align: right;
-  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-right: 0rem;
 }
 
 h4.FormHeader.SwitchHeader {
