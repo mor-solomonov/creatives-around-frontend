@@ -777,8 +777,8 @@ form.locationSettingsForm > output {
 }
 
 form.locationSettingsForm > .Line {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
 }
 
@@ -789,6 +789,30 @@ form.locationSettingsForm > .Line {
 }
 
 /* switches: disable location + travel mode */
+/* h4.FormHeader.inline {
+  display: inline;
+} */
+
+.LocationFooter {
+  margin-top: 0.8rem;
+}
+
+.LocationSwitchesContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.LocationSwitch {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+h4.FormHeader.SwitchHeader {
+  display: inline;
+  margin-top: 10px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -852,6 +876,11 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+button.btn.location {
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 /**/
 
 /* SEARCH PROFILES */
