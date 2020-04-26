@@ -381,15 +381,12 @@ div.ArtFormSingle {
   padding-left: 0.3rem;
 }
 
-
 div.ArtFormSingle {
   border: 1px solid white;
   border-radius: 1rem;
   padding-right: 0.3rem;
   padding-left: 0.3rem;
 }
-
-
 
 div.ArtFormLookingForSingle {
   display: flex;
@@ -422,6 +419,7 @@ div.FooterContainerFour {
   grid-auto-rows: 100px;
   grid-gap: 20px;
   margin-bottom: 2rem;
+  width: 70%;
 }
 
 div.FooterContainerFour > div {
@@ -453,22 +451,28 @@ form.SearchConnections > button {
 }
 
 .btn-light {
-  background: linear-gradient(200deg, #24061f, #24061f, #8d6586);
-  border: 4px solid #24061f;
+  /* background: linear-gradient(200deg, #24061f, #24061f, #8d6586);
+  border: 4px solid #24061f; */
+  background: linear-gradient(200deg, #24061f, #402449, #8d6586);
+  border: 2px solid #24061f;
   font-weight: 500;
   font-size: 1rem;
   font-family: 'Raleway';
   border-radius: 0.3rem;
   color: white;
   /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 .btn-light:hover {
-  color: rgb(53, 212, 114);
+  /* color: rgb(53, 212, 114); */
+  color: white;
+  background-color: #24061f;
   font-weight: 600;
-  border: 4px solid #24061f;
-
+  border: 2px solid #24061f;
   /* color: rgb(32, 121, 62); */
+  transition-duration: 10ms;
+  transform: scale(1.1);
 }
 
 /*  */
@@ -545,7 +549,6 @@ div.Message-Container > p {
   width: 60%;
   margin: auto;
   margin-top: 5%;
-
 }
 
 /* End of: SetupProfileContainer.js*/
@@ -637,10 +640,25 @@ div.ProfileInfoRight {
 }
 
 div.ViewProfileGallery {
-  margin-top: 1rem;
-  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+  width: 95%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+div.ViewProfileGallerySingle {
+  margin: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+.profileGalleryPic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* margin: 0.2rem; */
 }
 
 button.ArtFormSingle {
@@ -667,6 +685,42 @@ div.ArtFormsCollection > h4 {
   margin-bottom: 0.5rem;
 }
 
+.ProfileText {
+  width: 80%;
+}
+
+.ProfileTextHeader {
+  color: white;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+}
+
+/* p.ProfileTextHeader.LinkHeader {
+  margin-bottom: 2rem;
+} */
+
+p.ProfileTextInfo {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+p.ProfileTextLink {
+  color: #ffffff;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.ProfileText > .Line {
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
 /* End of: ViewMyProfileContainer.js: */
 
 .myArtFormsContainer {
@@ -678,7 +732,7 @@ div.ArtFormsCollection > h4 {
   width: 90%;
 }
 
-.myArtFormsForm>.FormHeader {
+.myArtFormsForm > .FormHeader {
   margin-top: 2rem;
 }
 
@@ -800,18 +854,17 @@ input:checked + .slider:before {
   flex-direction: column;
 }
 
-div.Search-Container>img {
+div.Search-Container > img {
   width: 20%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 0.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 
-
   position: absolute;
 }
 
-div.Search-Container>p {
+div.Search-Container > p {
   float: left;
   text-align: left;
   padding-left: 5.5rem;
@@ -822,7 +875,7 @@ div.Search-Container>p {
   font-family: 'Roboto';
 }
 
-div.Search-Container>p.NameAge {
+div.Search-Container > p.NameAge {
   font-size: 0.9rem;
 }
 
@@ -833,7 +886,18 @@ button.ArtFormSingle.SearchArtForm {
   border-radius: 2rem;
 }
 
-button.ArtFormSingle.SearchArtForm>p {
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.btn-outline-light:hover {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+.btn-outline-light:focus,
+.btn-outline-light:visited {
+  box-shadow: none;
+}
+
+button.ArtFormSingle.SearchArtForm > p {
   font-size: 0.73rem;
 }
 
@@ -842,7 +906,6 @@ div.SearchingArtForms {
   margin-left: auto;
   margin-top: auto;
   width: 85%;
-
 }
 
 p.KmAway {
@@ -852,7 +915,6 @@ p.KmAway {
 }
 
 /* */
-
 
 /*? MEDIA-QUERIES */
 /* Iphone 6 and bigger: */

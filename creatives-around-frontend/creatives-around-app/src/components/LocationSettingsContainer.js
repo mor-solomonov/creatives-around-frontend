@@ -73,7 +73,11 @@ const LocationSettingsContainer = () => {
           <img src={LocationPin} className="LocationPin" alt="" />
 
           <footer>
-            <div className="FooterContainerFour">
+            <div>
+              <button className="btn btn-light location">Go back</button>
+              <button className="btn btn-light location">Save</button>
+            </div>
+            {/* <div className="FooterContainerFour">
               <div>
                 <img src={CancelLocation} alt="Cancel" id="CancelLocation" />
               </div>
@@ -81,7 +85,7 @@ const LocationSettingsContainer = () => {
               <div>
                 <img src={SaveLocation} alt="Save" id="SaveLocation" />
               </div>
-            </div>
+            </div> */}
           </footer>
         </form>
       </div>
