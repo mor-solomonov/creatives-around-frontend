@@ -56,7 +56,7 @@ const SearchArtFormsContainer = props => {
       <TitleWithSymbol title="" />
 
       <DisplayTitle
-        title="Select your Search Art forms"
+        title="Art forms I am looking for"
         className="myArtFormsTitle"
       />
       <section className="section-container myArtFormsContainer">
@@ -171,7 +171,7 @@ const SearchArtFormsContainer = props => {
             <label className="label">Ceramics</label>
           </div>
 
-          <h4 className="FormHeader">Search all art forms</h4>
+          <h4 className="FormHeader">Select all art forms</h4>
           <label class="switch travelSwitch">
             <input type="checkbox" unchecked />
             <span class="slider round" />

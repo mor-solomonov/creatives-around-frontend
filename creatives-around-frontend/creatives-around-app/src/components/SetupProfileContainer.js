@@ -9,7 +9,14 @@ import AddTravelText from '../images/graphs/add_travel_text.svg';
 import SettingsText from '../images/graphs/settings_text.svg';
 import CancelText from '../images/graphs/cancel_text.svg';
 import SaveText from '../images/graphs/save_text.svg';
-// ---->
+// Images for Gallery example:
+import GalleryEx1 from '../images/fake_profiles/squares/3.png';
+import GalleryEx2 from '../images/fake_profiles/squares/4.png';
+import GalleryEx3 from '../images/fake_profiles/squares/5.png';
+import GalleryEx4 from '../images/fake_profiles/color-669630_960_720.jpg';
+
+// Graphics:
+import AddPicGallery from '../images/graphs/add_pic_gallery.svg';
 
 export default function SetupProfileContainer() {
   const [state, setState] = React.useState({
@@ -37,13 +44,12 @@ export default function SetupProfileContainer() {
     setLoading(false);
   };
 
-  //! TO BE CHECKED:
   const updateState = e => {
     console.log('VALUE', e.target.value);
     console.log('NAME', e.target.name);
     setState({ ...state, [e.target.name]: e.target.value });
   };
-  //! ---->
+
   return (
     <Fragment>
       <div className="App-Container">
@@ -56,7 +62,14 @@ export default function SetupProfileContainer() {
             <p></p>
           </div>
           <div className="col-4">
-            <input
+            <img src={AddProfilePic} alt="Add profile pic" id="AddProfilePic" />
+          </div>
+          <div className="col-4">
+            <img src={AddCoverPic} alt="Add cover pic" id="AddCoverPic" />
+          </div>
+        </div>
+        {/* UPLOAD IMAGE: */}
+        {/* <input
               type="file"
               name="file"
               placeholder="Upload an image"
@@ -66,14 +79,7 @@ export default function SetupProfileContainer() {
               <h3>loading...</h3>
             ) : (
               <img src={image} style={{ width: '300px' }} />
-            )}
-
-            <img src={AddProfilePic} alt="Add profile pic" id="AddProfilePic" />
-          </div>
-          <div className="col-4">
-            <img src={AddCoverPic} alt="Add cover pic" id="AddCoverPic" />
-          </div>
-        </div>
+            )} */}
 
         <form className="FormSetupProfile">
           <div className="FormFieldSetupProfile">
@@ -137,78 +143,74 @@ export default function SetupProfileContainer() {
           </div>
 
           <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">Art forms</h4>
+            <div className="ArtFormsCollection Container col-md-4 text-center">
+              <h4 className="FormHeader">Art forms</h4>
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Water Color</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
 
-            {/* Example of Art forms: */}
-            <div className="ArtFormsCollection">
-              <div className="ArtFormSingle">
-                <p className="ArtFormsText">
-                  Water Color
-                  <img
-                    src={RemoveWhiteCircle}
-                    alt="Add profile pic"
-                    className="RemoveArtForm"
-                  />
-                </p>
-              </div>
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Photography</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
 
-              <div className="ArtFormSingle">
-                <p className="ArtFormsText">
-                  Photography
-                  <img
-                    src={RemoveWhiteCircle}
-                    alt="Add profile pic"
-                    className="RemoveArtForm"
-                  />
-                </p>
-              </div>
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Acrylic</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
 
-              <div className="ArtFormSingle">
-                <p className="ArtFormsText">
-                  Acrylic
-                  <img
-                    src={RemoveWhiteCircle}
-                    alt="Add profile pic"
-                    className="RemoveArtForm"
-                  />
-                </p>
-              </div>
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Sculpture</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
 
-              <div className="ArtFormSingle">
-                <p className="ArtFormsText">
-                  Sculpture
-                  <img
-                    src={RemoveWhiteCircle}
-                    alt="Add profile pic"
-                    className="RemoveArtForm"
-                  />
-                </p>
-              </div>
-
-              <div className="ArtFormSingle">
-                <p className="ArtFormsText">
-                  Digital Art
-                  <img
-                    src={RemoveWhiteCircle}
-                    alt="Add profile pic"
-                    className="RemoveArtForm"
-                  />
-                </p>
-              </div>
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Digital Art</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
             </div>
 
             {/* Create a plus sign and add */}
-            <button className="btn btn-light">Add art forms</button>
+            <button className="btn btn-light marginTop1rem">
+              Add art forms
+            </button>
             {/* ---> */}
           </div>
           {/* ---> End example art forms */}
 
-          <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">Gallery</h4>
-            {/* Insert real gallery */}
-            <div className="tempGallery" />
+          <div className="SetupProfileGallery">
+            <div className="SetupProfileGallerySingle">
+              <img src={GalleryEx1} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="SetupProfileGallerySingle">
+              <img src={GalleryEx2} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="SetupProfileGallerySingle">
+              <img src={GalleryEx3} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="SetupProfileGallerySingle">
+              <img src={GalleryEx4} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="SetupProfileGallerySingle">
+              <img src={AddPicGallery} alt="" className="profileGalleryPic" />
+            </div>
           </div>
-
           <div className="FormFieldSetupProfile">
             <h4 className="FormHeader">Bio (optional)</h4>
             <input
@@ -231,8 +233,59 @@ export default function SetupProfileContainer() {
             />
           </div>
 
+          <div className="FormFieldSetupProfile marginTopZero">
+            <div className="ArtFormsCollection Container col-md-4 text-center">
+              <h4 className="FormHeader">Art forms I am looking for</h4>
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Water Color</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
+
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Photography</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
+
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Acrylic</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
+
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Sculpture</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
+
+              <button
+                type="button"
+                className="ArtFormSingle btn btn-outline-light"
+              >
+                <p className="ArtFormsText">Digital Art</p>
+                <img src={RemoveWhiteCircle} alt="" srcset="" />
+              </button>
+            </div>
+
+            {/* Create a plus sign and add */}
+            <button className="btn btn-light ButtonOthersArtForms">
+              Add art forms
+            </button>
+            {/* ---> */}
+          </div>
+
           {/* Example of Art forms (Looking for): */}
-          <div className="ArtFormsLookingForCollection">
+          {/* <div className="ArtFormsLookingForCollection">
             <div className="ArtFormLookingForSingle">
               <p className="ArtFormsText">
                 Water Color
@@ -289,8 +342,8 @@ export default function SetupProfileContainer() {
             </div>
           </div>
 
-          {/* Create a plus sign and add */}
-          <button>ADD ART FORM</button>
+    
+          <button className="btn btn-light">ADD ART FORM</button> */}
           {/* ---> */}
           {/* ---> End example art forms (looking for) */}
 
@@ -305,121 +358,16 @@ export default function SetupProfileContainer() {
               name="myLink"
               onChange={updateState}
             />
+            <button className="btn btn-light">Add link</button>
           </div>
 
           {/* Create a plus sign and add */}
-          <button>ADD ART FORM</button>
           {/* ---> */}
           {/* </div> */}
           {/* ---> End example art forms */}
-
-          <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">Gallery</h4>
-            {/* Insert real gallery */}
-            <div className="tempGallery" />
-          </div>
-
-          <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">Bio (optional)</h4>
-            <input
-              className="Bio form-control mb-4"
-              placeholder=""
-              type="text"
-              name="bio"
-              onChange={updateState}
-            />
-          </div>
-
-          <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">I am looking for (optional)</h4>
-            <input
-              className="LookingFor form-control mb-4"
-              placeholder=""
-              type="text"
-              name="lookingFor"
-              onChange={updateState}
-            />
-          </div>
-
-          {/* Example of Art forms (Looking for): */}
-          <div className="ArtFormsLookingForCollection">
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Water Color
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Photography
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Acrylic
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Sculpture
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Digital Art
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-          </div>
-
-          {/* Create a plus sign and add */}
-          <button className="btn btn-light">ADD ART FORM</button>
-          {/* ---> */}
-          {/* ---> End example art forms (looking for) */}
-
-          {/* Links: */}
-          {/* Needs: remove-link, add-link and so on... */}
-          <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">Website</h4>
-            <input
-              className="MyLink form-control mb-4"
-              placeholder=""
-              type="text"
-              name="myLink"
-              onChange={updateState}
-            />
-          </div>
-
           {/* Pictures needs to be made into buttons: */}
           <footer>
-            <div className="FooterContainerFour">
+            <div className="FooterContainerFour SetupFooter">
               <div>
                 <img src={AddTravelText} alt="Add Travel" id="AddTravelText" />
               </div>
