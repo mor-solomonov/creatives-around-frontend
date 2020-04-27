@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import AddProfilePic from '../images/graphs/add_profile_pic.svg';
@@ -10,7 +11,7 @@ import SettingsText from '../images/graphs/settings_text.svg';
 import CancelText from '../images/graphs/cancel_text.svg';
 import SaveText from '../images/graphs/save_text.svg';
 // Images for Gallery example:
-import GalleryEx1 from '../images/fake_profiles/squares/3.png';
+import GalleryEx1 from '../images/fake_profiles/cheltenham-4386872_1920.jpg';
 import GalleryEx2 from '../images/fake_profiles/squares/4.png';
 import GalleryEx3 from '../images/fake_profiles/squares/5.png';
 import GalleryEx4 from '../images/fake_profiles/color-669630_960_720.jpg';
@@ -284,73 +285,10 @@ export default function SetupProfileContainer() {
             {/* ---> */}
           </div>
 
-          {/* Example of Art forms (Looking for): */}
-          {/* <div className="ArtFormsLookingForCollection">
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Water Color
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Photography
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Acrylic
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Sculpture
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-
-            <div className="ArtFormLookingForSingle">
-              <p className="ArtFormsText">
-                Digital Art
-                <img
-                  src={RemoveWhiteCircle}
-                  alt="Add profile pic"
-                  className="RemoveArtForm"
-                />
-              </p>
-            </div>
-          </div>
-
-    
-          <button className="btn btn-light">ADD ART FORM</button> */}
-          {/* ---> */}
-          {/* ---> End example art forms (looking for) */}
-
           {/* Links: */}
           {/* Needs: remove-link, add-link and so on... */}
-          <div className="FormFieldSetupProfile">
-            <h4 className="FormHeader">Website</h4>
+          <div className="FormFieldSetupProfile LinksFieldMargin">
+            <h4 className="FormHeader">My links</h4>
             <input
               className="MyLink form-control mb-4"
               placeholder=""
