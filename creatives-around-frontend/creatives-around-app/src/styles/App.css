@@ -4,6 +4,7 @@
   text-align: center;
 }
 
+
 .Logo {
   display: flex;
   flex-direction: column;
@@ -48,6 +49,29 @@ a.TermsAndConditions {
   display: flex;
   flex-direction: column;
 }
+/* SCROLLBAR FIX: */
+
+/* width */
+::-webkit-scrollbar {
+width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+/* */ 
 
 /* END OF GLOBAL (note for cleanup) */
 
@@ -179,7 +203,8 @@ h3 {
   margin-right: 40px;
   margin-left: 40px;
   color: white;
-  font-size: 18px;
+  font-size: 1rem;
+  text-align: left;
 }
 
 /* Navbar = TitleWithSymbol: */
@@ -231,6 +256,30 @@ h3 {
 .MessagesSymbol {
   width: 1.6rem;
   /* margin-right: 1.5rem; */
+}
+.messageNoStyle:link {
+  text-decoration: none;
+  color:white;
+  
+  
+}
+.messageNoStyle:visited {
+  text-decoration: none;
+  color:white;
+  
+  
+}
+.messageNoStyle:hover{
+  text-decoration: none;
+  color:white;
+  
+  
+}
+.messageNoStyle:active {
+  text-decoration: none;
+  color:white;
+  
+  
 }
 
 .ConnectionsSymbol {

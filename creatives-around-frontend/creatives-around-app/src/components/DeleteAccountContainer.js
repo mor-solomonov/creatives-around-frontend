@@ -18,7 +18,7 @@ const DeleteAccountContainer = () => {
                         <input id='checkbox' type='checkbox' name='deleteaccount' />
                         <label className='delete-account-checkbox'>&nbsp;Delete my account</label>
                         <div className="text-center MarginButtons">
-                            <button type="submit" className="btn btn btn-light mb-4 btn-block">Delete Account</button>
+                            <Link to="/accountdeleted"> <button type="submit" className="btn btn btn-light mb-4 btn-block">Delete Account</button></Link>
                             <Link className="text-decoration-none" to="/settings"> <button className="DeleteAccountbtn btn btn-light mb-4 btn-block">Go Back</button></Link>
                         </div>
 

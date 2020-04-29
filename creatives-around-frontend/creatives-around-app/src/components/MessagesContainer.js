@@ -22,7 +22,7 @@ const MessagesContainer = () => {
                     <div className="Message-Container">
 
                         <img src={Profile9} className="OnlineConnection" alt="" srcset="" />
-                        <p><Link to="/message"><b>Lia:&nbsp; </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</Link></p>
+                        <p className="messageNoStyle"><Link className="messageNoStyle" to="/message"><b>Lia:&nbsp; </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab delectus ea voluptatibus sequi nobis minus consequuntur.</Link></p>
 
                     </div>
                     <div className="Line"></div>
@@ -57,7 +57,7 @@ const MessagesContainer = () => {
 
 
                 </div>
-
+                <div className="FooterMargins"></div>
             </div>
         </Fragment>
     )

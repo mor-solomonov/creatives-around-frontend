@@ -100,6 +100,7 @@ const LocationSettingsContainer = () => {
             </div> */}
           </footer>
         </form>
+        <div className="FooterMargins"></div>
       </div>
     </Fragment>
   );

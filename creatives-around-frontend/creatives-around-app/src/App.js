@@ -11,7 +11,7 @@ import Connections from './components/ConnectionsContainer';
 import Message from './components/MessageContainer';
 import LocationSettings from './components/LocationSettingsContainer';
 import Messages from './components/MessagesContainer';
-import FriendReqSent from './components/FriendReqSentContainer';
+// import FriendReqSent from './components/FriendReqSentContainer';
 import ContactUs from './components/ContactUsContainer';
 import DeleteAccount from './components/DeleteAccountContainer';
 import AccountDeleted from './components/AccoutDeletedContainer';
@@ -67,7 +67,7 @@ function App(props) {
         <Route exact path="/message" component={Message} />
         <Route exact path="/locationsettings" component={LocationSettings} />
         <Route exact path="/messages" component={Messages} />
-        <Route exact path="/friendreqsent" component={FriendReqSent} />
+        {/* <Route exact path="/friendreqsent" component={FriendReqSent} /> */}
         <Route exact path="/contactus" component={ContactUs} />
         <Route exact path="/deleteaccount" component={DeleteAccount} />
         <Route exact path="/aboutus" component={AboutUsContainer} />

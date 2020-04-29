@@ -12,26 +12,33 @@ const AboutUsContainer = props => {
       <TitleWithSymbol title="About Us" />
       <Logo />
       <br />
-      <p className="aboutus">
+      <p className="aboutus text-center">
         <b>
           Creatives Around is a location-based social platform for visual
           artists.
         </b>
-        <br />
+      </p>
+      <p className="aboutus">
+
         <br />
         The app suggests profiles based on location and art forms.
         Once connected with other users, direct messaging between the users is
         available and the users are added as friends for future updates in the
         news feed.
         <br />
+        <br />
+
         The idea of the app is to connect with other visual artists, arrange
         meetups, inspire one another by sharing creative works and ideas,
         initiate collaborations and see the activities of others.
         <br />
+        <br />
+
         Our mission is to function as a creative catalyst for visual artists, to
         hold space for creatives from various genres and skill levels and to
         connect with other creatives nearby locally or in 'travel mode' when
         abroad.
+        <br />
         <br />
         Creatives Around is a place for visual artists to get inspired from
         others in desired fields, inspire others by sharing your work, discover
@@ -40,6 +47,7 @@ const AboutUsContainer = props => {
       </p>
 
       <button className="btn btn-light" onClick={backClick}>Go Back</button>
+      <div className="FooterMargins"></div>
     </div>
   );
 };
