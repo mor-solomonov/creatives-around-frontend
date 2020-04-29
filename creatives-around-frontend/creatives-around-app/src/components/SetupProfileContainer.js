@@ -27,6 +27,8 @@ export default function SetupProfileContainer() {
   const [loading, setLoading] = useState(false);
 
   const uploadImage = async e => {
+    console.log('uploadImage shot off');
+
     const files = e.target.files;
     const data = new FormData();
     data.append('file', files[0]);
@@ -63,24 +65,32 @@ export default function SetupProfileContainer() {
             <p></p>
           </div>
           <div className="col-4">
-            <img src={AddProfilePic} alt="Add profile pic" id="AddProfilePic" />
+            <label htmlFor="upload-button">
+              <img
+                src={AddProfilePic}
+                alt="Add profile pic"
+                id="AddProfilePic"
+              />
+            </label>
           </div>
           <div className="col-4">
             <img src={AddCoverPic} alt="Add cover pic" id="AddCoverPic" />
           </div>
         </div>
         {/* UPLOAD IMAGE: */}
-        {/* <input
-              type="file"
-              name="file"
-              placeholder="Upload an image"
-              onChange={uploadImage}
-            />
-            {loading ? (
-              <h3>loading...</h3>
-            ) : (
-              <img src={image} style={{ width: '300px' }} />
-            )} */}
+        <input
+          type="file"
+          name="file"
+          id="upload-button"
+          placeholder="Upload an image"
+          style={{ display: 'none' }}
+          onChange={uploadImage}
+        />
+        {loading ? (
+          <h3>loading...</h3>
+        ) : (
+          <img src={image} style={{ width: '300px' }} />
+        )}
 
         <form className="FormSetupProfile">
           <div className="FormFieldSetupProfile">
@@ -306,9 +316,9 @@ export default function SetupProfileContainer() {
           {/* Pictures needs to be made into buttons: */}
           <footer>
             <div className="FooterContainerFour SetupFooter">
-              <div>
+              <Link to="/locationsettings">
                 <img src={AddTravelText} alt="Add Travel" id="AddTravelText" />
-              </div>
+              </Link>
 
               <div>
                 <img src={SettingsText} alt="Settings" id="SettingsText" />

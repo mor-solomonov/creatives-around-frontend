@@ -16,10 +16,14 @@ import SaveLocation from '../images/graphs/save_text.svg';
 //? Buttons footer: Cancel / Save (look at setupprofile)
 //? HR-lines (look at messages)
 
-const LocationSettingsContainer = () => {
+const LocationSettingsContainer = props => {
   const [state, setState] = useState({
     myMinSearchRadius: 1
   });
+
+  const backClick = () => {
+    props.history.go(-1);
+  };
   const updateState = e => {
     console.log('VALUE', e.target.value);
     console.log('NAME', e.target.name);
@@ -82,12 +86,12 @@ const LocationSettingsContainer = () => {
 
           <footer className="LocationFooter">
             <div>
-              <Link to="/settings">
-                <button className="btn btn-light location">Go back</button>
-              </Link>
-              <Link to="/settings">
-                <button className="btn btn-light location">Save</button>
-              </Link>
+              <button className="btn btn-light location" onClick={backClick}>
+                Go Back
+              </button>
+              <button className="btn btn-light location" onClick={backClick}>
+                Save
+              </button>
             </div>
             {/* <div className="FooterContainerFour">
               <div>
