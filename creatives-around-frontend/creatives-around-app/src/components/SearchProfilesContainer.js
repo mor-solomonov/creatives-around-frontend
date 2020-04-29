@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 export default function SearchProfilesContainer() {
   return (
     <div className="App-Container">
-      <TitleWithSymbol title="Search" />
+      <TitleWithSymbol title="Search Profiles" />
       <form action="" className="SearchConnections">
         <input type="text" />
         <button>Search</button>
