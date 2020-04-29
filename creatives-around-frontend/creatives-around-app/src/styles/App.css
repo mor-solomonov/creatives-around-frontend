@@ -49,6 +49,31 @@ a.TermsAndConditions {
   flex-direction: column;
 }
 
+/* */
+/* SCROLLBAR FIX: */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* */
+
 /* END OF GLOBAL (note for cleanup) */
 
 p.App-title {
@@ -153,6 +178,7 @@ div.FooterMargins {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
 button#marginBottomTerms {
   margin-bottom: 2rem;
 }
