@@ -883,6 +883,7 @@ form.locationSettingsForm>.Line {
   width: 100%;
 }
 
+
 /* styling my search radius:  */
 .mySearchRadius {
   display: inline-block;
@@ -1058,6 +1059,12 @@ p.KmAway {
   margin-left: auto;
 }
 
+h3.activationkeysent {
+  max-width: 80%;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* */
 
 /*? MEDIA-QUERIES */
@@ -1082,7 +1089,6 @@ p.KmAway {
     align-self: center;
   }
 }
-
 
 
 /* Laptop */

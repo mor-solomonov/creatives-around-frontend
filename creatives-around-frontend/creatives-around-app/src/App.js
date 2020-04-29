@@ -17,7 +17,7 @@ import DeleteAccount from './components/DeleteAccountContainer';
 import AccountDeleted from './components/AccoutDeletedContainer';
 import ViewMyProfileContainer from './components/ViewMyProfileContainer';
 import MyArtForms from './components/MyArtFormsContainer';
-import MustHavaAProfileContainer from './components/MustHaveAProfileContainer';
+// import MustHavaAProfileContainer from './components/MustHaveAProfileContainer';
 import MyGallery from './components/MyGalleryContainer';
 import AnotherUserGallery from './components/AnotherUserGalleryContainer';
 import ActivationKeySent from './components/ActivationKeySentContainer';
@@ -79,11 +79,11 @@ function App(props) {
           path="/profileofanotheruser"
           component={ProfileOfAnotherUserContainer}
         />
-        <Route
+        {/* <Route
           exact
           path="/youneedtohaveaprofile"
           component={MustHavaAProfileContainer}
-        />
+        /> */}
         <Route exact path="/mygallery" component={MyGallery} />
         <Route
           exact
