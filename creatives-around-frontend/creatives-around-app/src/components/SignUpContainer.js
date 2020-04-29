@@ -94,7 +94,7 @@ function SignUpContainer(props) {
           {/* ASK KAROL ABOUT! */}
           {success && <p>Thank you for registration</p>}
         </Link>
-        <div className="signUpFooterMargins"></div>
+        <div className="FooterMargins"></div>
       </form>
     </div>
   );

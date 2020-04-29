@@ -118,7 +118,7 @@ p.App-title {
   width: auto;
 }
 
-.signupFooterMargins {
+.FooterMargins {
   flex-direction: row;
 }
 
@@ -138,11 +138,13 @@ div.signUpFooterMargins {
 }
 
 .terms {
+  font-size: 0.85rem;
   color: white;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
   margin-top: 20px;
+  text-align: left;
 }
 
 .TermsTitle {
@@ -150,6 +152,13 @@ div.signUpFooterMargins {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+button#marginBottomTerms {
+  margin-bottom: 2rem;
+}
+
+#buttonTerms {
+  margin-top: 2rem;
 }
 
 h3 {
