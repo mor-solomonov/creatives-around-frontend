@@ -764,7 +764,7 @@ p.ProfileTextLink {
 
 .linkStyle:hover {
   text-decoration: none;
-  color: rgb(79, 148, 114);
+  color: white;
 }
 
 /* LocationsSettings: */
@@ -996,6 +996,8 @@ p.KmAway {
     align-self: center;
   }
 }
+
+
 
 /* Laptop */
 @media only screen and (min-width: 768px) {
