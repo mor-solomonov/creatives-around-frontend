@@ -324,6 +324,7 @@ export default function SearchProfilesContainer() {
               <p className="ArtFormsText">Digital Art</p>
             </button>
           </div>
+          <div className="FooterMargins"></div>
         </div>
       </div>
     </div >
