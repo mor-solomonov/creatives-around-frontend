@@ -118,6 +118,19 @@ p.App-title {
   width: auto;
 }
 
+.signupFooterMargins {
+  flex-direction: row;
+}
+
+button#SignUp {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+div.signUpFooterMargins {
+  height: 2rem;
+}
+
 /* */
 
 .Agree {

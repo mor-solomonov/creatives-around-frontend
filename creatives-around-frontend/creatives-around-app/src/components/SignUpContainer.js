@@ -78,18 +78,23 @@ function SignUpContainer(props) {
         <Link to="/termsandconditions" className="TermsAndConditions">
           terms and conditions
         </Link>
-        <br />
+
         <Link to="/activationkeysent">
-          <button type="submit" className="btn btn-light">
+          <button
+            type="submit"
+            id="SignUp"
+            className="btn btn-light signupMarginTop"
+          >
             Sign up
           </button>
         </Link>
 
         <Link to="/">
-          <GoBackButton />
+          <GoBackButton className="signupMarginBottom" id="SignUpGoBack" />
           {/* ASK KAROL ABOUT! */}
           {success && <p>Thank you for registration</p>}
         </Link>
+        <div className="signUpFooterMargins"></div>
       </form>
     </div>
   );
