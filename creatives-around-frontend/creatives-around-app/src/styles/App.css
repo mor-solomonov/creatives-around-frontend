@@ -379,10 +379,25 @@ h3 {
   margin-bottom: 1rem;
 }
 
-div.SetupProfilePics > div.col-4 {
+div.SetupProfilePics>div.col-4 {
   display: flex;
   flex-direction: column;
 }
+
+#AddConnection {
+  position: absolute;
+  margin-top: 2rem;
+  right: 3rem;
+  left: auto;
+  height: 2rem;
+}
+
+#otherProfileLinks {
+  margin-bottom: 2rem;
+}
+
+
+
 
 form.FormSetupProfile {
   max-width: 80vw;
@@ -426,7 +441,7 @@ div.ArtFormsLookingForCollection {
   flex-direction: column;
 }
 
-div.ArtFormsCollection > h4.FormHeader {
+div.ArtFormsCollection>h4.FormHeader {
   margin-top: 0rem;
 }
 
@@ -484,7 +499,7 @@ div.FooterContainerFour {
   margin-top: 2rem;
 }
 
-div.FooterContainerFour > a {
+div.FooterContainerFour>a {
   align-self: end;
   justify-self: center;
 }
@@ -494,8 +509,7 @@ div#viewProfileGallery {
   margin-bottom: 0.5rem;
 }
 
-div#viewProfileFooter {
-}
+div#viewProfileFooter {}
 
 /* end of SetupProfilePics.js */
 
@@ -505,14 +519,14 @@ form.SearchConnections {
   margin-top: 1rem;
 }
 
-form.SearchConnections > input {
+form.SearchConnections>input {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
   margin-right: 0.3rem;
 }
 
-form.SearchConnections > button {
+form.SearchConnections>button {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
@@ -584,7 +598,7 @@ div.ConnectionSingle.online::after {
   right: 3%;
 }
 
-div.ConnectionSingle > img {
+div.ConnectionSingle>img {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -592,7 +606,7 @@ div.ConnectionSingle > img {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 
-div.ConnectionSingle > p {
+div.ConnectionSingle>p {
   color: white;
   font-size: 0.7rem;
   margin: 0;
@@ -606,15 +620,18 @@ div.ConnectionSingle > p {
   padding-right: 5%;
 }
 
-div.Message-Container > img {
+
+div.Message-Container>img {
   width: 20%;
   height: 20%;
   border-radius: 50%;
   margin-bottom: 0.2rem;
+  margin-left: 0.2rem;
+  margin-right: -0.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 
-div.Message-Container > p {
+div.Message-Container>p {
   float: left;
   text-align: left;
   padding-left: 4%;
@@ -623,6 +640,27 @@ div.Message-Container > p {
   margin: 0;
   font-weight: 500;
   font-family: 'Roboto';
+}
+
+#WriteSend {
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#WriteMessage {
+  display: inline !important;
+  width: 75%;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#SendMessage {
+  /* padding: 0; */
+  margin: 0 0 0 1rem;
 }
 
 .Line {
@@ -641,7 +679,7 @@ div.MenuBar {
   /* align-self: flex-end; */
 }
 
-div.MenuBar > h3 {
+div.MenuBar>h3 {
   display: inline;
 }
 
@@ -660,7 +698,7 @@ div.CoverPic {
   filter: drop-shadow(0px 0px 7px #000000);
 }
 
-div.CoverPic > img {
+div.CoverPic>img {
   width: 100%;
   margin-top: -40%;
 }
@@ -675,7 +713,7 @@ div.ProfilePic {
   filter: drop-shadow(0px -6px 14px #000000);
 }
 
-div.ProfilePic > img {
+div.ProfilePic>img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -685,22 +723,22 @@ div.FullNameUsername {
   margin-top: 0.5rem;
 }
 
-div.FullNameUsername > h4,
-div.ProfileInfoLeft > h4,
-div.ProfileInfoRight > h4 {
+div.FullNameUsername>h4,
+div.ProfileInfoLeft>h4,
+div.ProfileInfoRight>h4 {
   color: white;
   font-size: 0.9rem;
 }
 
-div.FullNameUsername > h5,
-div.ProfileInfoLeft > h5,
-div.ProfileInfoRight > h5 {
+div.FullNameUsername>h5,
+div.ProfileInfoLeft>h5,
+div.ProfileInfoRight>h5 {
   color: white;
   font-size: 0.7rem;
 }
 
-div.FullNameUsername > h4,
-div.FullNameUsername > h5 {
+div.FullNameUsername>h4,
+div.FullNameUsername>h5 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -720,8 +758,7 @@ div.ProfileInfoRight {
   /* border: 1px solid white; */
 }
 
-div.FormFieldSetupProfile > h4.GalleryHeader {
-}
+div.FormFieldSetupProfile>h4.GalleryHeader {}
 
 div.ViewProfileGallery {
   margin-top: 0rem;
@@ -764,7 +801,7 @@ p.ArtFormsText {
   padding-right: 0;
 }
 
-button.ArtFormSingle > img {
+button.ArtFormSingle>img {
   padding-left: 0.3rem;
 }
 
@@ -772,7 +809,7 @@ div.ArtFormsCollection {
   margin-top: 1rem;
 }
 
-div.ArtFormsCollection > h4 {
+div.ArtFormsCollection>h4 {
   margin-bottom: 0.5rem;
 }
 
@@ -807,7 +844,7 @@ p.ProfileTextLink {
   margin-top: 0rem;
 }
 
-.ProfileText > .Line {
+.ProfileText>.Line {
   width: 90%;
   margin-bottom: 1.5rem;
 }
@@ -823,7 +860,7 @@ p.ProfileTextLink {
   width: 90%;
 }
 
-.myArtFormsForm > .FormHeader {
+.myArtFormsForm>.FormHeader {
   margin-top: 2rem;
 }
 
@@ -854,7 +891,7 @@ form.locationSettingsForm {
   margin-top: 2rem;
 }
 
-form.locationSettingsForm > input {
+form.locationSettingsForm>input {
   background: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 0.5rem;
@@ -863,16 +900,16 @@ form.locationSettingsForm > input {
   padding-left: 10px;
 }
 
-form.locationSettingsForm > input:focus {
+form.locationSettingsForm>input:focus {
   outline: none;
 }
 
-form.locationSettingsForm > output {
+form.locationSettingsForm>output {
   font-size: 1rem;
   color: white;
 }
 
-form.locationSettingsForm > .Line {
+form.locationSettingsForm>.Line {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -951,15 +988,15 @@ h4.FormHeader.SwitchHeader {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #ffffff;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   /* box-shadow: 0 0 1px #2196f3; */
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -993,7 +1030,7 @@ button.btn.location {
   flex-direction: column;
 }
 
-div.Search-Container > img {
+div.Search-Container>img {
   width: 20%;
   height: auto;
   border-radius: 50%;
@@ -1003,7 +1040,7 @@ div.Search-Container > img {
   position: absolute;
 }
 
-div.Search-Container > p {
+div.Search-Container>p {
   float: left;
   text-align: left;
   padding-left: 5.5rem;
@@ -1014,7 +1051,7 @@ div.Search-Container > p {
   font-family: 'Roboto';
 }
 
-div.Search-Container > p.NameAge {
+div.Search-Container>p.NameAge {
   font-size: 0.9rem;
 }
 
@@ -1036,7 +1073,7 @@ button.ArtFormSingle.SearchArtForm {
   box-shadow: none;
 }
 
-button.ArtFormSingle.SearchArtForm > p {
+button.ArtFormSingle.SearchArtForm>p {
   font-size: 0.73rem;
 }
 
@@ -1086,6 +1123,7 @@ h3.activationkeysent {
 
 /* Laptop */
 @media only screen and (min-width: 768px) {
+
   /* For desktop: */
   .LoginForm {
     margin-top: 4rem;
