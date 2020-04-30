@@ -23,9 +23,14 @@ export default function SearchProfilesContainer() {
       </form>
 
       <div className="Messages-Container">
-        <Link to="/profileofanotheruser">
+        <Link to="/profileofanotheruser" id="userLink">
           <div className="Search-Container">
-            <img src={EthanProfilePic} className="OnlineConnection" alt="" srcset="" />
+            <img
+              src={EthanProfilePic}
+              className="OnlineConnection"
+              alt=""
+              srcset=""
+            />
             <p className="NameAge">Eitan Schur, 39</p>
             <p className="KmAway">2 km away</p>
             <p className="Area">Kreuzberg, Berlin</p>
@@ -327,6 +332,6 @@ export default function SearchProfilesContainer() {
           <div className="FooterMargins"></div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }

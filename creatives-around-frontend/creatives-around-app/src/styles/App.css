@@ -832,7 +832,19 @@ p.ProfileTextLink {
   color: white;
 }
 
-.Search-Container > p {
+#userLink:link {
+  text-decoration: none;
+}
+
+#userLink:visited {
+  text-decoration: none;
+}
+
+#userLink:hover {
+  text-decoration: none;
+}
+
+#userLink:active {
   text-decoration: none;
 }
 
