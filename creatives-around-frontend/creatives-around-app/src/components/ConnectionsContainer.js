@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/App.css';
 import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 // Images - Profiles for testing:
@@ -30,8 +31,8 @@ const ConnectionsContainer = () => {
         <div className="ConnectionsContainer">
           <div className="ConnectionSingle online">
             <img src={Profile1} alt="" srcset="" />
-            <p>Steve</p>
-            <p>Bloom</p>
+            <p>Eitan</p>
+            <p>Schur</p>
           </div>
           <div className="ConnectionSingle online">
             <img src={Profile2} alt="" srcset="" />

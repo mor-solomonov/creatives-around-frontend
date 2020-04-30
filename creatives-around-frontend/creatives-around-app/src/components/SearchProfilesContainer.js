@@ -46,13 +46,6 @@ export default function SearchProfilesContainer() {
                 type="button"
                 className="ArtFormSingle SearchArtForm btn btn-outline-light"
               >
-                <p className="ArtFormsText">Photography</p>
-              </button>
-
-              <button
-                type="button"
-                className="ArtFormSingle SearchArtForm btn btn-outline-light"
-              >
                 <p className="ArtFormsText">Acrylic</p>
               </button>
 
@@ -60,14 +53,7 @@ export default function SearchProfilesContainer() {
                 type="button"
                 className="ArtFormSingle SearchArtForm btn btn-outline-light"
               >
-                <p className="ArtFormsText">Sculpture</p>
-              </button>
-
-              <button
-                type="button"
-                className="ArtFormSingle SearchArtForm btn btn-outline-light"
-              >
-                <p className="ArtFormsText">Digital Art</p>
+                <p className="ArtFormsText">Oil Color</p>
               </button>
             </div>
           </div>
@@ -75,9 +61,9 @@ export default function SearchProfilesContainer() {
         <div className="Line"></div>
         <div className="Search-Container">
           <img src={Profile6} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Eitan Schur, 39</p>
-          <p className="KmAway">2 km away</p>
-          <p className="Area">Kreuzberg, Berlin</p>
+          <p className="NameAge">Mia Schumann, 22</p>
+          <p className="KmAway">3 km away</p>
+          <p className="Area">Prenzlauer Berg, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
             <button
               type="button"
@@ -118,79 +104,30 @@ export default function SearchProfilesContainer() {
         <div className="Line"></div>
         <div className="Search-Container">
           <img src={Profile8} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Eitan Schur, 39</p>
-          <p className="KmAway">2 km away</p>
+          <p className="NameAge">Jacob Woodman, 33</p>
+          <p className="KmAway">3.5 km away</p>
           <p className="Area">Kreuzberg, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
             <button
               type="button"
               className="ArtFormSingle SearchArtForm btn btn-outline-light"
             >
-              <p className="ArtFormsText">Water Color</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
               <p className="ArtFormsText">Photography</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Acrylic</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Sculpture</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Digital Art</p>
             </button>
           </div>
         </div>
         <div className="Line"></div>
         <div className="Search-Container">
           <img src={Profile9} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Eitan Schur, 39</p>
-          <p className="KmAway">2 km away</p>
-          <p className="Area">Kreuzberg, Berlin</p>
+          <p className="NameAge">Lia Nowak, 25</p>
+          <p className="KmAway">4 km away</p>
+          <p className="Area">Mitte, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
             <button
               type="button"
               className="ArtFormSingle SearchArtForm btn btn-outline-light"
             >
-              <p className="ArtFormsText">Water Color</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Photography</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Acrylic</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Sculpture</p>
+              <p className="ArtFormsText">Drawing</p>
             </button>
 
             <button
@@ -202,53 +139,11 @@ export default function SearchProfilesContainer() {
           </div>
         </div>
         <div className="Line"></div>
-        <div className="Search-Container">
-          <img src={Profile8} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Eitan Schur, 39</p>
-          <p className="KmAway">2 km away</p>
-          <p className="Area">Kreuzberg, Berlin</p>
-          <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Water Color</p>
-            </button>
 
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Photography</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Acrylic</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Sculpture</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Digital Art</p>
-            </button>
-          </div>
-        </div>
-        <div className="Line"></div>
         <div className="Search-Container">
           <img src={Profile5} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Eitan Schur, 39</p>
-          <p className="KmAway">2 km away</p>
+          <p className="NameAge">Michelle Rosenthal, 36</p>
+          <p className="KmAway">4.1 km away</p>
           <p className="Area">Kreuzberg, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
             <button
@@ -290,22 +185,15 @@ export default function SearchProfilesContainer() {
         <div className="Line"></div>
         <div className="Search-Container">
           <img src={Profile10} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Eitan Schur, 39</p>
-          <p className="KmAway">2 km away</p>
-          <p className="Area">Kreuzberg, Berlin</p>
+          <p className="NameAge">Leyla Gotham, 28</p>
+          <p className="KmAway">5 km away</p>
+          <p className="Area">Charlottenburg, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
             <button
               type="button"
               className="ArtFormSingle SearchArtForm btn btn-outline-light"
             >
               <p className="ArtFormsText">Water Color</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Photography</p>
             </button>
 
             <button
@@ -320,13 +208,6 @@ export default function SearchProfilesContainer() {
               className="ArtFormSingle SearchArtForm btn btn-outline-light"
             >
               <p className="ArtFormsText">Sculpture</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Digital Art</p>
             </button>
           </div>
           <div className="FooterMargins"></div>

@@ -582,6 +582,10 @@ div.ConnectionSingle {
   margin-bottom: 1rem;
 }
 
+#LinkedUser {
+  align-self: center;
+}
+
 div.ConnectionSingle.online::after {
   content: ' ';
   display: inline;
