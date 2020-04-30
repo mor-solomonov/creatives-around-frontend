@@ -49,6 +49,7 @@ const MessageContainer = () => {
               <b>Steve:&nbsp; </b>Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Sequi nobis minus consequuntur.
             </p>
+
             <img src={Profile1} className="OnlineConnection" alt="" srcset="" />
           </div>
           <div id="WriteSend">
