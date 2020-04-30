@@ -19,34 +19,23 @@ const AboutUsContainer = props => {
         </b>
       </p>
       <p className="aboutus">
-
-        <br />
-        The app suggests profiles based on location and art forms.
-        Once connected with other users, direct messaging between the users is
-        available and the users are added as friends for future updates in the
-        news feed.
+        Creatives Around location-based social platform for visual artists.
         <br />
         <br />
-
-        The idea of the app is to connect with other visual artists, arrange
-        meetups, inspire one another by sharing creative works and ideas,
-        initiate collaborations and see the activities of others.
+        The idea of the app is to connect with other visual artists that are in
+        your area. The mission of the app is to hold space for visual artists,
+        from various fields and levels of skill, to connect - inspire one
+        another - and collaborate.
         <br />
         <br />
-
-        Our mission is to function as a creative catalyst for visual artists, to
-        hold space for creatives from various genres and skill levels and to
-        connect with other creatives nearby locally or in 'travel mode' when
-        abroad.
-        <br />
-        <br />
-        Creatives Around is a place for visual artists to get inspired from
-        others in desired fields, inspire others by sharing your work, discover
-        & communicate exhibitions, initiate collaborations and meetups with
-        other visual artists.
+        The app suggests profiles based on location and art forms. Once the
+        connection is confirmed by both sides, direct messaging between the
+        users is available and the users are added as a connection.
       </p>
 
-      <button className="btn btn-light" onClick={backClick}>Go Back</button>
+      <button className="btn btn-light" onClick={backClick}>
+        Go Back
+      </button>
       <div className="FooterMargins"></div>
     </div>
   );
