@@ -68,7 +68,7 @@ export default function LoginContainer() {
           onChange={updateState}
         />
         <div className="text-center">
-          <Link to="/searchprofiles">
+          <Link to="/viewmyprofile">
             <button className="Loginbutton btn btn-light">Login</button>
           </Link>
         </div>
@@ -76,19 +76,19 @@ export default function LoginContainer() {
       <div className="text-center signup-discover">
         <div className="signup-footer">
           <Link className="linkStyle" to="/signup">
-            <p className="SignUp">Not a member yet?&nbsp;
-            <b>Sign up</b></p>
+            <p className="SignUp">
+              Not a member yet?&nbsp;
+              <b>Sign up</b>
+            </p>
           </Link>
-
         </div>
         <div className="signup-footer">
           <p className="login-about-us-button">
-
             <Link className="linkStyle" to="/aboutus">
-              <p className="linkStyle">Discover more&nbsp;<b>About us</b></p>
+              <p className="linkStyle">
+                Discover more&nbsp;<b>About us</b>
+              </p>
             </Link>
-
-
           </p>
         </div>
       </div>

@@ -244,35 +244,12 @@ export default function SetupProfileContainer() {
           <div className="FormFieldSetupProfile">
             <div className="ArtFormsCollection Container col-md-4 text-center">
               <h4 className="FormHeader">Art forms</h4>
-              <button
-                type="button"
-                className="ArtFormSingle btn btn-outline-light"
-              >
-                <p className="ArtFormsText">Water Color</p>
-                <img src={RemoveWhiteCircle} alt="" srcset="" />
-              </button>
 
               <button
                 type="button"
                 className="ArtFormSingle btn btn-outline-light"
               >
                 <p className="ArtFormsText">Photography</p>
-                <img src={RemoveWhiteCircle} alt="" srcset="" />
-              </button>
-
-              <button
-                type="button"
-                className="ArtFormSingle btn btn-outline-light"
-              >
-                <p className="ArtFormsText">Acrylic</p>
-                <img src={RemoveWhiteCircle} alt="" srcset="" />
-              </button>
-
-              <button
-                type="button"
-                className="ArtFormSingle btn btn-outline-light"
-              >
-                <p className="ArtFormsText">Sculpture</p>
                 <img src={RemoveWhiteCircle} alt="" srcset="" />
               </button>
 
