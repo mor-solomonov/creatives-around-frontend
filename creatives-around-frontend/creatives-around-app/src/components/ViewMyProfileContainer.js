@@ -6,7 +6,7 @@ import TitleWithSymbol from './SymbolsandTitles/TitleWithSymbol';
 import ProfilePic from '../images/fake_profiles/profile_paintrbush_man.png';
 import CoverPic from '../images/fake_profiles/o-SPIEGELMAN-570.jpg';
 import PicExample from '../images/fake_profiles/images.jpg';
-import GalleryEx1 from '../images/fake_profiles/squares/3.png';
+import GalleryEx1 from '../images/fake_profiles/abstract-1782383_960_720.webp';
 import GalleryEx2 from '../images/fake_profiles/squares/4.png';
 import GalleryEx3 from '../images/fake_profiles/squares/5.png';
 import GalleryEx4 from '../images/fake_profiles/color-669630_960_720.jpg';
@@ -109,21 +109,24 @@ const ViewMyProfileContainer = () => {
           </button>
         </div>
 
-        <div className="ViewProfileGallery">
-          <div className="ViewProfileGallerySingle">
-            <img src={GalleryEx1} alt="" className="profileGalleryPic" />
-          </div>
-          <div className="ViewProfileGallerySingle">
-            <img src={GalleryEx2} alt="" className="profileGalleryPic" />
-          </div>
-          <div className="ViewProfileGallerySingle">
-            <img src={GalleryEx3} alt="" className="profileGalleryPic" />
-          </div>
-          <div className="ViewProfileGallerySingle">
-            <img src={GalleryEx4} alt="" className="profileGalleryPic" />
-          </div>
-          <div className="ViewProfileGallerySingle">
-            <img src={AddPicGallery} alt="" className="profileGalleryPic" />
+        <div className="FormFieldSetupProfile" id="viewProfileGallery">
+          <h4 className="FormHeader GalleryHeader">Gallery</h4>
+          <div className="ViewProfileGallery">
+            <div className="ViewProfileGallerySingle">
+              <img src={GalleryEx1} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="ViewProfileGallerySingle">
+              <img src={GalleryEx2} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="ViewProfileGallerySingle">
+              <img src={GalleryEx3} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="ViewProfileGallerySingle">
+              <img src={GalleryEx4} alt="" className="profileGalleryPic" />
+            </div>
+            <div className="ViewProfileGallerySingle">
+              <img src={AddPicGallery} alt="" className="profileGalleryPic" />
+            </div>
           </div>
         </div>
         <div className="ProfileText">
@@ -169,17 +172,14 @@ const ViewMyProfileContainer = () => {
           <p className="ProfileTextLink">www.instagram.com/stevebloom</p>
         </div>
 
-        <div className="FooterContainerFour">
-          <div>
-            <Link style={{ textDecoration: 'none' }} to="/settings">
-              <img src={Settings} alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link style={{ textDecoration: 'none' }} to="/setupprofile">
-              <img src={EditProfile} alt="" />
-            </Link>
-          </div>
+        <div className="FooterContainerFour" id="viewProfileFooter">
+          <Link style={{ textDecoration: 'none' }} to="/settings">
+            <img src={Settings} alt="" />
+          </Link>
+
+          <Link style={{ textDecoration: 'none' }} to="/setupprofile">
+            <img src={EditProfile} alt="" />
+          </Link>
         </div>
       </div>
     </Fragment>

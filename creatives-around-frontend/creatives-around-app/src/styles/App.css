@@ -49,29 +49,30 @@ a.TermsAndConditions {
   display: flex;
   flex-direction: column;
 }
+
 /* SCROLLBAR FIX: */
 
 /* width */
 ::-webkit-scrollbar {
-width: 3px;
+  width: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #888;
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #555;
+  background: #555;
 }
 
-/* */ 
+/* */
 
 /* */
 /* SCROLLBAR FIX: */
@@ -283,29 +284,33 @@ h3 {
   width: 1.6rem;
   /* margin-right: 1.5rem; */
 }
+
 .messageNoStyle:link {
   text-decoration: none;
-  color:white;
-  
-  
+  color: white;
+
+
 }
+
 .messageNoStyle:visited {
   text-decoration: none;
-  color:white;
-  
-  
+  color: white;
+
+
 }
-.messageNoStyle:hover{
+
+.messageNoStyle:hover {
   text-decoration: none;
-  color:white;
-  
-  
+  color: white;
+
+
 }
+
 .messageNoStyle:active {
   text-decoration: none;
-  color:white;
-  
-  
+  color: white;
+
+
 }
 
 .ConnectionsSymbol {
@@ -422,7 +427,9 @@ h3 {
 .SetupProfilePics {
   display: flex;
   width: 100vw;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
 }
 
 div.SetupProfilePics>div.col-4 {
@@ -472,6 +479,10 @@ div.ArtFormsLookingForCollection {
   flex-direction: column;
 }
 
+div.ArtFormsCollection>h4.FormHeader {
+  margin-top: 0rem;
+}
+
 div.ArtFormSingle {
   border: 1px solid white;
   border-radius: 1rem;
@@ -484,6 +495,11 @@ div.ArtFormSingle {
   border-radius: 1rem;
   padding-right: 0.3rem;
   padding-left: 0.3rem;
+}
+
+.btn-light.addArtSetup {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 div.ArtFormLookingForSingle {
@@ -514,16 +530,24 @@ div.tempGallery {
 div.FooterContainerFour {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 100px;
+  grid-auto-rows: 80px;
   grid-gap: 20px;
   margin-bottom: 2rem;
-  width: 70%;
+  width: 85%;
+  margin-top: 2rem;
 }
 
-div.FooterContainerFour>div {
+div.FooterContainerFour>a {
   align-self: end;
   justify-self: center;
 }
+
+div#viewProfileGallery {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+div#viewProfileFooter {}
 
 /* end of SetupProfilePics.js */
 
@@ -748,12 +772,14 @@ div.ProfileInfoRight {
   /* border: 1px solid white; */
 }
 
+div.FormFieldSetupProfile>h4.GalleryHeader {}
+
 div.ViewProfileGallery {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 2rem;
   /* margin-left: 1rem;
   margin-right: 1rem; */
-  width: 95%;
+  width: 90vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -769,6 +795,12 @@ div.ViewProfileGallerySingle {
   height: 100%;
   object-fit: cover;
   /* margin: 0.2rem; */
+}
+
+footer.SetupFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
 }
 
 button.ArtFormSingle {
@@ -850,9 +882,11 @@ p.ProfileTextLink {
   text-decoration: none;
   color: white;
 }
-.Search-Container > p {
+
+.Search-Container>p {
   text-decoration: none;
 }
+
 /* LocationsSettings: */
 
 form.locationSettingsForm {
