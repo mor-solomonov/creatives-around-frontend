@@ -58,7 +58,7 @@ export default function SearchProfilesContainer() {
             </div>
           </div>
         </Link>
-        <div className="Line"></div>
+        <div className="Line LineSearchProfiles"></div>
         <div className="Search-Container">
           <img src={Profile6} className="OnlineConnection" alt="" srcset="" />
           <p className="NameAge">Mia Schumann, 22</p>
@@ -101,7 +101,7 @@ export default function SearchProfilesContainer() {
             </button>
           </div>
         </div>
-        <div className="Line"></div>
+        <div className="Line LineSearchProfiles"></div>
         <div className="Search-Container">
           <img src={Profile8} className="OnlineConnection" alt="" srcset="" />
           <p className="NameAge">Jacob Woodman, 33</p>
@@ -116,7 +116,7 @@ export default function SearchProfilesContainer() {
             </button>
           </div>
         </div>
-        <div className="Line"></div>
+        <div className="Line LineSearchProfiles"></div>
         <div className="Search-Container">
           <img src={Profile9} className="OnlineConnection" alt="" srcset="" />
           <p className="NameAge">Lia Nowak, 25</p>
@@ -138,7 +138,7 @@ export default function SearchProfilesContainer() {
             </button>
           </div>
         </div>
-        <div className="Line"></div>
+        <div className="Line LineSearchProfiles"></div>
 
         <div className="Search-Container">
           <img src={Profile5} className="OnlineConnection" alt="" srcset="" />
@@ -182,7 +182,7 @@ export default function SearchProfilesContainer() {
             </button>
           </div>
         </div>
-        <div className="Line"></div>
+        <div className="Line LineSearchProfiles"></div>
         <div className="Search-Container">
           <img src={Profile10} className="OnlineConnection" alt="" srcset="" />
           <p className="NameAge">Leyla Gotham, 28</p>
