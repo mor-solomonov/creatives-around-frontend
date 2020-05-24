@@ -11,10 +11,10 @@ const ContactUsContainer = () => {
             <TitleWithSymbol title="Contact Us" />
             <Logo />
 
-            <div class="form-group">
-                <form>
+            <div className="form-group">
+                <form className="contactForm">
                     <label for="FormControlTextarea" className="FormControlTextarea">Please write your message here:</label>
-                    <textarea class="form-control Contactusform" rows="4"></textarea>
+                    <textarea className="form-control TextAreaPurple" rows="4"></textarea>
                     <div className="text-center MarginButtons">
 
                         <button type="submit" className=" btn btn-light mb-4 btn-block">Send message</button>

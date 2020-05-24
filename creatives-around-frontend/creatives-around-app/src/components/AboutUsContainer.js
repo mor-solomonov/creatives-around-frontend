@@ -19,9 +19,6 @@ const AboutUsContainer = props => {
         </b>
       </p>
       <p className="aboutus">
-        Creatives Around location-based social platform for visual artists.
-        <br />
-        <br />
         The idea of the app is to connect with other visual artists that are in
         your area. The mission of the app is to hold space for visual artists,
         from various fields and levels of skill, to connect - inspire one
