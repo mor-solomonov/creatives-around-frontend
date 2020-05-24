@@ -506,8 +506,6 @@ div#viewProfileGallery {
   margin-bottom: 0.5rem;
 }
 
-div#viewProfileFooter {
-}
 
 /* end of SetupProfilePics.js */
 
@@ -547,27 +545,18 @@ form.SearchConnections > button {
 }
 
 .btn-light:hover {
-  /* color: rgb(53, 212, 114); */
+ 
   color: white;
   background-color: #24061f;
   font-weight: 600;
   border: 2px solid #24061f;
-  /* color: rgb(32, 121, 62); */
-  transition-duration: 10ms;
-  transform: scale(1.1);
+
+  /* transition-duration: 10ms;
+  transform: scale(1.1); */
 }
+ 
 
-/*  */
-/* button {
-  background: linear-gradient(193deg, rgb(97, 212, 193) , rgb(211, 161, 188), rgb(77, 33, 77));
-  border: 1px solid rgb(80, 72, 83);
-  border-radius: 0.5rem;
-  font-weight: 800;
-  font-size: 1rem;
-  color:  rgb(33, 30, 34);
-} */
 
-/*  */
 
 div.ConnectionsContainer {
   display: grid;
