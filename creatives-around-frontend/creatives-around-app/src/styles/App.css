@@ -342,16 +342,20 @@ h3 {
   margin-top: 10%;
 }
 
-.DeleteAccountbtn {
-  color: black;
+.DeleteAccountButton {
+  /* color: black;
   border: none;
-  text-decoration: none !important;
+  text-decoration: none !important; */
+  width: 70%;
 }
 
 .DeleteAccountform {
   /* border: none; */
-  width: 70%;
-  margin: auto;
+  width: 80vw;
+  /* margin: auto; */
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .GoBackalignBottom {
