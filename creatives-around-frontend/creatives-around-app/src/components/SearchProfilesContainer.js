@@ -79,18 +79,13 @@ export default function SearchProfilesContainer() {
               <p className="ArtFormsText">Photography</p>
             </button>
 
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Acrylic</p>
-            </button>
+
           </div>
         </div>
         <div className="Line LineSearchProfiles"></div>
         <div className="Search-Container">
           <img src={Profile8} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Jacob Woodman, 33</p>
+          <p className="NameAge">Jay Harold, 33</p>
           <p className="KmAway">3.5 km away</p>
           <p className="Area">Kreuzberg, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
@@ -128,7 +123,7 @@ export default function SearchProfilesContainer() {
 
         <div className="Search-Container">
           <img src={Profile5} className="OnlineConnection" alt="" srcset="" />
-          <p className="NameAge">Michelle Rosenthal, 36</p>
+          <p className="NameAge">Michelle Rosen, 36</p>
           <p className="KmAway">4.1 km away</p>
           <p className="Area">Kreuzberg, Berlin</p>
           <div className="ArtFormsCollection Container SearchingArtForms col-md-4 text-right">
