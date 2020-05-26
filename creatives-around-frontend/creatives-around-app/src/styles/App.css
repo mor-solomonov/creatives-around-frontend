@@ -1,5 +1,37 @@
-/* Nic was here */
-/* Mor test */
+/* Scrollbar styling: */
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(65, 39, 60);
+}
+
+::-webkit-scrollbar-button {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(36, 6, 31, 0);
+  border: none;
+  /* box-shadow: 0px 0px 3px #dfdfdf inset; */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(36, 6, 31, 1);
+  border: none;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(36, 6, 31, 1);
+}
+
+/*  */
+
 .App {
   text-align: center;
 }
@@ -518,6 +550,7 @@ div#viewProfileGallery {
 
 form.SearchConnections {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 form.SearchConnections>input {
@@ -619,8 +652,8 @@ div.ConnectionSingle>p {
 }
 
 div.Message-Container>img {
-  width: 20%;
-  height: 20%;
+  width: 18%;
+  height: 18%;
   border-radius: 50%;
   margin-bottom: 0.2rem;
   margin-left: 0.2rem;
@@ -633,17 +666,21 @@ div.Message-Container>p {
   text-align: left;
   padding-left: 4%;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin: 0;
   font-weight: 500;
   font-family: 'Roboto';
 }
 
 #WriteSend {
-  width: 90%;
+  position: fixed;
+  width: 100%;
   margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #WriteMessage {
@@ -652,11 +689,25 @@ div.Message-Container>p {
   margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
+  background-image: linear-gradient(80deg, #24061f, #4e1e46, #582f52, #24061f);
+  border-color: #24061f;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  /* color: #20061c; */
+  color: #ffffff;
+
+  /*! webkit and mozilla to use in comatability  */
+  /* -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /* -moz-box-shadow: 3px 3px 5px 6px #ccc; */
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 #SendMessage {
   /* padding: 0; */
-  margin: 0px 0px 0px 1rem;
+  margin: 0px 0px 0px 0.5rem;
 }
 
 .Line {
@@ -676,11 +727,11 @@ div.Message-Container>p {
 .TextAreaPurple:focus {
   background-image: linear-gradient(70deg, #83617d, #cfb3cb, #b898b3, #72516c);
   background-color: #ffffff;
+  color: #20061c;
   border: none;
   box-shadow: none;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #20061c;
   height: 10rem !important;
 
   margin-left: auto;
