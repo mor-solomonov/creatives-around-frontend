@@ -9,11 +9,19 @@ const MessageContainer = () => {
     <Fragment>
       <div className="App-Container">
         <TitleWithSymbol title="Message" />
-        <form action="" className="SearchConnections">
+        {/* <form action="" className="SearchConnections">
           <input type="text" />
           <button>Search</button>
-        </form>
+        </form> */}
         <div className="Messages-Container">
+          <div className="Message-Container Receiver">
+            <img src={Profile9} className="OnlineConnection" alt="" srcset="" />
+            <p>
+              <b>Lia:&nbsp;</b> Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Sapiente necessitatibus ipsa, sit laudantium ab
+              delectus ea voluptatibus{' '}
+            </p>
+          </div>
           <div className="Message-Container">
             <p>
               <b>Steve:&nbsp; </b>Lorem ipsum dolor sit amet consectetur
