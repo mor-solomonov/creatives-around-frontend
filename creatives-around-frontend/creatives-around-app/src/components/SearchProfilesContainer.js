@@ -85,20 +85,6 @@ export default function SearchProfilesContainer() {
             >
               <p className="ArtFormsText">Acrylic</p>
             </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Sculpture</p>
-            </button>
-
-            <button
-              type="button"
-              className="ArtFormSingle SearchArtForm btn btn-outline-light"
-            >
-              <p className="ArtFormsText">Digital Art</p>
-            </button>
           </div>
         </div>
         <div className="Line LineSearchProfiles"></div>
