@@ -2,6 +2,7 @@
 ::-webkit-scrollbar {
   width: 8px;
   background: rgb(65, 39, 60);
+  border: none;
 }
 
 ::-webkit-scrollbar-button {
@@ -673,7 +674,7 @@ div.Message-Container>p {
 }
 
 #WriteSend {
-  position: fixed;
+  position: relative;
   width: 100%;
   margin-top: 1rem;
   padding-left: 1.4rem;
@@ -682,6 +683,8 @@ div.Message-Container>p {
   left: 0;
   right: 0;
 }
+
+
 
 #WriteMessage {
   display: inline !important;
@@ -706,8 +709,8 @@ div.Message-Container>p {
 }
 
 #SendMessage {
-  /* padding: 0; */
   margin: 0px 0px 0px 0.5rem;
+  transform: scale(0.9)
 }
 
 .Line {
@@ -1184,6 +1187,14 @@ h3.activationkeysent {
 /* */
 
 /*? MEDIA-QUERIES */
+/* Smaller than 344px wide */
+@media only screen and (max-width: 344px) {
+  #WriteMessage {
+    width: 70%;
+  }
+
+}
+
 /* Iphone 6 and bigger: */
 @media only screen and (min-width: 375px) {
   .TitleWithSymbol {
