@@ -56,7 +56,7 @@ const MessageContainer = () => {
             <p>
               <b>Steve:&nbsp; </b>Cool, I'll bring my laptop too. And if you
               would be up for it, my friend has an exhibition nearby Mano. See u
-              then. :)
+              then.
             </p>
 
             <img src={Profile1} className="OnlineConnection" alt="" srcset="" />
