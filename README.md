@@ -11,7 +11,10 @@ The app suggests profiles based on location and art forms.
 Once the connection is confirmed by both sides, direct messaging between the users is available and the users are added as a connection.
 
 This app is currently made for mobile only,
-and is for the desktop version presented in an iframe.
+and is for desktop presented in an iframe.
+
+- Optimized for Google Chrome.
+- Ongoing optimization for Mozilla Firefox, Safari & Microsoft Edge.
 
 by
 
