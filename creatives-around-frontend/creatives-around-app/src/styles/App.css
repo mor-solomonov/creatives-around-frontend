@@ -1233,4 +1233,9 @@ div.Search-Container>p.NameAge {
   .DisplayHeader {
     /* margin-bottom: 4rem; */
   }
+
+  p.App-title {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+  }
 }
