@@ -27,4 +27,4 @@ by
 * Creatives Around - Project Repo: <br>
   [https://github.com/mor-solomonov/creatives-around-frontend/tree/master/creatives-around-frontend](https://github.com/mor-solomonov/creatives-around-frontend/tree/master/creatives-around-frontend)
 
-![](Animated GIF-downsized_large.gif)
+
