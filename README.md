@@ -26,18 +26,7 @@ Once the connection is confirmed by both sides, direct messaging between the use
 * Optimized for Google Chrome.
 * Ongoing optimizaion for Mozilla Firefox, Safari & Microsoft Edge.
 
-by
 
-- Mor Solomonov: Frontend <br>
-  [https://github.com/mor-solomonov](https://github.com/mor-solomonov)
-
-- Nic Solitom: Frontend <br>
-  [https://github.com/nicsolitom](https://github.com/nicsolitom)
-  
-* Creatives Around - Project Repo: <br>
-  [https://github.com/mor-solomonov/creatives-around-frontend/tree/master/creatives-around-frontend](https://github.com/mor-solomonov/creatives-around-frontend/tree/master/creatives-around-frontend)
-  
- 
 
 
 
