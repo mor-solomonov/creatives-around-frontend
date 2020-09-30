@@ -14,7 +14,8 @@ Once the connection is confirmed by both sides, direct messaging between the use
 # App preview
 <br/>
 <img src="https://github.com/mor-solomonov/creatives-around-frontend/blob/master/Animated%20GIF-downsized_large.gif?raw=true" width="300"/>
-
+<br/>
+<img src="https://github.com/mor-solomonov/creatives-around-frontend/blob/master/Animated%20GIF-downsized_large2.gif?raw=true" width="300"/>
 
 
  <br/><br/>
