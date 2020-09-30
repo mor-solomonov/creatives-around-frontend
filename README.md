@@ -20,8 +20,8 @@ Once the connection is confirmed by both sides, direct messaging between the use
  <br/><br/>
  ## Comments
 <br/>
- -The app is currently made for mobile only.
- -For desktop an iframe is implemented.
+- The app is currently made for mobile only.
+- For desktop an iframe is implemented.
 - Optimized for Google Chrome.
 - Ongoing optimizaion for Mozilla Firefox, Safari & Microsoft Edge.
 
