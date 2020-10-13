@@ -1,8 +1,7 @@
 <br/> ![Screenshot](ca_redpurplelogo.png) <br/> <br/> <br/>
 
-Creatives Around location-based social platform for visual artists.
+Creatives Around is a location-based social platform for visual artists.
 
-The idea of the app is to connect with other visual artists that are in your area.
 The mission of the app is to hold space for visual artists,
 from various fields and levels of skill,
 to connect - inspire one another - and collaborate.
@@ -25,11 +24,11 @@ Once the connection is confirmed by both sides, direct messaging between the use
  ## Comments and updates
 <br/>
 
-* The app is currently made for mobile only.
+* The app is currently made for mobile-only.
 * For the desktop version, an iframe is implemented.
 * Optimized for Google Chrome.
-* Ongoing optimizaion for Mozilla Firefox, Safari & Microsoft Edge.
-
+* Ongoing optimization for Mozilla Firefox, Safari & Microsoft Edge.
+* Since our backend developer left the project, only the frontend is implemented. We are currently looking for a backend developer to continue the backend implementation.
 
 
 
